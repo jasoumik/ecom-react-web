@@ -31,6 +31,7 @@ cp .env.example .env.local
 | Variable | Description |
 |----------|-------------|
 | `NEXT_PUBLIC_API_URL` | Full URL to the API including /api (e.g. `http://localhost:3000/api`) |
+| `PORT` | Frontend port (default: 3001) |
 
 ## Running
 
