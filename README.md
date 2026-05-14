@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ecom-react-web
 
-## Getting Started
+Next.js storefront and admin dashboard for the eCommerce platform. Connects to [ecom-node-api](https://github.com/jasoumik/ecom-node-api) for all data.
 
-First, run the development server:
+## Tech Stack
+
+- **Framework** — Next.js v16 (App Router)
+- **UI** — React 19, Tailwind CSS v4
+- **State** — Zustand + TanStack React Query
+- **Animations** — Framer Motion
+- **Rich Text** — Tiptap
+
+## Prerequisites
+
+- Node.js 20+
+- npm
+- [ecom-node-api](https://github.com/jasoumik/ecom-node-api) running locally or deployed
+
+## Setup
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Install dependencies
+npm install
+
+# Copy env file and fill in your values
+cp .env.example .env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Variable | Description |
+|----------|-------------|
+| `NEXT_PUBLIC_API_URL` | Full URL to the API including /api (e.g. `http://localhost:3000/api`) |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Running
 
-## Learn More
+```bash
+# Development
+npm run dev
 
-To learn more about Next.js, take a look at the following resources:
+# Production build
+npm run build
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+App will be available at `http://localhost:3001`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+```
+src/
+├── app/
+│   ├── (public)/           # Public storefront pages
+│   ├── admin/              # Admin dashboard pages
+│   ├── products/           # Product listing & detail
+│   ├── cart/               # Cart page
+│   ├── checkout/           # Checkout flow (buy/[id])
+│   ├── profile/            # User profile & orders
+│   ├── login/              # Auth pages
+│   └── ...
+├── components/
+│   ├── layout/             # Header, Footer, BottomNav
+│   └── ui/                 # Reusable UI components
+└── lib/
+    ├── config.ts           # API URL config
+    ├── cart.ts             # Cart store (Zustand)
+    ├── wishlist.ts         # Wishlist store
+    ├── utils.ts            # Helpers including getImageUrl()
+    └── ...
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Key Routes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Route | Description |
+|-------|-------------|
+| `/` | Homepage |
+| `/products` | Product catalog |
+| `/products/[id]` | Product detail |
+| `/cart` | Shopping cart |
+| `/buy/[id]` | Direct checkout |
+| `/login` | Login / OTP auth |
+| `/profile` | User account |
+| `/profile/orders` | Order history |
+| `/admin` | Admin dashboard |
+| `/admin/products` | Product management |
+| `/admin/orders` | Order management |
+| `/admin/media` | Media file manager |
+
+## Related Repos
+
+- **Backend (API)** — [ecom-node-api](https://github.com/jasoumik/ecom-node-api)
