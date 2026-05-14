@@ -14,36 +14,59 @@ Tracks all infrastructure and migration work done on this repo.
   - Copied: `avatar`, `badge`, `button`, `card`, `image`, `layouts`, `rating`, `section`, `skeleton`, `typography`
 - Replaced all `@repo/ui` imports with `@/components/ui` across 90+ files
 - Removed `@repo/ui` path alias from `tsconfig.json`
-- Created `.env.example` with `NEXT_PUBLIC_API_URL`
+- Created `.env.example` with `NEXT_PUBLIC_API_URL` and `PORT`
 - Added `.turbo/`, lockfiles, and `pnpm-workspace.yaml` to `.gitignore`
+- Pinned port to `3001` in `package.json` dev/start scripts
 
 ### Acceptance criteria
 - [x] `npm run build` compiles all 79 routes without errors
 - [x] No remaining `@repo/ui` imports anywhere in `src/`
 - [x] All UI components resolve from `@/components/ui`
-- [x] `NEXT_PUBLIC_API_URL` env var documented
+- [x] Frontend runs on port `3001`, API on `3000`
 
 ---
 
-## Phase 2 — Cloudflare R2 Image URLs ⏳
+## Phase 2 — Skincare Theme ✅
 
-**Status:** Pending — depends on API Phase 2 & 3
+**Status:** Completed — 2026-05-15
+
+### Changes made
+- Replaced "Prithibee Baby Blue" design system with Replant Glow skincare palette
+- Removed stale `@source` reference to deleted `packages/ui` path
+- Updated all CSS variables in `src/app/globals.css`
+
+### New palette
+| Token | Value | Use |
+|-------|-------|-----|
+| `--color-primary` | `#4a7c59` | Sage green — brand |
+| `--color-secondary` | `#f5f0e8` | Warm cream — backgrounds |
+| `--color-accent` | `#c9956c` | Rose gold — CTAs |
+| `--color-dark` | `#2d5a3d` | Forest green — hover |
+| `--color-muted` | `#8fac97` | Soft sage — borders |
+| `--background` | `#fdfaf5` | Off-white cream |
+| `--foreground` | `#1a2e1f` | Deep green-black |
+
+---
+
+## Phase 3 — Cloudflare R2 Image URLs ⏳
+
+**Status:** Pending — depends on API Phase 3 (existing file migration)
 
 ### Goal
-Once the API migrates file storage to R2, the frontend will automatically serve images from R2 URLs. No code changes required — `getImageUrl()` in `src/lib/utils.ts` already handles full `https://` URLs by passing them through as-is.
+Verify all images render correctly from R2 URLs after the API migration. No frontend code changes needed — `getImageUrl()` already handles full `https://` URLs.
 
 ### Tasks
 - [ ] Update `NEXT_PUBLIC_API_URL` in production env to point to deployed API
-- [ ] Verify `getImageUrl()` correctly resolves R2 URLs after DB migration
-- [ ] Test: all product images, banners, brand logos load from R2
+- [ ] Verify `getImageUrl()` resolves R2 URLs correctly after DB migration
+- [ ] Test: product images, banners, brand logos load from R2
 - [ ] Test: media picker in admin shows R2-hosted images
-- [ ] Remove any hardcoded `http://127.0.0.1:3000` references if found
+- [ ] Search and remove any hardcoded `http://127.0.0.1:3000` references
 
 ### Notes
-- `src/lib/utils.ts` — `getImageUrl()` logic:
-  - If URL starts with `http/https` → return as-is ✅ (R2 URLs will work automatically)
-  - If URL starts with `/` → prepend `NEXT_PUBLIC_API_URL` (legacy `/uploads/` paths)
-  - Otherwise → return placeholder image
+- `src/lib/utils.ts` `getImageUrl()` logic:
+  - URL starts with `https://` → returned as-is ✅ (R2 URLs work automatically)
+  - URL starts with `/` → prepends `NEXT_PUBLIC_API_URL` (legacy `/uploads/` paths)
+  - Otherwise → returns placeholder image
 
 ---
 
