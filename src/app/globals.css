@@ -1,0 +1,242 @@
+@import "tailwindcss";
+@source "../../../../packages/ui/src/**/*.{ts,tsx}";
+
+/* Bangla font face */
+@font-face {
+  font-family: "ShohidShafkatSamir";
+  src: url("/fonts/ShohidShafkatSamir.woff2") format("woff2"),
+       url("/fonts/ShohidShafkatSamir.woff") format("woff"),
+       url("/fonts/ShohidShafkatSamir.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Force class-based dark mode */
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* Prithibee Baby Blue Design System */
+  --color-primary: #0EA5E9; /* Sky 500 - main brand */
+  --color-secondary: #E6F4FF; /* Baby blue - backgrounds */
+  --color-accent: #FDBA74; /* Orange 300 - CTAs, highlights */
+  --color-dark: #0369A1; /* Sky 700 - hover states */
+
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* Header heights */
+  --header-height: 60px;
+  --header-height-scroll: 50px;
+  --top-bar-height: 32px;
+
+  /* Safe area for mobile */
+  --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+
+  /* Font variables */
+  --font-english: var(--font-lato), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-bangla: "ShohidShafkatSamir", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Apply dark mode variables ONLY when .dark class is present */
+.dark {
+  --background: #020617; /* Slate 950 */
+  --foreground: #f8fafc;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Default font stack: English first, Bangla fallback where needed */
+  --font-sans: var(--font-english);
+
+  /* Custom colors matching Baby Blue theme */
+  --color-brand-primary: #0EA5E9; /* Sky 500 */
+  --color-brand-secondary: #E6F4FF; /* Baby Blue */
+  --color-brand-accent: #FDBA74; /* Orange 300 */
+  --color-brand-dark: #0369A1; /* Sky 700 */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-english);
+}
+
+/* Utility for Bangla text blocks */
+.font-bangla {
+  font-family: var(--font-bangla);
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Safe area padding for iOS */
+.pb-safe {
+  padding-bottom: max(16px, var(--safe-area-bottom));
+}
+
+/* Animation keyframes */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-from-bottom-2 {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-from-bottom-4 {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-from-bottom-8 {
+  from { opacity: 0; transform: translateY(32px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce-in {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes badge-bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+@keyframes heart-beat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.1); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.1); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
+}
+
+.animate-slide-in-from-bottom-2 {
+  animation: slide-in-from-bottom-2 0.4s ease-out;
+}
+
+.animate-slide-in-from-bottom-4 {
+  animation: slide-in-from-bottom-4 0.5s ease-out 0.1s both;
+}
+
+.animate-slide-in-from-bottom-8 {
+  animation: slide-in-from-bottom-8 0.6s ease-out 0.2s both;
+}
+
+.animate-bounce-in {
+  animation: bounce-in 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.animate-badge-bounce {
+  animation: badge-bounce 0.3s ease-in-out;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, var(--color-secondary) 25%, #f0f9ff 50%, var(--color-secondary) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 1.5s ease-out infinite;
+}
+
+.animate-heart-beat {
+  animation: heart-beat 0.5s ease-in-out;
+}
+
+/* Snap scroll for carousels */
+.snap-x {
+  scroll-snap-type: x mandatory;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}
+
+.snap-center {
+  scroll-snap-align: center;
+}
+
+/* Touch action for mobile */
+.touch-pan-x {
+  touch-action: pan-x;
+}
+
+.touch-pan-y {
+  touch-action: pan-y;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Minimum touch target for accessibility */
+.touch-target {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* Gradient overlays */
+.gradient-overlay-dark {
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
+}
+
+/* Baby blue shimmer for skeletons */
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    #E6F4FF 0%,
+    #f0f9ff 50%,
+    #E6F4FF 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
