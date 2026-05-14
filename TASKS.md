@@ -70,6 +70,36 @@ Verify all images render correctly from R2 URLs after the API migration. No fron
 
 ---
 
+## Phase 4 — Watermark Settings UI ✅
+
+**Status:** Completed — 2026-05-15
+
+### Goal
+Admin UI to configure the brand watermark applied to all uploaded images (controlled by API Phase 4).
+
+### Changes made
+- Updated `src/app/admin/settings/page.tsx`:
+  - Filters `watermark_*` keys out of the generic settings list
+  - Adds a dedicated **Watermark Configuration** card with:
+    - Enable/disable **toggle** (sky-500 when active)
+    - **Type** radio: Text or Image
+    - **Text** input (shown when type = text)
+    - **Image URL** input + live preview thumbnail + width (px) input (shown when type = image)
+    - **Opacity** range slider (0.1–1.0, step 0.1) with live numeric display
+    - **3×3 position grid** (↖ ↑ ↗ ← ◎ → ↙ ↓ ↘) with active highlight
+    - Section dims (`opacity-40 pointer-events-none`) when watermark is disabled
+  - All watermark settings save via the same `PUT /settings/:key` flow as general settings
+
+### Acceptance criteria
+- [x] Watermark section renders separately from general settings
+- [x] Enable toggle shows/hides the section controls
+- [x] Text and Image modes show the correct conditional inputs
+- [x] Opacity slider updates live
+- [x] Position grid highlights the active selection
+- [x] Save button persists all watermark settings to API
+
+---
+
 ## Backlog
 
 - [ ] Set up CI/CD pipeline (GitHub Actions → Vercel or custom server)
