@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Heading, Button } from "@/components/ui";
 import { API_URL } from "@/lib/config";
+import { getImageUrl } from "@/lib/utils";
 import { useToast } from "@/components/ui/Toast";
 import { FullScreenLoader } from "@/components/ui/Loader";
 
@@ -188,7 +189,7 @@ export default function AdminMediaPage() {
                     >
                         <div className="aspect-square bg-slate-50 dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-700">
                             {file.type === 'image' ? (
-                                <img src={`${API_URL}${file.url}`} alt={file.name} className="w-full h-full object-cover" />
+                                <img src={getImageUrl(file.url)} alt={file.name} className="w-full h-full object-cover" />
                             ) : (
                                 <div className="w-full h-full flex items-center justify-center text-slate-400">
                                     📄

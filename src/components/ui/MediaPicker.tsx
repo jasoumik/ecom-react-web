@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui";
 import { API_URL } from "@/lib/config";
+import { getImageUrl } from "@/lib/utils";
 import { FullScreenLoader } from "./Loader";
 
 interface MediaPickerProps {
@@ -59,7 +60,7 @@ export function MediaPicker({ onSelect, onClose, context = 'general' }: MediaPic
         // If context is profile, we might not get a file record back in the list immediately if we chose not to save it to DB.
         // But we need to select it.
         if (context === 'profile') {
-            onSelect(`${API_URL}${data.url}`);
+            onSelect(getImageUrl(data.url));
             onClose();
         } else {
             fetchMedia(currentFolder);
@@ -121,7 +122,7 @@ export function MediaPicker({ onSelect, onClose, context = 'general' }: MediaPic
                     onClick={() => onSelect(`${file.url}`)}
                 >
                   {file.type === 'image' ? (
-                    <img src={`${API_URL}${file.url}`} alt={file.name} className="w-full h-full object-cover" />
+                    <img src={getImageUrl(file.url)} alt={file.name} className="w-full h-full object-cover" />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-2xl">📄</div>
                   )}
