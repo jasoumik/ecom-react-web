@@ -4,6 +4,23 @@ Tracks all infrastructure and migration work done on this repo.
 
 ---
 
+## About `sharp` (Image Processing)
+
+`sharp` is a Node.js image processing library powered by **libvips** (a C++ image processing system). It runs in the API (`ecom-node-api`) — not in this frontend repo — but it directly affects what this frontend renders.
+
+Every image uploaded through the admin panel is processed by `sharp` before being stored:
+
+- Converted to **WebP** format at quality 85
+- Optionally stamped with a brand watermark (text or image)
+- All processing happens in memory — no temp files
+
+**What this means for the frontend:**
+- All new image URLs will end in `.webp`
+- `getImageUrl()` in `src/lib/utils.ts` is format-agnostic — no changes needed
+- `<img>` tags and Next.js `<Image>` both support WebP natively in all modern browsers
+
+---
+
 ## Phase 1 — Monorepo Separation ✅
 
 **Status:** Completed — 2026-05-15
@@ -89,6 +106,7 @@ Admin UI to configure the brand watermark applied to all uploaded images (contro
     - **3×3 position grid** (↖ ↑ ↗ ← ◎ → ↙ ↓ ↘) with active highlight
     - Section dims (`opacity-40 pointer-events-none`) when watermark is disabled
   - All watermark settings save via the same `PUT /settings/:key` flow as general settings
+- Fixed `MediaPicker.tsx` and `admin/media/page.tsx` — replaced `${API_URL}${file.url}` with `getImageUrl(file.url)` to correctly handle both local `/uploads/` paths and full R2 URLs
 
 ### Acceptance criteria
 - [x] Watermark section renders separately from general settings
@@ -97,6 +115,7 @@ Admin UI to configure the brand watermark applied to all uploaded images (contro
 - [x] Opacity slider updates live
 - [x] Position grid highlights the active selection
 - [x] Save button persists all watermark settings to API
+- [x] Media library and picker render images correctly for both local and R2 URLs
 
 ---
 
