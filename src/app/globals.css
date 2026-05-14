@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@source "../../../../packages/ui/src/**/*.{ts,tsx}";
 
 /* Bangla font face */
 @font-face {
@@ -16,14 +15,15 @@
 @variant dark (&:where(.dark, .dark *));
 
 :root {
-  /* Prithibee Baby Blue Design System */
-  --color-primary: #0EA5E9; /* Sky 500 - main brand */
-  --color-secondary: #E6F4FF; /* Baby blue - backgrounds */
-  --color-accent: #FDBA74; /* Orange 300 - CTAs, highlights */
-  --color-dark: #0369A1; /* Sky 700 - hover states */
+  /* Replant Glow — Premium Skincare Design System */
+  --color-primary: #4a7c59;    /* Sage green — brand identity */
+  --color-secondary: #f5f0e8;  /* Warm cream — backgrounds */
+  --color-accent: #c9956c;     /* Rose gold — CTAs, highlights */
+  --color-dark: #2d5a3d;       /* Deep forest green — hover states */
+  --color-muted: #8fac97;      /* Soft sage — muted text, borders */
 
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fdfaf5;       /* Off-white cream — warmer than pure white */
+  --foreground: #1a2e1f;       /* Deep green-black — body text */
 
   /* Header heights */
   --header-height: 60px;
@@ -40,8 +40,9 @@
 
 /* Apply dark mode variables ONLY when .dark class is present */
 .dark {
-  --background: #020617; /* Slate 950 */
-  --foreground: #f8fafc;
+  --background: #0f1a12; /* Deep forest */
+  --foreground: #f0ebe0; /* Warm cream */
+  --color-secondary: #1a2e1f;
 }
 
 @theme inline {
@@ -51,11 +52,12 @@
   /* Default font stack: English first, Bangla fallback where needed */
   --font-sans: var(--font-english);
 
-  /* Custom colors matching Baby Blue theme */
-  --color-brand-primary: #0EA5E9; /* Sky 500 */
-  --color-brand-secondary: #E6F4FF; /* Baby Blue */
-  --color-brand-accent: #FDBA74; /* Orange 300 */
-  --color-brand-dark: #0369A1; /* Sky 700 */
+  /* Replant Glow skincare palette */
+  --color-brand-primary: #4a7c59;   /* Sage green */
+  --color-brand-secondary: #f5f0e8; /* Warm cream */
+  --color-brand-accent: #c9956c;    /* Rose gold */
+  --color-brand-dark: #2d5a3d;      /* Deep forest green */
+  --color-brand-muted: #8fac97;     /* Soft sage */
 }
 
 body {
@@ -166,7 +168,7 @@ body {
 }
 
 .animate-shimmer {
-  background: linear-gradient(90deg, var(--color-secondary) 25%, #f0f9ff 50%, var(--color-secondary) 75%);
+  background: linear-gradient(90deg, var(--color-secondary) 25%, #fdfaf5 50%, var(--color-secondary) 75%);
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
 }
@@ -229,13 +231,13 @@ body {
   background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
 }
 
-/* Baby blue shimmer for skeletons */
+/* Skincare cream shimmer for skeletons */
 .skeleton-shimmer {
   background: linear-gradient(
     90deg,
-    #E6F4FF 0%,
-    #f0f9ff 50%,
-    #E6F4FF 100%
+    #f5f0e8 0%,
+    #fdfaf5 50%,
+    #f5f0e8 100%
   );
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite linear;
