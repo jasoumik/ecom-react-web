@@ -52,7 +52,7 @@ export default function AdminCouponsPage() {
     if (!coupon.is_active) return { label: 'Inactive', color: 'bg-slate-100 text-slate-600' };
     if (coupon.starts_at && coupon.starts_at > today) return { label: 'Scheduled', color: 'bg-blue-50 text-blue-600' };
     if (!coupon.no_expiry && coupon.expires_at && coupon.expires_at < today) return { label: 'Expired', color: 'bg-red-50 text-red-600' };
-    if (coupon.usage_limit && coupon.times_used >= coupon.usage_limit) return { label: 'Exhausted', color: 'bg-orange-50 text-orange-600' };
+    if (coupon.usage_limit && coupon.times_used >= coupon.usage_limit) return { label: 'Exhausted', color: 'bg-pink-50 text-pink-600' };
     return { label: 'Active', color: 'bg-green-50 text-green-600' };
   };
 
@@ -82,7 +82,7 @@ export default function AdminCouponsPage() {
           {
             header: "Code",
             cell: (coupon) => (
-              <span className="font-mono font-bold text-sky-600 dark:text-sky-400 text-sm bg-sky-50 dark:bg-sky-900/20 px-2 py-1 rounded">
+              <span className="font-mono font-bold text-pink-600 dark:text-pink-400 text-sm bg-pink-50 dark:bg-pink-900/20 px-2 py-1 rounded">
                 {coupon.code}
               </span>
             )
@@ -152,7 +152,7 @@ export default function AdminCouponsPage() {
               <div className="flex justify-end gap-1">
                 <button
                   onClick={(e) => { e.stopPropagation(); router.push(`/admin/coupons/${coupon.id}/edit`); }}
-                  className="p-1.5 rounded text-slate-500 hover:bg-sky-50 hover:text-sky-600 transition-colors"
+                  className="p-1.5 rounded text-slate-500 hover:bg-pink-50 hover:text-pink-600 transition-colors"
                   title="Edit"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>

@@ -94,12 +94,12 @@ export function ShopByAgeSection({ onAgeSelect }: ShopByAgeSectionProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-6 sm:mb-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-50 dark:bg-slate-800 text-sky-600 dark:text-sky-400 text-[10px] font-bold uppercase tracking-wider mb-3">
-            <span className="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-50 dark:bg-slate-800 text-rose-400 dark:text-rose-300 text-[10px] font-bold uppercase tracking-wider mb-3">
+            <span className="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse" />
             {language === "bn" ? "বয়স অনুযায়ী কেনাকাটা" : "Shop by Age"}
           </div>
           <Heading size="md" className="font-sans text-slate-900 dark:text-white font-bold text-xl sm:text-2xl">
-            {language === "bn" ? "আপনার শিশুর বয়স নির্বাচন করুন" : "Select Your Baby's Age"}
+            {language === "bn" ? "আপনার স্কিন টাইপ নির্বাচন করুন" : "Shop By Skin Type"}
           </Heading>
           <p className="text-slate-500 dark:text-slate-400 text-sm mt-2">
             {language === "bn"
@@ -124,8 +124,8 @@ export function ShopByAgeSection({ onAgeSelect }: ShopByAgeSectionProps) {
                 whileTap={{ scale: 0.95 }}
                 className={`relative flex flex-col items-center gap-2 p-4 rounded-2xl transition-all duration-300 min-w-[140px] ${
                   isSelected
-                    ? "bg-sky-500 text-white shadow-lg shadow-sky-500/30"
-                    : "bg-[#E6F4FF] dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-sky-100 dark:hover:bg-slate-700"
+                    ? "bg-rose-400 text-white shadow-lg shadow-rose-400/30"
+                    : "bg-[#E6F4FF] dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-rose-100 dark:hover:bg-slate-700"
                 }`}
               >
                 {/* Age Icon */}
@@ -151,7 +151,7 @@ export function ShopByAgeSection({ onAgeSelect }: ShopByAgeSectionProps) {
                 {isSelected && (
                   <motion.div
                     layoutId="ageIndicator"
-                    className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-sky-500 rotate-45"
+                    className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-rose-400 rotate-45"
                     transition={{ type: "spring", stiffness: 400, damping: 30 }}
                   />
                 )}
@@ -176,7 +176,7 @@ export function ShopByAgeSection({ onAgeSelect }: ShopByAgeSectionProps) {
                   whileTap={{ scale: 0.95 }}
                   className={`flex-shrink-0 snap-center flex flex-col items-center gap-2 p-3 rounded-xl transition-all duration-300 min-w-[100px] ${
                     isSelected
-                      ? "bg-sky-500 text-white shadow-lg shadow-sky-500/30"
+                      ? "bg-rose-400 text-white shadow-lg shadow-rose-400/30"
                       : "bg-[#E6F4FF] dark:bg-slate-800 text-slate-700 dark:text-slate-300"
                   }`}
                 >
@@ -210,7 +210,7 @@ export function ShopByAgeSection({ onAgeSelect }: ShopByAgeSectionProps) {
                 key={stage.id}
                 className={`h-1.5 rounded-full transition-all duration-300 ${
                   selectedAge === (stage.slug || stage.id)
-                    ? "w-4 bg-sky-500"
+                    ? "w-4 bg-rose-400"
                     : "w-1.5 bg-slate-300 dark:bg-slate-600"
                 }`}
               />

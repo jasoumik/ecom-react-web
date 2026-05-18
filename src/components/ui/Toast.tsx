@@ -48,7 +48,7 @@ export function ToastContainer() {
                 ? "bg-white/95 border-emerald-100 text-emerald-900 dark:bg-slate-800/95 dark:border-emerald-900/30 dark:text-emerald-100"
                 : toast.type === "error"
                 ? "bg-white/95 border-red-100 text-red-900 dark:bg-slate-800/95 dark:border-red-900/30 dark:text-red-100"
-                : "bg-white/95 border-sky-100 text-sky-900 dark:bg-slate-800/95 dark:border-sky-900/30 dark:text-sky-100"
+                : "bg-white/95 border-rose-100 text-rose-900 dark:bg-slate-800/95 dark:border-rose-900/30 dark:text-rose-100"
             }
           `}
         >
@@ -58,7 +58,7 @@ export function ToastContainer() {
                 ${
                     toast.type === "success" ? "bg-emerald-100 text-emerald-600 dark:bg-emerald-900/50 dark:text-emerald-400" :
                     toast.type === "error" ? "bg-red-100 text-red-600 dark:bg-red-900/50 dark:text-red-400" :
-                    "bg-sky-100 text-sky-600 dark:bg-sky-900/50 dark:text-sky-400"
+                    "bg-rose-100 text-rose-400 dark:bg-rose-900/50 dark:text-rose-300"
                 }
             `}>
                 {toast.type === "success" && (
@@ -85,7 +85,7 @@ export function ToastContainer() {
                       ${
                         toast.type === "success" 
                           ? "bg-emerald-600 text-white hover:bg-emerald-700" 
-                          : "bg-sky-600 text-white hover:bg-sky-700"
+                          : "bg-rose-400 text-white hover:bg-rose-500"
                       }
                     `}
                   >

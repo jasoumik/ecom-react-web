@@ -132,7 +132,7 @@ export default function AddressesPage() {
             <Heading size="lg" className="font-sans text-slate-900 dark:text-white mb-1">My Addresses</Heading>
             <p className="text-slate-500 dark:text-slate-400 text-sm">Manage your shipping addresses for faster checkout.</p>
         </div>
-        <Button onClick={() => setIsAdding(!isAdding)} className="w-full sm:w-auto rounded-xl shadow-lg shadow-sky-500/20 px-6 py-2.5">
+        <Button onClick={() => setIsAdding(!isAdding)} className="w-full sm:w-auto rounded-xl shadow-lg shadow-rose-400/20 px-6 py-2.5">
             {isAdding ? "Cancel" : "+ Add New"}
         </Button>
       </div>
@@ -176,7 +176,7 @@ export default function AddressesPage() {
                     <Input label="Zip Code" value={newAddress.zip} onChange={e => setNewAddress({...newAddress, zip: e.target.value})} required className="bg-white" />
                     <div className="flex items-center pt-8">
                         <label className="flex items-center gap-3 cursor-pointer group">
-                            <div className={`w-6 h-6 rounded-lg border-2 flex items-center justify-center transition-colors ${newAddress.is_default ? 'bg-sky-500 border-sky-500' : 'border-slate-300 bg-white'}`}>
+                            <div className={`w-6 h-6 rounded-lg border-2 flex items-center justify-center transition-colors ${newAddress.is_default ? 'bg-rose-400 border-rose-400' : 'border-slate-300 bg-white'}`}>
                                 {newAddress.is_default && <span className="text-white text-sm">✓</span>}
                             </div>
                             <input 
@@ -185,7 +185,7 @@ export default function AddressesPage() {
                                 onChange={e => setNewAddress({...newAddress, is_default: e.target.checked})}
                                 className="hidden"
                             />
-                            <span className="text-sm font-bold text-slate-700 dark:text-slate-300 group-hover:text-sky-600 transition-colors">Set as Default Address</span>
+                            <span className="text-sm font-bold text-slate-700 dark:text-slate-300 group-hover:text-rose-400 transition-colors">Set as Default Address</span>
                         </label>
                     </div>
                 </div>
@@ -200,13 +200,13 @@ export default function AddressesPage() {
         {addresses.map((addr) => (
             <div key={addr.id} className="bg-white dark:bg-slate-800 p-6 rounded-3xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all relative group">
                 {addr.is_default && (
-                    <span className="absolute top-6 right-6 bg-sky-100 text-sky-600 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wide dark:bg-sky-900/30 dark:text-sky-400">
+                    <span className="absolute top-6 right-6 bg-rose-100 text-rose-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wide dark:bg-rose-900/30 dark:text-rose-300">
                         Default
                     </span>
                 )}
                 <div className="flex items-center gap-4 mb-4">
                     <div className={`w-12 h-12 rounded-2xl flex items-center justify-center text-2xl ${
-                        addr.type.toLowerCase().includes('home') ? 'bg-rose-50 text-rose-500' : 
+                        addr.type.toLowerCase().includes('home') ? 'bg-rose-50 text-rose-400' : 
                         addr.type.toLowerCase().includes('office') ? 'bg-blue-50 text-blue-500' : 
                         'bg-slate-100 text-slate-500'
                     }`}>

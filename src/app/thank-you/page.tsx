@@ -56,7 +56,7 @@ function ThankYouContent() {
                 </Link>
             )}
             <Link href="/products" className="w-full">
-                <Button fullWidth className="rounded-xl shadow-lg shadow-sky-500/20 py-3 h-auto">{t('continue_shopping')}</Button>
+                <Button fullWidth className="rounded-xl shadow-lg shadow-rose-400/20 py-3 h-auto">{t('continue_shopping')}</Button>
             </Link>
         </div>
       </div>

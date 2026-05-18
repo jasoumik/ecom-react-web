@@ -315,7 +315,7 @@ function ProductsContent() {
                                     href={`/products?category=${sub.slug || sub.id}`}
                                     className="flex flex-col items-center gap-3 min-w-[100px] group"
                                 >
-                                    <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 overflow-hidden group-hover:border-sky-500 group-hover:shadow-md transition-all duration-300">
+                                    <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 overflow-hidden group-hover:border-rose-400 group-hover:shadow-md transition-all duration-300">
                                         <ResponsiveImage 
                                             src={getImageUrl(sub.image)} 
                                             alt={getLocalizedField(sub, 'name', language)} 
@@ -324,7 +324,7 @@ function ProductsContent() {
                                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                         />
                                     </div>
-                                    <span className="text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-300 text-center group-hover:text-sky-500 transition-colors line-clamp-2 max-w-[100px]">
+                                    <span className="text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-300 text-center group-hover:text-rose-400 transition-colors line-clamp-2 max-w-[100px]">
                                         {getLocalizedField(sub, 'name', language)}
                                     </span>
                                 </Link>
@@ -366,7 +366,7 @@ function ProductsContent() {
         {ageGroup && (
             <div className="mb-8 animate-in fade-in slide-in-from-top-4 duration-500">
                 <div className="text-center mb-8">
-                    <div className="w-20 h-20 mx-auto rounded-full bg-sky-100 dark:bg-sky-900/30 flex items-center justify-center text-4xl mb-4">
+                    <div className="w-20 h-20 mx-auto rounded-full bg-rose-100 dark:bg-rose-900/30 flex items-center justify-center text-4xl mb-4">
                         {ageGroup.icon}
                     </div>
                     <Heading size="lg" className="font-sans text-slate-900 dark:text-white font-bold text-2xl sm:text-3xl mb-2">
@@ -388,7 +388,7 @@ function ProductsContent() {
                                     href={`/products?category=${cat.slug || cat.id}&age=${ageId}`}
                                     className="flex flex-col items-center gap-3 w-[100px] group"
                                 >
-                                    <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 overflow-hidden group-hover:border-sky-500 group-hover:shadow-md transition-all duration-300">
+                                    <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 overflow-hidden group-hover:border-rose-400 group-hover:shadow-md transition-all duration-300">
                                         <ResponsiveImage 
                                             src={getImageUrl(cat.image)} 
                                             alt={getLocalizedField(cat, 'name', language)} 
@@ -397,7 +397,7 @@ function ProductsContent() {
                                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                         />
                                     </div>
-                                    <span className="text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-300 text-center group-hover:text-sky-500 transition-colors line-clamp-2">
+                                    <span className="text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-300 text-center group-hover:text-rose-400 transition-colors line-clamp-2">
                                         {getLocalizedField(cat, 'name', language)}
                                     </span>
                                 </Link>
@@ -418,7 +418,7 @@ function ProductsContent() {
                               href={`/products?category=${cat.slug || cat.id}`}
                               className="flex flex-col items-center gap-3 w-[100px] group"
                           >
-                              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 overflow-hidden group-hover:border-sky-500 group-hover:shadow-md transition-all duration-300">
+                              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 overflow-hidden group-hover:border-rose-400 group-hover:shadow-md transition-all duration-300">
                                   <ResponsiveImage
                                       src={getImageUrl(cat.image)}
                                       alt={getLocalizedField(cat, 'name', language)}
@@ -427,7 +427,7 @@ function ProductsContent() {
                                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                   />
                               </div>
-                              <span className="text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-300 text-center group-hover:text-sky-500 transition-colors line-clamp-2">
+                              <span className="text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-300 text-center group-hover:text-rose-400 transition-colors line-clamp-2">
                                 {getLocalizedField(cat, 'name', language)}
                             </span>
                           </Link>
@@ -460,7 +460,7 @@ function ProductsContent() {
                     <Filter size={16} />
                     Filters
                     {(appliedMinPrice !== undefined || appliedMaxPrice !== undefined) && (
-                        <span className="w-2 h-2 rounded-full bg-sky-500" />
+                        <span className="w-2 h-2 rounded-full bg-rose-400" />
                     )}
                 </button>
 
@@ -475,7 +475,7 @@ function ProductsContent() {
                                     placeholder={t('min_price')} 
                                     value={minPrice}
                                     onChange={(e) => setMinPrice(e.target.value)}
-                                    className="w-20 px-2 py-1.5 text-sm border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                                    className="w-20 px-2 py-1.5 text-sm border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-rose-400"
                                 />
                                 <span className="text-slate-400">-</span>
                                 <input 
@@ -483,11 +483,11 @@ function ProductsContent() {
                                     placeholder={t('max_price')} 
                                     value={maxPrice}
                                     onChange={(e) => setMaxPrice(e.target.value)}
-                                    className="w-20 px-2 py-1.5 text-sm border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                                    className="w-20 px-2 py-1.5 text-sm border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-rose-400"
                                 />
                                 <button 
                                     onClick={applyPriceFilter}
-                                    className="px-3 py-1.5 bg-sky-500 text-white text-sm font-medium rounded-lg hover:bg-sky-600 transition-colors"
+                                    className="px-3 py-1.5 bg-rose-400 text-white text-sm font-medium rounded-lg hover:bg-rose-400 transition-colors"
                                 >
                                     {t('apply')}
                                 </button>
@@ -497,7 +497,7 @@ function ProductsContent() {
                         {(appliedMinPrice !== undefined || appliedMaxPrice !== undefined) && (
                             <button 
                                 onClick={clearFilters}
-                                className="text-xs text-rose-500 hover:underline flex items-center gap-1"
+                                className="text-xs text-rose-400 hover:underline flex items-center gap-1"
                             >
                                 <X size={12} />
                                 {t('clear_filters')}
@@ -513,7 +513,7 @@ function ProductsContent() {
                         <select
                             value={sortBy}
                             onChange={(e) => setSortBy(e.target.value)}
-                            className="appearance-none pl-3 pr-8 py-2 bg-slate-100 dark:bg-slate-800 border-none rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 cursor-pointer"
+                            className="appearance-none pl-3 pr-8 py-2 bg-slate-100 dark:bg-slate-800 border-none rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-rose-400 cursor-pointer"
                         >
                             <option value="newest">{t('newest')}</option>
                             <option value="popularity">{t('popularity')}</option>
@@ -569,8 +569,8 @@ function ProductsContent() {
                                 onClick={(e) => { e.preventDefault(); toggleWishlist(product); }}
                                 className={`absolute top-2 right-2 w-8 h-8 rounded-full flex items-center justify-center transition-all shadow-sm ${
                                     isWishlisted 
-                                    ? 'bg-rose-50 text-rose-500' 
-                                    : 'bg-white/90 text-slate-400 hover:text-rose-500 hover:bg-white'
+                                    ? 'bg-rose-50 text-rose-400' 
+                                    : 'bg-white/90 text-slate-400 hover:text-rose-400 hover:bg-white'
                                 }`}
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill={isWishlisted ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -587,7 +587,7 @@ function ProductsContent() {
                                     <span className="text-[10px] text-slate-400">({product.reviewCount || 0})</span>
                                 </div>
                                 <h3 className="text-sm font-bold text-slate-800 dark:text-white line-clamp-2 leading-snug min-h-[2.5em]">
-                                    <Link href={`/products/${product.slug || product.id}`} className="hover:text-sky-600 transition-colors">
+                                    <Link href={`/products/${product.slug || product.id}`} className="hover:text-rose-400 transition-colors">
                                         {getLocalizedField(product, 'name', language)}
                                     </Link>
                                 </h3>
@@ -600,7 +600,7 @@ function ProductsContent() {
                             </div>
                             
                             <div className="mt-auto pt-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-                                <div className="text-base font-bold text-sky-600 dark:text-sky-400">
+                                <div className="text-base font-bold text-rose-400 dark:text-rose-300">
                                     {product.hasMultiplePrices ? (
                                         <span className="text-sm">
                                             ৳{product.minPrice} - ৳{product.maxPrice}
@@ -611,7 +611,7 @@ function ProductsContent() {
                                 </div>
                                 <Button 
                                     onClick={() => handleAddToCart(product)}
-                                    className="w-full sm:w-auto py-1.5 px-2 sm:px-3 text-[10px] sm:text-xs font-bold bg-sky-50 text-sky-600 hover:bg-sky-100 dark:bg-sky-900/30 dark:text-sky-400 rounded-lg shadow-sm whitespace-nowrap"
+                                    className="w-full sm:w-auto py-1.5 px-2 sm:px-3 text-[10px] sm:text-xs font-bold bg-rose-50 text-rose-400 hover:bg-rose-100 dark:bg-rose-900/30 dark:text-rose-300 rounded-lg shadow-sm whitespace-nowrap"
                                 >
                                     {hasVariants ? 'View Options' : t('add_to_cart')}
                                 </Button>
@@ -627,7 +627,7 @@ function ProductsContent() {
                         <Button 
                             onClick={loadMore} 
                             disabled={loadingMore}
-                            className="rounded-full px-8 py-3 bg-sky-500 hover:bg-sky-600 text-white font-bold shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-70 disabled:cursor-not-allowed"
+                            className="rounded-full px-8 py-3 bg-rose-400 hover:bg-rose-400 text-white font-bold shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-70 disabled:cursor-not-allowed"
                         >
                             {loadingMore ? (
                                 <span className="flex items-center gap-2">

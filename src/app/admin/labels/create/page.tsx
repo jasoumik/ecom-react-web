@@ -88,7 +88,7 @@ export default function CreateLabelPage() {
           <Button type="button" variant="outline" onClick={() => router.back()} className="rounded-lg py-2 px-4 text-sm h-auto">
             Cancel
           </Button>
-          <Button type="submit" form="label-form" disabled={isSubmitting} className="rounded-lg shadow-md shadow-sky-500/20 py-2 px-6 text-sm h-auto">
+          <Button type="submit" form="label-form" disabled={isSubmitting} className="rounded-lg shadow-md shadow-pink-500/20 py-2 px-6 text-sm h-auto">
             {isSubmitting ? "Creating..." : "Create Label"}
           </Button>
         </div>
@@ -145,7 +145,7 @@ export default function CreateLabelPage() {
                   onClick={() => handleColorPreset(preset)}
                   className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
                     formData.color === preset.color 
-                      ? 'ring-2 ring-offset-2 ring-sky-500' 
+                      ? 'ring-2 ring-offset-2 ring-pink-500' 
                       : 'hover:scale-105'
                   }`}
                   style={{ backgroundColor: preset.bg, color: preset.color }}
@@ -198,7 +198,7 @@ export default function CreateLabelPage() {
               onChange={e => setFormData({...formData, description: e.target.value})}
               placeholder="Optional description for admin reference..."
               rows={3}
-              className="w-full px-4 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+              className="w-full px-4 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
             />
           </div>
 
@@ -207,7 +207,7 @@ export default function CreateLabelPage() {
               type="checkbox"
               checked={formData.is_active}
               onChange={e => setFormData({...formData, is_active: e.target.checked})}
-              className="w-4 h-4 rounded border-slate-300 text-sky-500 focus:ring-sky-500"
+              className="w-4 h-4 rounded border-slate-300 text-pink-500 focus:ring-pink-500"
             />
             <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Active</span>
           </label>

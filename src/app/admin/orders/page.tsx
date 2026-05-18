@@ -258,7 +258,7 @@ export default function AdminOrdersPage() {
                   </button>
                   <button 
                     onClick={() => router.push(`/profile/orders/${order.id}`)} 
-                    className="p-1.5 rounded text-slate-500 hover:bg-sky-50 hover:text-sky-600 transition-colors"
+                    className="p-1.5 rounded text-slate-500 hover:bg-pink-50 hover:text-pink-600 transition-colors"
                     title="View Invoice"
                   >
                       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
@@ -281,7 +281,7 @@ export default function AdminOrdersPage() {
                   <div className="mb-6">
                       <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-2">Comment (Optional)</label>
                       <textarea 
-                          className="w-full px-3 py-2 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:placeholder-slate-500 text-sm"
+                          className="w-full px-3 py-2 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:placeholder-slate-500 text-sm"
                           value={statusComment}
                           onChange={(e) => setStatusComment(e.target.value)}
                           rows={3}
@@ -291,7 +291,7 @@ export default function AdminOrdersPage() {
                   
                   <div className="flex justify-end gap-3">
                       <Button variant="outline" onClick={() => { setStatusModal(null); setStatusComment(""); }} className="rounded-lg py-2 px-4 text-xs h-auto">Cancel</Button>
-                      <Button onClick={confirmStatusUpdate} className="rounded-lg py-2 px-4 text-xs h-auto bg-sky-500 text-white hover:bg-sky-600">Confirm Update</Button>
+                      <Button onClick={confirmStatusUpdate} className="rounded-lg py-2 px-4 text-xs h-auto bg-pink-500 text-white hover:bg-pink-600">Confirm Update</Button>
                   </div>
               </div>
           </div>
@@ -308,8 +308,8 @@ export default function AdminOrdersPage() {
 
                   {/* Customer Payment Info (if available) */}
                   {(paymentModal.paymentPhone || paymentModal.transactionId) && (
-                      <div className="bg-sky-50 dark:bg-sky-900/20 p-4 rounded-xl mb-6 border border-sky-100 dark:border-sky-800">
-                          <h4 className="text-xs font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider mb-2">Customer Payment Details</h4>
+                      <div className="bg-pink-50 dark:bg-pink-900/20 p-4 rounded-xl mb-6 border border-pink-100 dark:border-pink-800">
+                          <h4 className="text-xs font-bold text-pink-600 dark:text-pink-400 uppercase tracking-wider mb-2">Customer Payment Details</h4>
                           <div className="grid grid-cols-2 gap-4">
                               {paymentModal.paymentPhone && (
                                   <div>
@@ -363,7 +363,7 @@ export default function AdminOrdersPage() {
                           <div>
                               <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Method</label>
                               <select 
-                                  className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                                  className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
                                   value={paymentMethod}
                                   onChange={e => setPaymentMethod(e.target.value)}
                               >

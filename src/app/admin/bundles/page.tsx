@@ -80,7 +80,7 @@ export default function BundlesPage() {
       <div className="flex justify-between items-center">
         <Heading size="md" className="font-sans text-slate-900 dark:text-white">Bundles & Combos</Heading>
         <Link href="/admin/bundles/create">
-          <Button className="rounded-lg shadow-md shadow-sky-500/20 py-2 px-4 text-sm h-auto">+ Add Bundle</Button>
+          <Button className="rounded-lg shadow-md shadow-pink-500/20 py-2 px-4 text-sm h-auto">+ Add Bundle</Button>
         </Link>
       </div>
 
@@ -90,7 +90,7 @@ export default function BundlesPage() {
           </div>
           <div className="w-full md:w-auto">
               <select 
-                  className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white text-xs rounded-lg focus:ring-sky-500 focus:border-sky-500 block p-2.5 min-w-[150px]"
+                  className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white text-xs rounded-lg focus:ring-pink-500 focus:border-pink-500 block p-2.5 min-w-[150px]"
                   value={statusFilter}
                   onChange={(e) => setStatusFilter(e.target.value)}
               >
@@ -126,7 +126,7 @@ export default function BundlesPage() {
                   </Link>
                   <Button 
                     variant="outline"
-                    className="h-8 px-3 text-xs text-rose-600 hover:text-rose-700 hover:bg-rose-50 border-rose-200"
+                    className="h-8 px-3 text-xs text-pink-600 hover:text-pink-700 hover:bg-pink-50 border-pink-200"
                     onClick={(e: React.MouseEvent) => handleDelete(bundle.id, e)}
                   >
                     Delete

@@ -69,10 +69,10 @@ export default function OrderInvoicePage() {
             {/* Header */}
             <div className="flex flex-col sm:flex-row justify-between items-start gap-6 mb-8 border-b border-slate-100 dark:border-slate-700 pb-8 print:border-slate-200">
               <div className="space-y-1 w-full sm:w-auto">
-                <h1 className="text-2xl sm:text-3xl font-bold text-sky-500 mb-2 print:text-sky-600">{settings.shop_name}</h1>
+                <h1 className="text-2xl sm:text-3xl font-bold text-rose-400 mb-2 print:text-rose-400">{settings.shop_name}</h1>
                 <p className="text-xs sm:text-sm text-slate-500 print:text-slate-600 max-w-xs">{t('footer_desc')}</p>
                 <p className="text-xs sm:text-sm text-slate-500 print:text-slate-600 mt-2 font-medium">{settings.shop_address}</p>
-                <p className="text-xs sm:text-sm text-slate-500 print:text-slate-600">support@prithibee.com</p>
+                <p className="text-xs sm:text-sm text-slate-500 print:text-slate-600">support@replantglow.com</p>
               </div>
               <div className="text-left sm:text-right w-full sm:w-auto space-y-1">
                 <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-2 print:text-black uppercase tracking-wide">{t('invoice')}</h2>
@@ -128,7 +128,7 @@ export default function OrderInvoicePage() {
                                 ) : canReview ? (
                                     <button 
                                         onClick={() => setReviewProduct({ id: item.product_id, name: item.product_name })}
-                                        className="text-xs font-bold text-sky-600 hover:text-sky-700 hover:underline whitespace-nowrap bg-sky-50 dark:bg-sky-900/20 px-3 py-1.5 rounded-lg transition-colors"
+                                        className="text-xs font-bold text-rose-400 hover:text-rose-500 hover:underline whitespace-nowrap bg-rose-50 dark:bg-rose-900/20 px-3 py-1.5 rounded-lg transition-colors"
                                     >
                                         {t('write_review')}
                                     </button>
@@ -166,7 +166,7 @@ export default function OrderInvoicePage() {
                                 ) : canReview ? (
                                     <button 
                                         onClick={() => setReviewProduct({ id: item.product_id, name: item.product_name })}
-                                        className="text-xs font-bold text-sky-600 hover:text-sky-700 bg-white dark:bg-slate-800 px-4 py-2 rounded-lg shadow-sm border border-slate-200 dark:border-slate-600 w-full"
+                                        className="text-xs font-bold text-rose-400 hover:text-rose-500 bg-white dark:bg-slate-800 px-4 py-2 rounded-lg shadow-sm border border-slate-200 dark:border-slate-600 w-full"
                                     >
                                         {t('write_review')}
                                     </button>

@@ -68,7 +68,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Free Shipping Banner - Mobile Only */}
         <div className="md:hidden mb-6 -mt-6">
-          <div className="bg-gradient-to-r from-sky-500 to-sky-600 text-white rounded-xl p-4 text-center shadow-lg">
+          <div className="bg-gradient-to-r from-rose-400 to-rose-400 text-white rounded-xl p-4 text-center shadow-lg">
             <div className="flex items-center justify-center gap-2 mb-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11"/>
@@ -80,7 +80,7 @@ export function Footer() {
                 {language === "bn" ? "বিনামূল্যে শিপিং" : "FREE SHIPPING"}
               </span>
             </div>
-            <p className="text-xs text-sky-100">
+            <p className="text-xs text-rose-100">
               {language === "bn"
                 ? `৳${settings.free_shipping_threshold || 5000} এর বেশি অর্ডারে • সারা বাংলাদেশে`
                 : `On orders over ৳${settings.free_shipping_threshold || 5000} • Whole Bangladesh`
@@ -121,8 +121,8 @@ export function Footer() {
                 className="h-10 w-auto object-contain"
               />
               <div className="flex flex-col leading-none text-left">
-                <span className="font-bold text-lg text-sky-600 dark:text-sky-400">PrithiBee</span>
-                <span className="text-xs font-bold text-slate-500 dark:text-slate-400">পৃথিবী</span>
+                <span className="font-bold text-lg text-rose-400 dark:text-rose-300">Replant Glow</span>
+                <span className="text-xs font-bold text-slate-500 dark:text-slate-400">রিপ্ল্যান্ট গ্লো</span>
               </div>
             </Link>
             <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed hidden md:block">
@@ -144,22 +144,22 @@ export function Footer() {
           <AccordionSection title={t("shop")}>
             <ul className="space-y-3 text-sm text-slate-500 dark:text-slate-400">
               <li>
-                <Link href="/products" className="hover:text-sky-500 transition-colors block py-1">
+                <Link href="/products" className="hover:text-rose-400 transition-colors block py-1">
                   {t("shop_all_products")}
                 </Link>
               </li>
               <li>
-                <Link href="/products?sort=new" className="hover:text-sky-500 transition-colors block py-1">
+                <Link href="/products?sort=new" className="hover:text-rose-400 transition-colors block py-1">
                   {t("new_arrivals")}
                 </Link>
               </li>
               <li>
-                <Link href="/products?sort=best_selling" className="hover:text-sky-500 transition-colors block py-1">
+                <Link href="/products?sort=best_selling" className="hover:text-rose-400 transition-colors block py-1">
                   {t("best_sellers")}
                 </Link>
               </li>
               <li>
-                <Link href="/bundles" className="hover:text-sky-500 transition-colors block py-1">
+                <Link href="/bundles" className="hover:text-rose-400 transition-colors block py-1">
                   {t("bundles_sets")}
                 </Link>
               </li>
@@ -170,22 +170,22 @@ export function Footer() {
           <AccordionSection title={t("support")}>
             <ul className="space-y-3 text-sm text-slate-500 dark:text-slate-400">
               <li>
-                <Link href="/about" className="hover:text-sky-500 transition-colors block py-1">
+                <Link href="/about" className="hover:text-rose-400 transition-colors block py-1">
                   {t("about")}
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-sky-500 transition-colors block py-1">
+                <Link href="/contact" className="hover:text-rose-400 transition-colors block py-1">
                   {t("contact")}
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="hover:text-sky-500 transition-colors block py-1">
+                <Link href="/faq" className="hover:text-rose-400 transition-colors block py-1">
                   {t("faqs")}
                 </Link>
               </li>
               <li>
-                <Link href="/shipping" className="hover:text-sky-500 transition-colors block py-1">
+                <Link href="/shipping" className="hover:text-rose-400 transition-colors block py-1">
                   {t("shipping_policy")}
                 </Link>
               </li>
@@ -196,24 +196,24 @@ export function Footer() {
           <AccordionSection title={t("contact")} defaultOpen={true}>
             <ul className="space-y-3 text-sm text-slate-500 dark:text-slate-400">
               <li className="flex gap-3 items-start">
-                <MapPin size={16} className="flex-shrink-0 mt-0.5 text-sky-500" />
+                <MapPin size={16} className="flex-shrink-0 mt-0.5 text-rose-400" />
                 <span>{settings.shop_address}</span>
               </li>
               <li>
                 <a
                   href={`tel:${settings.shop_phone}`}
-                  className="flex gap-3 items-center hover:text-sky-500 transition-colors"
+                  className="flex gap-3 items-center hover:text-rose-400 transition-colors"
                 >
-                  <Phone size={16} className="flex-shrink-0 text-sky-500" />
+                  <Phone size={16} className="flex-shrink-0 text-rose-400" />
                   <span>{settings.shop_phone}</span>
                 </a>
               </li>
               <li>
                 <a
                   href={`mailto:${settings.support_email}`}
-                  className="flex gap-3 items-center hover:text-sky-500 transition-colors"
+                  className="flex gap-3 items-center hover:text-rose-400 transition-colors"
                 >
-                  <Mail size={16} className="flex-shrink-0 text-sky-500" />
+                  <Mail size={16} className="flex-shrink-0 text-rose-400" />
                   <span>{settings.support_email}</span>
                 </a>
               </li>
@@ -254,7 +254,7 @@ export function Footer() {
               href="https://intovah.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-bold text-sky-500 hover:underline"
+              className="font-bold text-rose-400 hover:underline"
             >
               Intovah
             </a>

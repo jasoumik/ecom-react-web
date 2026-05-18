@@ -46,12 +46,12 @@ export default function ProfileLayout({
           <aside className="w-full lg:w-72 shrink-0">
             <div className="bg-white dark:bg-slate-900 rounded-md shadow-sm border border-slate-100 dark:border-slate-800 overflow-hidden sticky top-24">
               {/* User Info Header */}
-              <div className="p-4 lg:p-8 flex flex-row lg:flex-col items-center text-left lg:text-center gap-4 border-b border-slate-50 dark:border-slate-800 bg-gradient-to-r lg:bg-gradient-to-b from-sky-50/50 to-white dark:from-slate-800/50 dark:to-slate-900">
-                <div className="w-16 h-16 lg:w-24 lg:h-24 shrink-0 rounded-full p-1 bg-white dark:bg-slate-800 shadow-lg ring-2 lg:ring-4 ring-sky-50 dark:ring-slate-700 lg:mb-4">
+              <div className="p-4 lg:p-8 flex flex-row lg:flex-col items-center text-left lg:text-center gap-4 border-b border-slate-50 dark:border-slate-800 bg-gradient-to-r lg:bg-gradient-to-b from-rose-50/50 to-white dark:from-slate-800/50 dark:to-slate-900">
+                <div className="w-16 h-16 lg:w-24 lg:h-24 shrink-0 rounded-full p-1 bg-white dark:bg-slate-800 shadow-lg ring-2 lg:ring-4 ring-rose-50 dark:ring-slate-700 lg:mb-4">
                   {user.avatar ? (
                     <img src={user.avatar} alt={user.name} className="w-full h-full rounded-full object-cover" />
                   ) : (
-                    <div className="w-full h-full rounded-full bg-sky-100 dark:bg-sky-900/30 flex items-center justify-center text-2xl lg:text-4xl">👤</div>
+                    <div className="w-full h-full rounded-full bg-rose-100 dark:bg-rose-900/30 flex items-center justify-center text-2xl lg:text-4xl">👤</div>
                   )}
                 </div>
                 <div>
@@ -85,13 +85,13 @@ export default function ProfileLayout({
                       href={item.href}
                       className={`flex items-center gap-2 lg:gap-4 px-3 lg:px-5 py-2 lg:py-3 rounded-md text-xs lg:text-sm font-bold transition-all duration-200 group shrink-0 whitespace-nowrap ${
                         isActive
-                          ? "bg-sky-50 text-sky-600 dark:bg-sky-900/20 dark:text-sky-400 shadow-sm ring-1 ring-sky-100 dark:ring-sky-900/30 lg:ring-0"
+                          ? "bg-rose-50 text-rose-400 dark:bg-rose-900/20 dark:text-rose-300 shadow-sm ring-1 ring-rose-100 dark:ring-rose-900/30 lg:ring-0"
                           : "text-slate-500 hover:bg-slate-50 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-white border border-transparent hover:border-slate-100 lg:hover:border-transparent"
                       }`}
                     >
                       <span className={`text-lg lg:text-xl transition-transform group-hover:scale-110 ${isActive ? "scale-110" : ""}`}>{item.icon}</span>
                       {item.label}
-                      {isActive && <div className="ml-auto w-1.5 h-1.5 rounded-full bg-sky-500 hidden lg:block"></div>}
+                      {isActive && <div className="ml-auto w-1.5 h-1.5 rounded-full bg-rose-400 hidden lg:block"></div>}
                     </Link>
                   );
                 })}

@@ -124,7 +124,7 @@ export default function SmsTemplatesPage() {
                 ))}
               </div>
               <textarea 
-                className="w-full h-32 px-4 py-3 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 font-mono text-sm focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white"
+                className="w-full h-32 px-4 py-3 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 font-mono text-sm focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white"
                 value={editingTemplate.body}
                 onChange={e => setEditingTemplate({...editingTemplate, body: e.target.value})}
                 required
@@ -135,7 +135,7 @@ export default function SmsTemplatesPage() {
             </div>
 
             <div className="flex justify-end">
-              <Button type="submit" className="bg-sky-600 hover:bg-sky-700 text-white rounded-lg shadow-md h-10 px-6">Save Changes</Button>
+              <Button type="submit" className="bg-pink-600 hover:bg-pink-700 text-white rounded-lg shadow-md h-10 px-6">Save Changes</Button>
             </div>
           </form>
         </div>

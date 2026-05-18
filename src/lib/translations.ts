@@ -42,7 +42,7 @@ export const translations = {
     product_of: "Product of",
     shop_all: "Shop All",
     shop_all_products: "Shop All Products",
-    discover_collection: "Discover our curated collection of premium baby essentials.",
+    discover_collection: "Discover our curated collection of premium skincare essentials.",
     no_products_found: "No products found.",
     load_more: "Load More Products",
     sku: "SKU",
@@ -79,17 +79,17 @@ export const translations = {
 
     // Why Choose Us
     our_promise: "Our Promise",
-    prithibee_promise: "The Prithibee Promise",
-    promise_tagline: "We believe in products that are safe for your baby, nurturing for mom, and kind to the planet.",
+    replantglow_promise: "The Replant Glow Promise",
+    promise_tagline: "We believe in products that are effective, clean, and kind to your skin, and kind to the planet.",
     
     // Testimonials
     love_notes: "Love Notes",
-    parents_love: "Parents Love Prithibee",
+    parents_love: "Parents Love Replant Glow",
     avg_rating_from: "Average rating from {count}+ reviews",
     verified_buyer: "Verified Buyer",
     
     // CTA
-    start_journey: "Start Your Journey with Prithibee",
+    start_journey: "Start Your Journey with Replant Glow",
     journey_subtitle: "Get 20% off your first order when you join our family.",
     free_shipping_over: "Free shipping on orders over ৳{amount}.",
 
@@ -121,7 +121,7 @@ export const translations = {
     shipping_details: "Shipping Details",
     full_name: "Full Name",
     address: "Address",
-    secure_checkout: "Secure checkout powered by Prithibee",
+    secure_checkout: "Secure checkout powered by Replant Glow",
     free_shipping_unlocked: "🎉 You've unlocked Free Shipping!",
     add_more_free_shipping: "Add ৳{amount} more for Free Shipping",
     items: "items",
@@ -140,7 +140,7 @@ export const translations = {
     order_place_error: "Error placing order. Check your connection.",
 
     // Footer
-    footer_desc: "Your trusted partner in parenting. We provide premium, safe, and sustainable baby care and skin care products across Bangladesh.",
+    footer_desc: "Your trusted skincare partner. We provide premium, safe, and sustainable skincare products across Bangladesh.",
     developed_by: "Developed by",
     rights_reserved: "All rights reserved.",
     privacy_policy: "Privacy Policy",
@@ -163,7 +163,7 @@ export const translations = {
     item: "Item",
     quantity: "Quantity",
     price: "Price",
-    thank_you: "Thank you for shopping with Prithibee!",
+    thank_you: "Thank you for shopping with Replant Glow!",
     queries_contact: "For any queries, please contact us at",
     print_invoice: "Print Invoice",
     back: "Back",
@@ -178,12 +178,12 @@ export const translations = {
     estimated_delivery: "Estimated Delivery",
 
     // About
-    shop_name: "Prithibee",
-    about_hero_subtitle: "We are on a mission to provide the safest, most comfortable, and sustainable baby care and skin care products across Bangladesh.",
+    shop_name: "Replant Glow",
+    about_hero_subtitle: "We are on a mission to provide the safest, most comfortable, and sustainable skincare products across Bangladesh.",
     our_story: "Our Story",
     story_headline: "Born from Love, Built for Trust",
-    story_paragraph_1: "Prithibee started with a simple question: \"Why is it so hard to find genuine, safe baby products?\" As parents ourselves, we understood the anxiety of choosing the right diaper, the right lotion, or the right food for our little ones.",
-    story_paragraph_2: "We decided to change that. We curate only the best global and local brands, ensuring every item on our shelf meets strict safety standards. Because your baby deserves the world (Prithibee).",
+    story_paragraph_1: "Replant Glow started with a simple question: \"Why is it so hard to find genuine, safe baby products?\" As parents ourselves, we understood the anxiety of choosing the right diaper, the right lotion, or the right food for our little ones.",
+    story_paragraph_2: "We decided to change that. We curate only the best global and local brands, ensuring every item on our shelf meets strict safety standards. Because your skin deserves the best (Replant Glow).",
     our_core_values: "Our Core Values",
     values_tagline: "The principles that guide everything we do.",
     safety_first: "Safety First",
@@ -192,7 +192,7 @@ export const translations = {
     sustainability_desc: "We prioritize eco-friendly and organic options for a better future.",
     community: "Community",
     community_desc: "We are more than a shop; we are a community of parents supporting parents.",
-    join_family: "Join the Prithibee Family",
+    join_family: "Join the Replant Glow Family",
     join_family_subtitle: "Have questions or suggestions? We'd love to hear from you.",
     contact_us: "Contact Us",
 
@@ -222,7 +222,7 @@ export const translations = {
     request_product_modal_title: "Request a Product",
     request_product_modal_subtitle: "Can't find what you're looking for? Let us know!",
     product_name: "Product Name",
-    product_name_placeholder: "e.g. Specific Brand Diapers",
+    product_name_placeholder: "e.g. Hydrating Face Serum",
     description_optional: "Description (Optional)",
     description_placeholder: "Any specific details...",
 
@@ -241,7 +241,7 @@ export const translations = {
     dont_have_account: "Don't have an account?",
     create_account: "Create account",
     create_account_title: "Create Account",
-    create_account_subtitle: "Join us to get the best for your baby.",
+    create_account_subtitle: "Join us for your best skin ever.",
     full_name_placeholder: "John Doe",
     already_have_account: "Already have an account?",
     register: "Register",
@@ -360,17 +360,17 @@ export const translations = {
 
     // Why Choose Us
     our_promise: "আমাদের প্রতিশ্রুতি",
-    prithibee_promise: "পৃথিবীর প্রতিশ্রুতি",
+    replantglow_promise: "রিপ্ল্যান্ট গ্লো প্রতিশ্রুতি",
     promise_tagline: "আমরা বিশ্বাস করি এমন পণ্যে যা আপনার শিশুর জন্য নিরাপদ, মায়ের জন্য যত্নশীল এবং পরিবেশের জন্য ভালো।",
     
     // Testimonials
     love_notes: "ভালোবাসার বার্তা",
-    parents_love: "অভিভাবকরা পৃথিবীকে ভালোবাসেন",
+    parents_love: "গ্রাহকরা রিপ্ল্যান্ট গ্লো ভালোবাসেন",
     avg_rating_from: "{count}+ রিভিউ থেকে গড় রেটিং",
     verified_buyer: "যাচাইকৃত ক্রেতা",
     
     // CTA
-    start_journey: "পৃথিবীর সাথে আপনার যাত্রা শুরু করুন",
+    start_journey: "রিপ্ল্যান্ট গ্লো-র সাথে আপনার যাত্রা শুরু করুন",
     journey_subtitle: "আমাদের পরিবারে যোগ দিলে আপনার প্রথম অর্ডারে ২০% ছাড় পান।",
     free_shipping_over: "৳{amount} এর বেশি অর্ডারে ফ্রি শিপিং।",
 
@@ -402,7 +402,7 @@ export const translations = {
     shipping_details: "শিপিং বিবরণ",
     full_name: "পূর্ণ নাম",
     address: "ঠিকানা",
-    secure_checkout: "পৃথিবী দ্বারা সুরক্ষিত চেকআউট",
+    secure_checkout: "রিপ্ল্যান্ট গ্লো দ্বারা সুরক্ষিত চেকআউট",
     free_shipping_unlocked: "🎉 আপনি ফ্রি শিপিং আনলক করেছেন!",
     add_more_free_shipping: "ফ্রি শিপিংয়ের জন্য আরও ৳{amount} যোগ করুন",
     items: "টি আইটেম",
@@ -421,7 +421,7 @@ export const translations = {
     order_place_error: "অর্ডার দিতে সমস্যা হয়েছে। আপনার কানেকশন চেক করুন।",
 
     // Footer
-    footer_desc: "প্যারেন্টিংয়ে আপনার বিশ্বস্ত সঙ্গী। আমরা সারা বাংলাদেশে মা এবং শিশুদের জন্য প্রিমিয়াম, নিরাপদ এবং টেকসই বেবি কেয়ার এবং স্কিন কেয়ার পণ্য সরবরাহ করি।",
+    footer_desc: "স্কিনকেয়ারে আপনার বিশ্বস্ত সঙ্গী। আমরা সারা বাংলাদেশে মা এবং শিশুদের জন্য প্রিমিয়াম, নিরাপদ এবং টেকসই বেবি কেয়ার এবং স্কিন কেয়ার পণ্য সরবরাহ করি।",
     developed_by: "ডেভেলপ করেছে",
     rights_reserved: "সর্বস্বত্ব সংরক্ষিত।",
     privacy_policy: "গোপনীয়তা নীতি",
@@ -444,7 +444,7 @@ export const translations = {
     item: "আইটেম",
     quantity: "পরিমাণ",
     price: "দাম",
-    thank_you: "পৃথিবী থেকে কেনাকাটা করার জন্য ধন্যবাদ!",
+    thank_you: "রিপ্ল্যান্ট গ্লো থেকে কেনাকাটা করার জন্য ধন্যবাদ!",
     queries_contact: "যেকোনো প্রশ্নের জন্য, আমাদের সাথে যোগাযোগ করুন",
     print_invoice: "ইনভয়েস প্রিন্ট করুন",
     back: "ফিরে যান",
@@ -459,12 +459,12 @@ export const translations = {
     estimated_delivery: " আনুমানিক ডেলিভারি",
 
     // About
-    shop_name: "পৃথিবী",
+    shop_name: "রিপ্ল্যান্ট গ্লো",
     about_hero_subtitle: "আমরা সারা বাংলাদেশে মা এবং শিশুদের জন্য সবচেয়ে নিরাপদ, আরামদায়ক এবং টেকসই বেবি কেয়ার এবং স্কিন কেয়ার পণ্য সরবরাহ করার মিশনে আছি।",
     our_story: "আমাদের গল্প",
     story_headline: "ভালোবাসা থেকে জন্ম, বিশ্বাসের উপর নির্মিত",
-    story_paragraph_1: "পৃথিবী একটি সাধারণ প্রশ্ন দিয়ে শুরু হয়েছিল: \"আসল, নিরাপদ শিশু পণ্য খুঁজে পাওয়া এত কঠিন কেন?\" অভিভাবক হিসেবে, আমরা আমাদের ছোটদের জন্য সঠিক ডায়াপার, সঠিক লোশন বা সঠিক খাবার বেছে নেওয়ার উদ্বেগ বুঝতে পেরেছিলাম।",
-    story_paragraph_2: "আমরা সেটা পরিবর্তন করার সিদ্ধান্ত নিয়েছি। আমরা শুধুমাত্র সেরা গ্লোবাল এবং লোকাল ব্র্যান্ডগুলি কিউরেট করি, নিশ্চিত করি যে আমাদের শেলফের প্রতিটি আইটেম কঠোর নিরাপত্তা মান পূরণ করে। কারণ আপনার শিশু পৃথিবীর যোগ্য।",
+    story_paragraph_1: "রিপ্ল্যান্ট গ্লো একটি সাধারণ প্রশ্ন দিয়ে শুরু হয়েছিল: \"আসল, কার্যকর স্কিনকেয়ার পণ্য খুঁজে পাওয়া এত কঠিন কেন?\" আমরা বিশ্বাস করি প্রতিটি মানুষ সুস্থ, উজ্জ্বল ত্বকের যোগ্য — তাই আমরা সেরা উপাদান থেকে তৈরি পণ্য এনেছি।",
+    story_paragraph_2: "আমরা সেটা পরিবর্তন করার সিদ্ধান্ত নিয়েছি। আমরা শুধুমাত্র সেরা গ্লোবাল এবং লোকাল ব্র্যান্ডগুলি কিউরেট করি, নিশ্চিত করি যে আমাদের শেলফের প্রতিটি আইটেম কঠোর নিরাপত্তা মান পূরণ করে। কারণ আপনার ত্বক রিপ্ল্যান্ট গ্লো-র যোগ্য।",
     our_core_values: "আমাদের মূল মান",
     values_tagline: "যে নীতিগুলো আমাদের প্রতিটি কাজে পথ দেখায়।",
     safety_first: "নিরাপত্তা প্রথম",
@@ -472,8 +472,8 @@ export const translations = {
     sustainability: "স্থায়িত্ব",
     sustainability_desc: "আমরা একটি ভালো ভবিষ্যতের জন্য পরিবেশ-বান্ধব এবং অর্গানিক বিকল্পগুলিকে অগ্রাধিকার দিই।",
     community: "কমিউনিটি",
-    community_desc: "আমরা একটি দোকানের চেয়ে বেশি; আমরা অভিভাবকদের একটি কমিউনিটি যারা অভিভাবকদের সমর্থন করে।",
-    join_family: "পৃথিবী পরিবারে যোগ দিন",
+    community_desc: "আমরা একটি দোকানের চেয়ে বেশি; আমরা স্কিনকেয়ার উৎসাহীদের একটি কমিউনিটি।",
+    join_family: "রিপ্ল্যান্ট গ্লো পরিবারে যোগ দিন",
     join_family_subtitle: "প্রশ্ন বা পরামর্শ আছে? আমরা আপনার কথা শুনতে চাই।",
     contact_us: "যোগাযোগ করুন",
 
@@ -503,7 +503,7 @@ export const translations = {
     request_product_modal_title: "একটি পণ্যের জন্য অনুরোধ করুন",
     request_product_modal_subtitle: "আপনি যা খুঁজছেন তা খুঁজে পাচ্ছেন না? আমাদের জানান!",
     product_name: "পণ্যের নাম",
-    product_name_placeholder: "যেমন: নির্দিষ্ট ব্র্যান্ডের ডায়াপার",
+    product_name_placeholder: "যেমন: হাইড্রেটিং ফেস সিরাম",
     description_optional: "বিবরণ (ঐচ্ছিক)",
     description_placeholder: "যেকোনো নির্দিষ্ট বিবরণ...",
 
@@ -522,7 +522,7 @@ export const translations = {
     dont_have_account: "অ্যাকাউন্ট নেই?",
     create_account: "অ্যাকাউন্ট তৈরি করুন",
     create_account_title: "অ্যাকাউন্ট তৈরি করুন",
-    create_account_subtitle: "আপনার শিশুর জন্য সেরা পেতে আমাদের সাথে যোগ দিন।",
+    create_account_subtitle: "আপনার সেরা ত্বকের জন্য আমাদের সাথে যোগ দিন।",
     full_name_placeholder: "জন ডো",
     already_have_account: "ইতিমধ্যে একটি অ্যাকাউন্ট আছে?",
     register: "নিবন্ধন করুন",

@@ -75,7 +75,7 @@ export default function PasswordChangeForm({ userId }: { userId: string }) {
                         type={showCurrentPassword ? "text" : "password"}
                         value={formData.currentPassword}
                         onChange={(e) => setFormData({...formData, currentPassword: e.target.value})}
-                        className="w-full pl-10 pr-10 py-3 rounded-xl border border-slate-200 bg-white dark:bg-slate-800 dark:border-slate-700 focus:ring-2 focus:ring-sky-500 outline-none transition-all text-sm font-medium text-slate-900 dark:text-white"
+                        className="w-full pl-10 pr-10 py-3 rounded-xl border border-slate-200 bg-white dark:bg-slate-800 dark:border-slate-700 focus:ring-2 focus:ring-rose-400 outline-none transition-all text-sm font-medium text-slate-900 dark:text-white"
                         placeholder="Enter current password"
                         required
                     />
@@ -98,7 +98,7 @@ export default function PasswordChangeForm({ userId }: { userId: string }) {
                             type={showNewPassword ? "text" : "password"}
                             value={formData.newPassword}
                             onChange={(e) => setFormData({...formData, newPassword: e.target.value})}
-                            className="w-full pl-10 pr-10 py-3 rounded-xl border border-slate-200 bg-white dark:bg-slate-800 dark:border-slate-700 focus:ring-2 focus:ring-sky-500 outline-none transition-all text-sm font-medium text-slate-900 dark:text-white"
+                            className="w-full pl-10 pr-10 py-3 rounded-xl border border-slate-200 bg-white dark:bg-slate-800 dark:border-slate-700 focus:ring-2 focus:ring-rose-400 outline-none transition-all text-sm font-medium text-slate-900 dark:text-white"
                             placeholder="New password"
                             required
                         />
@@ -120,7 +120,7 @@ export default function PasswordChangeForm({ userId }: { userId: string }) {
                             type="password"
                             value={formData.confirmPassword}
                             onChange={(e) => setFormData({...formData, confirmPassword: e.target.value})}
-                            className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 bg-white dark:bg-slate-800 dark:border-slate-700 focus:ring-2 focus:ring-sky-500 outline-none transition-all text-sm font-medium text-slate-900 dark:text-white"
+                            className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 bg-white dark:bg-slate-800 dark:border-slate-700 focus:ring-2 focus:ring-rose-400 outline-none transition-all text-sm font-medium text-slate-900 dark:text-white"
                             placeholder="Confirm password"
                             required
                         />

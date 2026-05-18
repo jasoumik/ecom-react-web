@@ -38,7 +38,7 @@ export function ProductRequestButton() {
     <>
       <Button
         onClick={() => setIsRequestModalOpen(true)}
-        className="rounded-xl px-6 py-2 bg-sky-500 hover:bg-sky-600 text-white font-bold shadow-lg shadow-sky-500/20 mt-4"
+        className="rounded-xl px-6 py-2 bg-rose-400 hover:bg-rose-400 text-white font-bold shadow-lg shadow-rose-400/20 mt-4"
       >
         {t('request_product')}
       </Button>
@@ -55,7 +55,7 @@ export function ProductRequestButton() {
                     <div>
                         <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{t('description_optional')}</label>
                         <textarea 
-                            className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:placeholder-slate-500"
+                            className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-rose-400 focus:ring-2 focus:ring-rose-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:placeholder-slate-500"
                             value={formData.description} 
                             onChange={e => setFormData({...formData, description: e.target.value})} 
                             rows={3}

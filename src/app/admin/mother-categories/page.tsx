@@ -141,7 +141,7 @@ export default function MotherCategoriesPage() {
               <tr 
                 key={cat.id} 
                 onClick={() => openEditModal(cat)}
-                className="hover:bg-sky-50 dark:hover:bg-sky-900/20 transition-colors cursor-pointer"
+                className="hover:bg-pink-50 dark:hover:bg-pink-900/20 transition-colors cursor-pointer"
               >
                 <td className="px-6 py-4 font-medium text-slate-900 dark:text-white">{cat.name}</td>
                 <td className="px-6 py-4 text-slate-600 dark:text-slate-300">{cat.name_bn}</td>
@@ -151,13 +151,13 @@ export default function MotherCategoriesPage() {
                   <div className="flex justify-end gap-2">
                     <button 
                         onClick={(e) => { e.stopPropagation(); openEditModal(cat); }}
-                        className="p-2 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg text-slate-500 hover:text-sky-600 transition-colors"
+                        className="p-2 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg text-slate-500 hover:text-pink-600 transition-colors"
                     >
                       <Edit size={16} />
                     </button>
                     <button 
                         onClick={(e) => handleDelete(cat.id, e)}
-                        className="p-2 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg text-slate-500 hover:text-rose-600 transition-colors"
+                        className="p-2 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg text-slate-500 hover:text-pink-600 transition-colors"
                     >
                       <Trash2 size={16} />
                     </button>

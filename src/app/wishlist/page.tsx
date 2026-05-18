@@ -72,7 +72,7 @@ export default function WishlistPage() {
             <div className="text-6xl mb-4">❤️</div>
             <p className="text-slate-500 dark:text-slate-400 mb-6">Your wishlist is empty.</p>
             <Link href="/products">
-              <Button className="rounded-xl px-8 py-3 shadow-lg shadow-sky-500/20">{t("start_shopping")}</Button>
+              <Button className="rounded-xl px-8 py-3 shadow-lg shadow-rose-400/20">{t("start_shopping")}</Button>
             </Link>
           </div>
         ) : (
@@ -94,7 +94,7 @@ export default function WishlistPage() {
                   </Link>
                   <button
                     onClick={() => handleRemove(item.id)}
-                    className="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/90 text-rose-500 flex items-center justify-center hover:bg-rose-500 hover:text-white transition-colors shadow-sm"
+                    className="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/90 text-rose-400 flex items-center justify-center hover:bg-rose-400 hover:text-white transition-colors shadow-sm"
                     title="Remove"
                   >
                     ✕
@@ -102,16 +102,16 @@ export default function WishlistPage() {
                 </div>
 
                 <h3 className="font-bold text-slate-900 dark:text-white mb-1 line-clamp-1">
-                  <Link href={`/products/${item.slug || item.id}`} className="hover:text-sky-500 transition-colors">
+                  <Link href={`/products/${item.slug || item.id}`} className="hover:text-rose-400 transition-colors">
                     {item.name}
                   </Link>
                 </h3>
-                <div className="text-sky-500 font-bold text-lg mb-4">৳{item.price}</div>
+                <div className="text-rose-400 font-bold text-lg mb-4">৳{item.price}</div>
 
                 <Button
                   fullWidth
                   onClick={() => handleAddToCart(item)}
-                  className="rounded-xl py-2 text-sm font-bold bg-sky-50 text-sky-600 hover:bg-sky-100 dark:bg-sky-900/30 dark:text-sky-400"
+                  className="rounded-xl py-2 text-sm font-bold bg-rose-50 text-rose-400 hover:bg-rose-100 dark:bg-rose-900/30 dark:text-rose-300"
                 >
                   {t("add_to_cart")}
                 </Button>

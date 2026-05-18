@@ -98,7 +98,7 @@ export default function AdminSettingsPage() {
         <Button
           onClick={handleSave}
           disabled={saving}
-          className="rounded-lg shadow-md shadow-sky-500/20 py-2 px-6 text-sm h-auto"
+          className="rounded-lg shadow-md shadow-pink-500/20 py-2 px-6 text-sm h-auto"
         >
           {saving ? "Saving..." : "Save Changes"}
         </Button>
@@ -124,7 +124,7 @@ export default function AdminSettingsPage() {
                       key={method}
                       className={`flex items-center gap-2 px-3 py-2 rounded-lg border cursor-pointer transition-all ${
                         setting.value === method
-                          ? "border-sky-500 bg-sky-50 dark:bg-sky-900/20"
+                          ? "border-pink-500 bg-pink-50 dark:bg-pink-900/20"
                           : "border-slate-200 dark:border-slate-700"
                       }`}
                     >
@@ -133,7 +133,7 @@ export default function AdminSettingsPage() {
                         name="inventory_method"
                         checked={setting.value === method}
                         onChange={() => handleChange("inventory_method", method)}
-                        className="w-3.5 h-3.5 text-sky-500 focus:ring-sky-500"
+                        className="w-3.5 h-3.5 text-pink-500 focus:ring-pink-500"
                       />
                       <span className="text-xs font-bold text-slate-900 dark:text-white">
                         {method === "FIFO" ? "FIFO (First-In, First-Out)" : "LIFO (Last-In, First-Out)"}
@@ -143,7 +143,7 @@ export default function AdminSettingsPage() {
                 </div>
               ) : (
                 <input
-                  className="w-full px-3 py-2 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                  className="w-full px-3 py-2 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
                   value={setting.value}
                   onChange={(e) => handleChange(setting.key, e.target.value)}
                 />
@@ -169,7 +169,7 @@ export default function AdminSettingsPage() {
             type="button"
             onClick={() => handleChange("watermark_enabled", wmEnabled ? "false" : "true")}
             className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none ${
-              wmEnabled ? "bg-sky-500" : "bg-slate-200 dark:bg-slate-700"
+              wmEnabled ? "bg-pink-500" : "bg-slate-200 dark:bg-slate-700"
             }`}
           >
             <span
@@ -195,7 +195,7 @@ export default function AdminSettingsPage() {
                   key={opt.value}
                   className={`flex items-center gap-2 px-4 py-2 rounded-lg border cursor-pointer transition-all ${
                     wmType === opt.value
-                      ? "border-sky-500 bg-sky-50 dark:bg-sky-900/20"
+                      ? "border-pink-500 bg-pink-50 dark:bg-pink-900/20"
                       : "border-slate-200 dark:border-slate-700"
                   }`}
                 >
@@ -203,7 +203,7 @@ export default function AdminSettingsPage() {
                     type="radio"
                     checked={wmType === opt.value}
                     onChange={() => handleChange("watermark_type", opt.value)}
-                    className="w-3.5 h-3.5 text-sky-500 focus:ring-sky-500"
+                    className="w-3.5 h-3.5 text-pink-500 focus:ring-pink-500"
                   />
                   <span className="text-xs font-bold text-slate-900 dark:text-white">{opt.label}</span>
                 </label>
@@ -218,7 +218,7 @@ export default function AdminSettingsPage() {
                 Watermark Text
               </label>
               <input
-                className="w-full px-3 py-2 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                className="w-full px-3 py-2 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
                 placeholder="Your Brand Name"
                 value={wm("watermark_text")}
                 onChange={(e) => handleChange("watermark_text", e.target.value)}
@@ -231,7 +231,7 @@ export default function AdminSettingsPage() {
                   Watermark Image URL
                 </label>
                 <input
-                  className="w-full px-3 py-2 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                  className="w-full px-3 py-2 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
                   placeholder="https://..."
                   value={wm("watermark_image")}
                   onChange={(e) => handleChange("watermark_image", e.target.value)}
@@ -255,7 +255,7 @@ export default function AdminSettingsPage() {
                   type="number"
                   min={50}
                   max={500}
-                  className="w-28 px-3 py-2 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                  className="w-28 px-3 py-2 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
                   value={wm("watermark_size")}
                   onChange={(e) => handleChange("watermark_size", e.target.value)}
                 />
@@ -266,7 +266,7 @@ export default function AdminSettingsPage() {
           {/* Opacity */}
           <div>
             <label className="text-xs font-bold text-slate-700 dark:text-slate-300 block mb-1.5">
-              Opacity — <span className="text-sky-500 font-mono">{parseFloat(wm("watermark_opacity") || "0.5").toFixed(1)}</span>
+              Opacity — <span className="text-pink-500 font-mono">{parseFloat(wm("watermark_opacity") || "0.5").toFixed(1)}</span>
             </label>
             <input
               type="range"
@@ -275,7 +275,7 @@ export default function AdminSettingsPage() {
               step={0.1}
               value={parseFloat(wm("watermark_opacity") || "0.5")}
               onChange={(e) => handleChange("watermark_opacity", e.target.value)}
-              className="w-full h-1.5 rounded-full accent-sky-500 cursor-pointer"
+              className="w-full h-1.5 rounded-full accent-pink-500 cursor-pointer"
             />
             <div className="flex justify-between text-[10px] text-slate-400 mt-1">
               <span>10%</span>
@@ -297,8 +297,8 @@ export default function AdminSettingsPage() {
                   onClick={() => handleChange("watermark_position", pos.value)}
                   className={`h-10 rounded-lg text-base font-bold transition-all border ${
                     wmPosition === pos.value
-                      ? "bg-sky-500 border-sky-500 text-white shadow-sm shadow-sky-500/30"
-                      : "border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:border-sky-300"
+                      ? "bg-pink-500 border-pink-500 text-white shadow-sm shadow-pink-500/30"
+                      : "border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:border-pink-300"
                   }`}
                 >
                   {pos.label}

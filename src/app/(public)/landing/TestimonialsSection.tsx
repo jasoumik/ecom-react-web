@@ -32,8 +32,8 @@ export function TestimonialsSection({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-3 sm:gap-6 mb-4 sm:mb-10">
           <div className="space-y-1 sm:space-y-2 max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white shadow-sm border border-sky-100 text-sky-600 text-[10px] font-bold uppercase tracking-wider mb-2 sm:mb-3 dark:bg-slate-800 dark:border-slate-700 dark:text-sky-400">
-                  <span className="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse"></span>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white shadow-sm border border-rose-100 text-rose-400 text-[10px] font-bold uppercase tracking-wider mb-2 sm:mb-3 dark:bg-slate-800 dark:border-slate-700 dark:text-rose-300">
+                  <span className="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse"></span>
                   {t('love_notes')}
               </div>
             <Heading size="lg" className="font-sans text-xl sm:text-2xl md:text-3xl text-slate-900 dark:text-white font-bold">
@@ -63,7 +63,7 @@ export function TestimonialsSection({
                 </Text>
 
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 font-bold text-xs dark:bg-slate-800 dark:text-sky-400">
+                  <div className="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center text-rose-400 font-bold text-xs dark:bg-slate-800 dark:text-rose-300">
                     {testimonial.authorName.charAt(0)}
                   </div>
                   <div>
@@ -91,7 +91,7 @@ export function TestimonialsSection({
               </Text>
               
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 font-bold text-sm dark:bg-slate-800 dark:text-sky-400">
+                <div className="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center text-rose-400 font-bold text-sm dark:bg-slate-800 dark:text-rose-300">
                   {testimonial.authorName.charAt(0)}
                 </div>
                 <div>

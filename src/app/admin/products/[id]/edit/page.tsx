@@ -233,7 +233,7 @@ export default function EditProductPage() {
         </div>
         <div className="flex gap-3 w-full sm:w-auto">
             <Button type="button" variant="outline" onClick={() => router.back()} className="flex-1 sm:flex-none rounded-lg py-2.5 px-4 text-sm h-auto">Cancel</Button>
-            <Button type="submit" form="edit-product-form" className="flex-1 sm:flex-none rounded-lg shadow-lg shadow-sky-500/20 py-2.5 px-6 text-sm h-auto font-bold">Update Product</Button>
+            <Button type="submit" form="edit-product-form" className="flex-1 sm:flex-none rounded-lg shadow-lg shadow-pink-500/20 py-2.5 px-6 text-sm h-auto font-bold">Update Product</Button>
         </div>
       </div>
       
@@ -243,7 +243,7 @@ export default function EditProductPage() {
             <div className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800">
                 <div className="flex justify-between items-center border-b border-slate-100 dark:border-slate-800 pb-4 mb-6">
                     <h3 className="font-bold text-lg text-slate-900 dark:text-white flex items-center gap-2">
-                        <span className="w-1 h-6 bg-sky-500 rounded-full"></span>
+                        <span className="w-1 h-6 bg-pink-500 rounded-full"></span>
                         Basic Information
                     </h3>
                     <label className="flex items-center gap-2 cursor-pointer bg-slate-50 dark:bg-slate-800 px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700">
@@ -251,7 +251,7 @@ export default function EditProductPage() {
                             type="checkbox" 
                             checked={product.is_active} 
                             onChange={e => setProduct({...product, is_active: e.target.checked})}
-                            className="w-4 h-4 rounded border-slate-300 text-sky-500 focus:ring-sky-500"
+                            className="w-4 h-4 rounded border-slate-300 text-pink-500 focus:ring-pink-500"
                         />
                         <span className="text-xs font-bold text-slate-700 dark:text-slate-300">Active Status</span>
                     </label>
@@ -399,7 +399,7 @@ export default function EditProductPage() {
         <div className="lg:col-span-1 space-y-8">
             <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800">
                 <h3 className="font-bold text-lg text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800 pb-4 mb-6 flex items-center gap-2">
-                    <span className="w-1 h-6 bg-orange-500 rounded-full"></span>
+                    <span className="w-1 h-6 bg-pink-500 rounded-full"></span>
                     Organization
                 </h3>
                 <div className="space-y-6">
@@ -438,7 +438,7 @@ export default function EditProductPage() {
                                         type="checkbox" 
                                         checked={product.age_groups?.includes(group.id)}
                                         onChange={() => toggleAgeGroup(group.id)}
-                                        className="w-4 h-4 rounded border-slate-300 text-sky-500 focus:ring-sky-500"
+                                        className="w-4 h-4 rounded border-slate-300 text-pink-500 focus:ring-pink-500"
                                     />
                                     <span className="text-sm text-slate-700 dark:text-slate-300">{group.label} <span className="text-slate-400 text-xs">({group.age_range})</span></span>
                                 </label>
@@ -519,7 +519,7 @@ export default function EditProductPage() {
                     </div>
                     <div className="flex justify-between text-xs">
                         <span className="text-slate-500">Valuation</span>
-                        <span className="font-bold text-sky-500">{product.inventoryMethod}</span>
+                        <span className="font-bold text-pink-500">{product.inventoryMethod}</span>
                     </div>
                 </div>
             </div>

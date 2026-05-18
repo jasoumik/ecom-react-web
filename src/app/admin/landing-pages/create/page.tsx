@@ -50,7 +50,7 @@ export default function CreateLandingPage() {
         <Heading size="md" className="font-sans text-slate-900 dark:text-white">Create Landing Page</Heading>
         <div className="flex gap-3">
             <Button type="button" variant="outline" onClick={() => router.back()} className="rounded-lg py-2 px-4 text-sm h-auto">Cancel</Button>
-            <Button type="submit" form="page-form" className="rounded-lg shadow-md shadow-sky-500/20 py-2 px-6 text-sm h-auto">Save Page</Button>
+            <Button type="submit" form="page-form" className="rounded-lg shadow-md shadow-pink-500/20 py-2 px-6 text-sm h-auto">Save Page</Button>
         </div>
       </div>
       
@@ -63,7 +63,7 @@ export default function CreateLandingPage() {
                         type="checkbox" 
                         checked={newPage.is_active} 
                         onChange={e => setNewPage({...newPage, is_active: e.target.checked})}
-                        className="w-4 h-4 rounded border-slate-300 text-sky-500 focus:ring-sky-500"
+                        className="w-4 h-4 rounded border-slate-300 text-pink-500 focus:ring-pink-500"
                     />
                     <span className="text-xs font-bold text-slate-700 dark:text-slate-300">Active</span>
                 </label>
@@ -71,13 +71,13 @@ export default function CreateLandingPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <Input label="Page Title" value={newPage.title} onChange={e => setNewPage({...newPage, title: e.target.value})} required className="bg-slate-50/50 dark:bg-slate-800/50" />
-            <Input label="Slug (URL)" value={newPage.slug} onChange={e => setNewPage({...newPage, slug: e.target.value})} required placeholder="e.g. summer-sale-diapers" className="bg-slate-50/50 dark:bg-slate-800/50" />
+            <Input label="Slug (URL)" value={newPage.slug} onChange={e => setNewPage({...newPage, slug: e.target.value})} required placeholder="e.g. summer-glow-sale" className="bg-slate-50/50 dark:bg-slate-800/50" />
           </div>
           
           <div>
               <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Select Product</label>
               <select 
-                  className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
+                  className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
                   value={newPage.product_id}
                   onChange={e => setNewPage({...newPage, product_id: e.target.value})}
                   required
@@ -92,7 +92,7 @@ export default function CreateLandingPage() {
           <div>
             <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Custom Description (Optional)</label>
             <textarea 
-              className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white dark:placeholder-slate-500 text-sm"
+              className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white dark:placeholder-slate-500 text-sm"
               value={newPage.description} 
               onChange={e => setNewPage({...newPage, description: e.target.value})} 
               rows={4}
@@ -103,7 +103,7 @@ export default function CreateLandingPage() {
           <div>
               <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Theme</label>
               <select 
-                  className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
+                  className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
                   value={newPage.theme}
                   onChange={e => setNewPage({...newPage, theme: e.target.value})}
               >

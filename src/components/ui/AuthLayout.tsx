@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Shield, Truck, Baby, Heart } from "lucide-react";
+import { Shield, Truck, Sparkles, Heart } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -53,7 +53,7 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
   return (
     <div className="min-h-screen flex flex-col lg:flex-row bg-white dark:bg-slate-950">
       {/* Left Side - Branding (Hidden on Mobile) */}
-      <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-sky-500 via-sky-600 to-sky-700 relative overflow-hidden">
+      <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-rose-400 via-rose-400 to-rose-500 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-64 h-64 rounded-full bg-white/20 blur-3xl" />
@@ -65,14 +65,14 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
           <Link href="/" className="flex items-center gap-3 mb-12">
             <Image
               src="/logo2.png"
-              alt="Prithibee"
+              alt="Replant Glow"
               width={56}
               height={56}
               className="h-14 w-auto"
             />
             <div>
-              <span className="text-3xl font-bold text-white">Prithibee</span>
-              <p className="text-sky-200 text-sm">পৃথিবী</p>
+              <span className="text-3xl font-bold text-white">Replant Glow</span>
+              <p className="text-rose-200 text-sm">রিপ্ল্যান্ট গ্লো</p>
             </div>
           </Link>
 
@@ -84,10 +84,10 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
           >
             <h1 className="text-4xl xl:text-5xl font-bold text-white leading-tight mb-6">
               {language === "bn"
-                ? "মা ও শিশুর জন্য সেরা পণ্য"
-                : "Everything for Mother & Baby"}
+                ? "আপনার গ্লো যাত্রা শুরু হোক"
+                : "Your Glow Journey Starts Here"}
             </h1>
-            <p className="text-sky-100 text-lg mb-10 leading-relaxed">
+            <p className="text-rose-100 text-lg mb-10 leading-relaxed">
               {language === "bn"
                 ? "বাংলাদেশের সবচেয়ে বিশ্বস্ত শপ থেকে কেনাকাটা করুন।"
                 : "Shop from Bangladesh's most trusted store. Quality products, fast delivery, and exceptional care."}
@@ -107,7 +107,7 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
               </div>
               <div>
                 <p className="font-semibold">100% Authentic Products</p>
-                <p className="text-sm text-sky-200">Genuine brands guaranteed</p>
+                <p className="text-sm text-rose-200">Genuine brands guaranteed</p>
               </div>
             </div>
             <div className="flex items-center gap-4 text-white">
@@ -116,7 +116,7 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
               </div>
               <div>
                 <p className="font-semibold">Fast Delivery</p>
-                <p className="text-sm text-sky-200">All over Bangladesh</p>
+                <p className="text-sm text-rose-200">All over Bangladesh</p>
               </div>
             </div>
             <div className="flex items-center gap-4 text-white">
@@ -125,7 +125,7 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
               </div>
               <div>
                 <p className="font-semibold">Care & Support</p>
-                <p className="text-sm text-sky-200">Always here for you</p>
+                <p className="text-sm text-rose-200">Always here for you</p>
               </div>
             </div>
           </motion.div>
@@ -139,14 +139,14 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/logo2.png"
-              alt="Prithibee"
+              alt="Replant Glow"
               width={48}
               height={48}
               className="h-12 w-auto"
             />
             <div>
-              <span className="text-2xl font-bold text-sky-600">Prithibee</span>
-              <p className="text-slate-500 text-xs">পৃথিবী</p>
+              <span className="text-2xl font-bold text-rose-400">Replant Glow</span>
+              <p className="text-slate-500 text-xs">রিপ্ল্যান্ট গ্লো</p>
             </div>
           </Link>
         </div>
@@ -176,11 +176,11 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
           >
             <div className="flex justify-center gap-6 text-xs text-slate-500 dark:text-slate-400">
               <div className="flex items-center gap-1.5">
-                <Shield size={14} className="text-sky-500" />
+                <Shield size={14} className="text-rose-400" />
                 <span>100% Authentic</span>
               </div>
               <div className="flex items-center gap-1.5">
-                <Truck size={14} className="text-sky-500" />
+                <Truck size={14} className="text-rose-400" />
                 <span>Fast Delivery</span>
               </div>
             </div>

@@ -62,7 +62,7 @@ export function RichTextEditor({ value, onChange, label, required, className }: 
 
       <div
         className={`border rounded-lg overflow-hidden transition-all ${
-          editor?.isFocused ? "border-sky-500 ring-2 ring-sky-100" : "border-slate-200 dark:border-slate-700"
+          editor?.isFocused ? "border-rose-400 ring-2 ring-rose-100" : "border-slate-200 dark:border-slate-700"
         }`}
       >
         {/* Toolbar */}
@@ -115,7 +115,7 @@ export function RichTextEditor({ value, onChange, label, required, className }: 
           {editor ? (
             <EditorContent
               editor={editor}
-              className="p-4 prose dark:prose-invert max-w-none text-sm text-slate-900 dark:text-slate-50 focus:outline-none"
+              className="p-4 prose dark:ppink-invert max-w-none text-sm text-slate-900 dark:text-slate-50 focus:outline-none"
             />
           ) : (
             <div className="p-4 text-sm text-slate-400">Loading editor...</div>

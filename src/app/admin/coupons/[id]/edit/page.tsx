@@ -125,7 +125,7 @@ export default function EditCouponPage() {
           <Button type="button" variant="outline" onClick={() => router.back()} className="rounded-lg py-2 px-4 text-sm h-auto">
             Cancel
           </Button>
-          <Button type="submit" form="coupon-form" disabled={isSubmitting} className="rounded-lg shadow-md shadow-sky-500/20 py-2 px-6 text-sm h-auto">
+          <Button type="submit" form="coupon-form" disabled={isSubmitting} className="rounded-lg shadow-md shadow-pink-500/20 py-2 px-6 text-sm h-auto">
             {isSubmitting ? "Saving..." : "Save Changes"}
           </Button>
         </div>
@@ -133,17 +133,17 @@ export default function EditCouponPage() {
 
       {/* Usage Stats */}
       {stats && (
-        <div className="bg-gradient-to-r from-sky-50 to-blue-50 dark:from-sky-900/20 dark:to-blue-900/20 p-4 rounded-xl border border-sky-100 dark:border-sky-800">
+        <div className="bg-gradient-to-r from-pink-50 to-blue-50 dark:from-pink-900/20 dark:to-blue-900/20 p-4 rounded-xl border border-pink-100 dark:border-pink-800">
           <div className="flex items-center justify-between">
             <div>
               <h4 className="text-sm font-bold text-slate-900 dark:text-white">Usage Statistics</h4>
               <p className="text-xs text-slate-500 mt-1">
-                Used <span className="font-bold text-sky-600">{stats.totalUsages}</span> times
+                Used <span className="font-bold text-pink-600">{stats.totalUsages}</span> times
                 {formData.usage_limit && ` out of ${formData.usage_limit}`}
               </p>
             </div>
             <div className="text-right">
-              <div className="text-2xl font-bold text-sky-600">৳{stats.totalDiscount?.toFixed(0) || 0}</div>
+              <div className="text-2xl font-bold text-pink-600">৳{stats.totalDiscount?.toFixed(0) || 0}</div>
               <div className="text-xs text-slate-500">Total Discount Given</div>
             </div>
           </div>
@@ -180,7 +180,7 @@ export default function EditCouponPage() {
               onChange={e => setFormData({...formData, description: e.target.value})}
               placeholder="Internal notes about this coupon..."
               rows={2}
-              className="w-full px-4 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+              className="w-full px-4 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
             />
           </div>
         </div>
@@ -195,7 +195,7 @@ export default function EditCouponPage() {
               <select
                 value={formData.type}
                 onChange={e => setFormData({...formData, type: e.target.value as "percentage" | "fixed"})}
-                className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
               >
                 <option value="percentage">Percentage (%)</option>
                 <option value="fixed">Fixed Amount (৳)</option>
@@ -243,7 +243,7 @@ export default function EditCouponPage() {
                 type="checkbox"
                 checked={formData.no_expiry}
                 onChange={e => setFormData({...formData, no_expiry: e.target.checked})}
-                className="w-4 h-4 rounded border-slate-300 text-sky-500 focus:ring-sky-500"
+                className="w-4 h-4 rounded border-slate-300 text-pink-500 focus:ring-pink-500"
               />
               <span className="text-sm font-medium text-slate-700 dark:text-slate-300">No Expiry</span>
             </label>
@@ -303,7 +303,7 @@ export default function EditCouponPage() {
                 type="checkbox"
                 checked={formData.first_order_only}
                 onChange={e => setFormData({...formData, first_order_only: e.target.checked})}
-                className="w-4 h-4 rounded border-slate-300 text-sky-500 focus:ring-sky-500"
+                className="w-4 h-4 rounded border-slate-300 text-pink-500 focus:ring-pink-500"
               />
               <div>
                 <span className="text-sm font-medium text-slate-700 dark:text-slate-300">First Order Only</span>
@@ -316,7 +316,7 @@ export default function EditCouponPage() {
                 type="checkbox"
                 checked={formData.free_shipping}
                 onChange={e => setFormData({...formData, free_shipping: e.target.checked})}
-                className="w-4 h-4 rounded border-slate-300 text-sky-500 focus:ring-sky-500"
+                className="w-4 h-4 rounded border-slate-300 text-pink-500 focus:ring-pink-500"
               />
               <div>
                 <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Include Free Shipping</span>
@@ -329,7 +329,7 @@ export default function EditCouponPage() {
                 type="checkbox"
                 checked={formData.is_active}
                 onChange={e => setFormData({...formData, is_active: e.target.checked})}
-                className="w-4 h-4 rounded border-slate-300 text-sky-500 focus:ring-sky-500"
+                className="w-4 h-4 rounded border-slate-300 text-pink-500 focus:ring-pink-500"
               />
               <div>
                 <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Active</span>

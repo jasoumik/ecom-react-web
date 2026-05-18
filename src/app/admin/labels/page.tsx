@@ -94,7 +94,7 @@ export default function AdminLabelsPage() {
           </div>
           <div className="w-full md:w-auto">
               <select 
-                  className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white text-xs rounded-lg focus:ring-sky-500 focus:border-sky-500 block p-2.5 min-w-[150px]"
+                  className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white text-xs rounded-lg focus:ring-pink-500 focus:border-pink-500 block p-2.5 min-w-[150px]"
                   value={statusFilter}
                   onChange={(e) => setStatusFilter(e.target.value)}
               >
@@ -159,7 +159,7 @@ export default function AdminLabelsPage() {
               <div className="flex justify-end gap-1">
                 <button
                   onClick={(e) => { e.stopPropagation(); router.push(`/admin/labels/${label.id}/edit`); }}
-                  className="p-1.5 rounded text-slate-500 hover:bg-sky-50 hover:text-sky-600 transition-colors"
+                  className="p-1.5 rounded text-slate-500 hover:bg-pink-50 hover:text-pink-600 transition-colors"
                   title="Edit"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>

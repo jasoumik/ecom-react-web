@@ -162,7 +162,7 @@ export default function StockAdjustmentPage() {
                             placeholder="Search product by name or SKU..." 
                             value={searchTerm}
                             onChange={e => setSearchQuery(e.target.value)}
-                            className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                            className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
                         />
                     </div>
                     {searchResults.length > 0 && (
@@ -189,7 +189,7 @@ export default function StockAdjustmentPage() {
               <div>
                   <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Variant</label>
                   <select 
-                      className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                      className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
                       value={selectedVariant}
                       onChange={e => setSelectedVariant(e.target.value)}
                   >
@@ -206,7 +206,7 @@ export default function StockAdjustmentPage() {
               <div>
                   <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Adjustment Type</label>
                   <select 
-                      className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                      className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
                       value={adjustmentType}
                       onChange={e => setAdjustmentType(e.target.value)}
                   >
@@ -243,7 +243,7 @@ export default function StockAdjustmentPage() {
                                       value={batch.id}
                                       checked={selectedBatchId === batch.id}
                                       onChange={() => setSelectedBatchId(batch.id)}
-                                      className="text-sky-500 focus:ring-sky-500"
+                                      className="text-pink-500 focus:ring-pink-500"
                                   />
                                   <div>
                                       <div className="text-sm font-medium text-slate-900 dark:text-white">{batch.batch_number}</div>
@@ -293,7 +293,7 @@ export default function StockAdjustmentPage() {
                                 placeholder="Search order by number or customer..." 
                                 value={orderSearchTerm}
                                 onChange={e => setOrderSearchTerm(e.target.value)}
-                                className="w-full pl-9 pr-3 py-2.5 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                                className="w-full pl-9 pr-3 py-2.5 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
                             />
                         </div>
                         {orderSearchResults.length > 0 && (
@@ -319,7 +319,7 @@ export default function StockAdjustmentPage() {
           <div>
               <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Reason / Note</label>
               <textarea 
-                  className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                  className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-white text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
                   rows={3}
                   value={reason}
                   onChange={e => setReason(e.target.value)}

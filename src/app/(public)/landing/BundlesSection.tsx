@@ -60,12 +60,12 @@ export function BundlesSection() {
   if (bundles.length === 0) return null;
 
   return (
-    <Section className="py-8 sm:py-12 bg-gradient-to-b from-white to-sky-50 dark:from-slate-900 dark:to-slate-900/50">
+    <Section className="py-8 sm:py-12 bg-gradient-to-b from-white to-rose-50 dark:from-slate-900 dark:to-slate-900/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-end mb-6 sm:mb-8 gap-4">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-600 text-[10px] font-bold uppercase tracking-wider mb-2 sm:mb-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse"></span>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-100 text-rose-400 text-[10px] font-bold uppercase tracking-wider mb-2 sm:mb-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse"></span>
               {t('save_more')}
             </div>
             <Heading size="lg" className="font-sans text-slate-900 dark:text-white font-bold text-xl sm:text-2xl md:text-3xl">
@@ -77,7 +77,7 @@ export function BundlesSection() {
           </div>
           <Link
               href="/bundles"
-              className="text-sm font-bold text-sky-600 hover:text-sky-700 flex items-center gap-1 bg-white dark:bg-slate-800 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 shadow-sm transition-all hover:shadow-md"
+              className="text-sm font-bold text-rose-400 hover:text-rose-500 flex items-center gap-1 bg-white dark:bg-slate-800 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 shadow-sm transition-all hover:shadow-md"
           >
             {t('view_all')}
             <ChevronRight size={16} />
@@ -134,7 +134,7 @@ export function BundlesSection() {
                     </div>
 
                     <div className="p-2 sm:p-4 flex flex-col flex-grow">
-                    <h3 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white mb-1 line-clamp-1 group-hover:text-sky-600 transition-colors">
+                    <h3 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white mb-1 line-clamp-1 group-hover:text-rose-400 transition-colors">
                         {getLocalizedField(bundle, 'title', language)}
                     </h3>
                     <p className="text-slate-500 dark:text-slate-400 text-[10px] sm:text-xs mb-2 sm:mb-3 line-clamp-2 flex-grow">
@@ -150,7 +150,7 @@ export function BundlesSection() {
                         </div>
                         <Button 
                         onClick={(e) => handleAddToCart(bundle, e)}
-                        className="rounded-lg px-2 py-1 sm:px-3 sm:py-1.5 bg-sky-500 hover:bg-sky-600 text-white font-bold shadow-md text-[10px] flex items-center gap-1 h-7 sm:h-8 min-w-0"
+                        className="rounded-lg px-2 py-1 sm:px-3 sm:py-1.5 bg-rose-400 hover:bg-rose-400 text-white font-bold shadow-md text-[10px] flex items-center gap-1 h-7 sm:h-8 min-w-0"
                         >
                         <ShoppingCart size={12} />
                         <span className="hidden sm:inline">{t('add_to_cart')}</span>
@@ -167,7 +167,7 @@ export function BundlesSection() {
         <div className="mt-6 sm:mt-8 text-center md:hidden">
           <Link
               href="/bundles"
-              className="text-sm font-bold text-sky-600 hover:text-sky-700 flex items-center gap-1 bg-white dark:bg-slate-800 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 shadow-sm transition-all hover:shadow-md"
+              className="text-sm font-bold text-rose-400 hover:text-rose-500 flex items-center gap-1 bg-white dark:bg-slate-800 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 shadow-sm transition-all hover:shadow-md"
           >
             {t('view_all')}
             <ChevronRight size={16} />

@@ -103,7 +103,7 @@ export default function MyOrdersPage() {
                 <div className="flex justify-end gap-2">
                     <Button 
                         variant="outline" 
-                        className="text-sky-600 border-sky-200 hover:bg-sky-50 hover:border-sky-300 px-4 py-2 text-xs rounded-xl"
+                        className="text-rose-400 border-rose-200 hover:bg-rose-50 hover:border-rose-200 px-4 py-2 text-xs rounded-xl"
                         onClick={() => router.push(`/profile/orders/${order.id}`)}
                     >
                         View Invoice

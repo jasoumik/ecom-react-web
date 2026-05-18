@@ -131,7 +131,7 @@ export default function AdminLayout({
                       }`}
                   >
                       <div className="flex items-center gap-3">
-                          <span className="text-sky-500">{item.icon}</span>
+                          <span className="text-pink-500">{item.icon}</span>
                           {item.label}
                       </div>
                       <span className={`text-xs transition-transform duration-200 ${isExpanded ? 'rotate-90' : ''}`}>▶</span>
@@ -153,12 +153,12 @@ export default function AdminLayout({
           href={item.href!}
           className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 group relative overflow-hidden ${
             isActive
-              ? "bg-sky-50 text-sky-600 dark:bg-sky-900/20 dark:text-sky-400"
+              ? "bg-pink-50 text-pink-600 dark:bg-pink-900/20 dark:text-pink-400"
               : "text-slate-500 hover:text-slate-900 hover:bg-slate-50 dark:text-slate-400 dark:hover:text-white dark:hover:bg-slate-800"
           }`}
         >
           {isActive && (
-            <div className="absolute left-0 top-0 bottom-0 w-1 bg-sky-500 rounded-r-full"></div>
+            <div className="absolute left-0 top-0 bottom-0 w-1 bg-pink-500 rounded-r-full"></div>
           )}
           <span className={`text-base transition-transform duration-300 ${isActive ? "scale-110" : "group-hover:scale-110"}`}>{item.icon}</span>
           {item.label}
@@ -183,10 +183,10 @@ export default function AdminLayout({
       `}>
         <div className="h-[60px] flex items-center justify-between px-5 border-b border-slate-50 dark:border-slate-800 shrink-0">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 bg-gradient-to-br from-sky-400 to-sky-600 rounded-lg flex items-center justify-center text-white text-base font-bold shadow-md shadow-sky-500/20">
+            <div className="w-8 h-8 bg-gradient-to-br from-pink-400 to-pink-600 rounded-lg flex items-center justify-center text-white text-base font-bold shadow-md shadow-pink-500/20">
               P
             </div>
-            <span className="text-base font-bold text-slate-800 dark:text-white tracking-tight">Prithibee Admin</span>
+            <span className="text-base font-bold text-slate-800 dark:text-white tracking-tight">Replant Glow Admin</span>
           </div>
           <button onClick={() => setIsMobileMenuOpen(false)} className="lg:hidden text-slate-500">
             ✕
@@ -245,8 +245,8 @@ export default function AdminLayout({
                     🔔
                 </div>
                 <Link href="/admin/profile">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-sky-400 to-blue-500 p-0.5 cursor-pointer hover:scale-105 transition-transform">
-                        <div className="w-full h-full bg-white dark:bg-slate-900 rounded-full flex items-center justify-center font-bold text-sky-600 text-xs overflow-hidden">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-pink-400 to-blue-500 p-0.5 cursor-pointer hover:scale-105 transition-transform">
+                        <div className="w-full h-full bg-white dark:bg-slate-900 rounded-full flex items-center justify-center font-bold text-pink-600 text-xs overflow-hidden">
                             {user?.avatar ? (
                                 <img src={user.avatar} alt={user.name} className="w-full h-full object-cover" />
                             ) : (

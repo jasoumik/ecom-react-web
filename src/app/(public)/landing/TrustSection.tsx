@@ -19,7 +19,7 @@ interface TrustItem {
 const trustItems: TrustItem[] = [
   {
     id: "authentic",
-    icon: <Shield className="w-3.5 h-3.5 sm:w-8 sm:h-8 text-sky-500" />,
+    icon: <Shield className="w-3.5 h-3.5 sm:w-8 sm:h-8 text-rose-400" />,
     title: "100% Authentic",
     title_bn: "১০০% অথেনটিক",
     description: "Guaranteed genuine products",
@@ -28,7 +28,7 @@ const trustItems: TrustItem[] = [
   },
   {
     id: "delivery",
-    icon: <Truck className="w-3.5 h-3.5 sm:w-8 sm:h-8 text-sky-500" />,
+    icon: <Truck className="w-3.5 h-3.5 sm:w-8 sm:h-8 text-rose-400" />,
     title: "Fast Delivery",
     title_bn: "দ্রুত ডেলিভারি",
     description: "All over Bangladesh",
@@ -37,7 +37,7 @@ const trustItems: TrustItem[] = [
   },
   {
     id: "returns",
-    icon: <RefreshCcw className="w-3.5 h-3.5 sm:w-8 sm:h-8 text-sky-500" />,
+    icon: <RefreshCcw className="w-3.5 h-3.5 sm:w-8 sm:h-8 text-rose-400" />,
     title: "Easy Returns",
     title_bn: "সহজ রিটার্ন",
     description: "Hassle-free returns",
@@ -46,7 +46,7 @@ const trustItems: TrustItem[] = [
   },
   {
     id: "support",
-    icon: <Headphones className="w-3.5 h-3.5 sm:w-8 sm:h-8 text-sky-500" />,
+    icon: <Headphones className="w-3.5 h-3.5 sm:w-8 sm:h-8 text-rose-400" />,
     title: "24/7 Support",
     title_bn: "২৪/৭ সাপোর্ট",
     description: "Always here for you",
@@ -73,7 +73,7 @@ export function TrustSection() {
         {/*      className="flex-1 bg-white dark:bg-slate-800 px-2 py-1.5 rounded-lg flex items-center gap-1.5"*/}
         {/*    >*/}
         {/*      /!* Icon *!/*/}
-        {/*      <div className="w-10 h-10 bg-sky-50 dark:bg-slate-700 rounded flex items-center justify-center">*/}
+        {/*      <div className="w-10 h-10 bg-rose-50 dark:bg-slate-700 rounded flex items-center justify-center">*/}
         {/*        {item.icon}*/}
         {/*      </div>*/}
 
@@ -95,7 +95,7 @@ export function TrustSection() {
     relative overflow-hidden
     rounded-xl p-4 text-center shadow-xl
     bg-size-[200%_200%]
-    bg-linear-to-r from-sky-400 via-blue-500 to-sky-400
+    bg-linear-to-r from-rose-300 via-blue-500 to-rose-300
     animate-[aliveGradient_3s_ease_infinite]
   ">
 
@@ -142,7 +142,7 @@ export function TrustSection() {
         </span>
               </div>
 
-              <p className="text-xs text-sky-50 font-medium">
+              <p className="text-xs text-rose-50 font-medium">
                 {language === "bn"
                   ? `৳${settings.free_shipping_threshold || 5000} এর বেশি অর্ডারে • সারা বাংলাদেশে`
                   : `On orders over ৳${settings.free_shipping_threshold || 5000} • Whole Bangladesh`
@@ -163,7 +163,7 @@ export function TrustSection() {
               className="bg-white dark:bg-slate-800 p-6 rounded-2xl text-center hover:shadow-lg transition-all duration-300 group"
             >
               {/* Icon */}
-              <div className="w-16 h-16 bg-sky-50 dark:bg-slate-700 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <div className="w-16 h-16 bg-rose-50 dark:bg-slate-700 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 {item.icon}
               </div>
 

@@ -75,7 +75,7 @@ export default function BrandsPage() {
                     <button
                         key={letter}
                         onClick={() => scrollToSection(letter)}
-                        className="w-7 h-7 flex items-center justify-center rounded bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-bold shadow-sm hover:bg-sky-500 hover:text-white dark:hover:bg-sky-500 transition-all border border-slate-200 dark:border-slate-700"
+                        className="w-7 h-7 flex items-center justify-center rounded bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-bold shadow-sm hover:bg-rose-400 hover:text-white dark:hover:bg-rose-400 transition-all border border-slate-200 dark:border-slate-700"
                     >
                         {letter}
                     </button>
@@ -108,12 +108,12 @@ export default function BrandsPage() {
                                             className="w-full h-full object-contain transition-all duration-300"
                                         />
                                     ) : (
-                                        <span className="text-xl font-bold text-slate-300 group-hover:text-sky-500 transition-colors">
+                                        <span className="text-xl font-bold text-slate-300 group-hover:text-rose-400 transition-colors">
                                             {getLocalizedField(brand, 'name', language).charAt(0)}
                                         </span>
                                     )}
                                 </div>
-                                <span className="text-[10px] sm:text-xs font-semibold text-slate-600 dark:text-slate-400 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors text-center line-clamp-1 px-0.5 leading-tight">
+                                <span className="text-[10px] sm:text-xs font-semibold text-slate-600 dark:text-slate-400 group-hover:text-rose-400 dark:group-hover:text-rose-300 transition-colors text-center line-clamp-1 px-0.5 leading-tight">
                                     {getLocalizedField(brand, 'name', language)}
                                 </span>
                             </Link>

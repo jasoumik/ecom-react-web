@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin/', '/profile/', '/cart/', '/checkout/'],
     },
-    sitemap: 'https://prithibee.com/sitemap.xml', // Replace with actual domain
+    sitemap: 'https://replantglow.com/sitemap.xml', // Replace with actual domain
   }
 }

@@ -53,7 +53,7 @@ export function FloatingActionGroup() {
   };
 
   const whatsappNumber = settings.whatsapp_number || "+8801616684803";
-  const whatsappMessage = "Hi, I'm interested in a product from Prithibee.";
+  const whatsappMessage = "Hi, I'm interested in a product from Replant Glow.";
   const whatsappLink = `https://wa.me/${whatsappNumber.replace('+', '')}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
@@ -80,7 +80,7 @@ export function FloatingActionGroup() {
             {/* Request Product Button */}
             <button
                 onClick={() => { setIsRequestModalOpen(true); setIsOpen(false); }}
-                className="flex items-center gap-3 bg-sky-500 text-white px-4 py-3 rounded-full shadow-lg hover:bg-sky-600 transition-transform hover:scale-105 group"
+                className="flex items-center gap-3 bg-rose-400 text-white px-4 py-3 rounded-full shadow-lg hover:bg-rose-400 transition-transform hover:scale-105 group"
             >
                 <span className="text-sm font-bold whitespace-nowrap">{t('request_product')}</span>
                 <span className="text-xl">💡</span>
@@ -90,7 +90,7 @@ export function FloatingActionGroup() {
         {/* Main Toggle Button */}
         <button 
             onClick={() => setIsOpen(!isOpen)}
-            className={`w-14 h-14 rounded-full shadow-xl flex items-center justify-center text-white transition-all duration-300 hover:scale-110 pointer-events-auto ${isOpen ? 'bg-slate-800 rotate-45' : 'bg-sky-600'}`}
+            className={`w-14 h-14 rounded-full shadow-xl flex items-center justify-center text-white transition-all duration-300 hover:scale-110 pointer-events-auto ${isOpen ? 'bg-slate-800 rotate-45' : 'bg-rose-400'}`}
             aria-label={t('toggle_actions')}
         >
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -113,7 +113,7 @@ export function FloatingActionGroup() {
                     <div>
                         <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{t('description_optional')}</label>
                         <textarea 
-                            className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:placeholder-slate-500"
+                            className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-rose-400 focus:ring-2 focus:ring-rose-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:placeholder-slate-500"
                             value={formData.description} 
                             onChange={e => setFormData({...formData, description: e.target.value})} 
                             rows={3}

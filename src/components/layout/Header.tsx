@@ -200,7 +200,7 @@ export function Header() {
   return (
     <>
       {/* Top Offer Bar */}
-      <div className="bg-sky-500 text-white py-1.5 px-4">
+      <div className="bg-rose-400 text-white py-1.5 px-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center gap-2 text-[10px] sm:text-xs font-bold tracking-wide">
           {/* Desktop: Free Shipping Text */}
           <div className="hidden sm:block">
@@ -209,11 +209,11 @@ export function Header() {
 
           {/* Mobile: Social Icons */}
           <div className="flex sm:hidden items-center gap-4 w-full justify-center">
-             <a href={settings.facebook_link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-sky-100 transition-colors">
+             <a href={settings.facebook_link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-rose-100 transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.333-4.669 1.212 0 2.493.216 2.493.216v2.733h-1.406c-1.492 0-1.956.926-1.956 1.874v2.25h3.072l-.487 3.47h-2.585v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                 <span>Facebook</span>
              </a>
-             <a href={`https://wa.me/${settings.whatsapp_number}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-sky-100 transition-colors">
+             <a href={`https://wa.me/${settings.whatsapp_number}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-rose-100 transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.015-1.04 2.535 0 1.52 1.115 2.988 1.264 3.186.149.198 2.19 3.348 5.302 4.695.74.325 1.317.521 1.767.664.75.237 1.433.204 1.975.124.603-.088 1.758-.718 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                 <span>WhatsApp</span>
              </a>
@@ -221,10 +221,10 @@ export function Header() {
 
           {/* Desktop: Phone Number & Socials */}
           <div className="hidden sm:flex items-center gap-4 justify-end">
-            <a href={settings.facebook_link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-sky-100 transition-colors">
+            <a href={settings.facebook_link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-rose-100 transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.333-4.669 1.212 0 2.493.216 2.493.216v2.733h-1.406c-1.492 0-1.956.926-1.956 1.874v2.25h3.072l-.487 3.47h-2.585v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
-            <a href={`tel:${settings.shop_phone}`} className="flex items-center gap-1 hover:text-sky-100 transition-colors">
+            <a href={`tel:${settings.shop_phone}`} className="flex items-center gap-1 hover:text-rose-100 transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" className="w-3 h-3">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.536 0 1.52 1.115 2.988 1.264 3.186.149.198 2.19 3.349 5.302 4.695.74.326 1.317.521 1.767.664.75.238 1.433.204 1.975.124.603-.088 1.758-.718 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
               </svg>
@@ -255,8 +255,8 @@ export function Header() {
                         className="h-8 sm:h-10 w-auto object-contain"
                         priority
                     />
-                    <span className="font-bold text-lg text-sky-600 dark:text-sky-400">
-                        {language === 'bn' ? 'পৃথিবী' : 'PrithiBee'}
+                    <span className="font-bold text-lg text-rose-400 dark:text-rose-300">
+                        {language === 'bn' ? 'রিপ্ল্যান্ট গ্লো' : 'Replant Glow'}
                     </span>
                 </Link>
             </div>
@@ -265,7 +265,7 @@ export function Header() {
             <nav className="hidden lg:flex items-center gap-6 ml-4">
                 {/* Categories Dropdown */}
                 <div className="relative group">
-                    <button className="flex items-center gap-1 text-sm font-bold text-slate-600 hover:text-sky-500 transition-colors dark:text-slate-300 dark:hover:text-sky-400 py-4">
+                    <button className="flex items-center gap-1 text-sm font-bold text-slate-600 hover:text-rose-400 transition-colors dark:text-slate-300 dark:hover:text-rose-300 py-4">
                         {t('categories')}
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
@@ -274,7 +274,7 @@ export function Header() {
                             <div key={cat.id} className="relative group/sub">
                                 <Link 
                                     href={`/products?category=${cat.id}`}
-                                    className="flex items-center justify-between px-4 py-2.5 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-800 hover:text-sky-600 dark:hover:text-sky-400"
+                                    className="flex items-center justify-between px-4 py-2.5 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-rose-50 dark:hover:bg-slate-800 hover:text-rose-400 dark:hover:text-rose-300"
                                 >
                                     {getLocalizedField(cat, 'name', language)}
                                     {cat.children && cat.children.length > 0 && (
@@ -287,7 +287,7 @@ export function Header() {
                                             <Link 
                                                 key={sub.id}
                                                 href={`/products?category=${sub.id}`}
-                                                className="block px-4 py-2.5 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-800 hover:text-sky-600 dark:hover:text-sky-400"
+                                                className="block px-4 py-2.5 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-rose-50 dark:hover:bg-slate-800 hover:text-rose-400 dark:hover:text-rose-300"
                                             >
                                                 {getLocalizedField(sub, 'name', language)}
                                             </Link>
@@ -298,8 +298,8 @@ export function Header() {
                         ))}
                     </div>
                 </div>
-                <Link href="/products" className="text-sm font-bold text-slate-600 hover:text-sky-500 transition-colors dark:text-slate-300 dark:hover:text-sky-400">{t('shop')}</Link>
-                <Link href="/brands" className="text-sm font-bold text-slate-600 hover:text-sky-500 transition-colors dark:text-slate-300 dark:hover:text-sky-400">Brands</Link>
+                <Link href="/products" className="text-sm font-bold text-slate-600 hover:text-rose-400 transition-colors dark:text-slate-300 dark:hover:text-rose-300">{t('shop')}</Link>
+                <Link href="/brands" className="text-sm font-bold text-slate-600 hover:text-rose-400 transition-colors dark:text-slate-300 dark:hover:text-rose-300">Brands</Link>
             </nav>
 
             {/* Desktop Search Bar */}
@@ -311,7 +311,7 @@ export function Header() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   onFocus={() => setShowSuggestions(true)}
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all dark:bg-slate-900 dark:border-slate-700 dark:text-white dark:placeholder-slate-500"
+                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:border-rose-400 focus:ring-2 focus:ring-rose-100 transition-all dark:bg-slate-900 dark:border-slate-700 dark:text-white dark:placeholder-slate-500"
                 />
                 {searchQuery && (
                     <button 
@@ -324,7 +324,7 @@ export function Header() {
                 )}
                 <button 
                   type="submit"
-                  className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-sky-500 transition-colors p-1"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-rose-400 transition-colors p-1"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="11" cy="11" r="8"></circle>
@@ -342,7 +342,7 @@ export function Header() {
                                       <h4 className="text-xs font-bold text-slate-400 uppercase mb-2">Recent Searches</h4>
                                       <div className="flex flex-wrap gap-2">
                                           {recentSearches.map(s => (
-                                              <button key={s} onClick={() => performSearch(s)} className="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs hover:bg-sky-50 dark:hover:bg-sky-900/30 transition-colors">
+                                              <button key={s} onClick={() => performSearch(s)} className="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs hover:bg-rose-50 dark:hover:bg-rose-900/30 transition-colors">
                                                   {s}
                                               </button>
                                           ))}
@@ -353,7 +353,7 @@ export function Header() {
                                   <h4 className="text-xs font-bold text-slate-400 uppercase mb-2">Popular</h4>
                                   <div className="flex flex-wrap gap-2">
                                       {popularSearches.map(s => (
-                                          <button key={s} onClick={() => performSearch(s)} className="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs hover:bg-sky-50 dark:hover:bg-sky-900/30 transition-colors">
+                                          <button key={s} onClick={() => performSearch(s)} className="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs hover:bg-rose-50 dark:hover:bg-rose-900/30 transition-colors">
                                               {s}
                                           </button>
                                       ))}
@@ -386,7 +386,7 @@ export function Header() {
                             <div className="p-2 border-t border-slate-100 dark:border-slate-800">
                                 <Link
                                     href={`/products?search=${encodeURIComponent(searchQuery)}`}
-                                    className="block w-full py-2 text-center text-sm font-bold text-sky-600 hover:bg-sky-50 dark:hover:bg-slate-800 rounded-lg transition-colors"
+                                    className="block w-full py-2 text-center text-sm font-bold text-rose-400 hover:bg-rose-50 dark:hover:bg-slate-800 rounded-lg transition-colors"
                                     onClick={() => setShowSuggestions(false)}
                                 >
                                     View all results for "{searchQuery}"
@@ -429,7 +429,7 @@ export function Header() {
                   <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                 </svg>
                 {mounted && wishlistItems.length > 0 && (
-                  <span className="absolute -top-1 -right-1 w-4 h-4 bg-rose-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center">
+                  <span className="absolute -top-1 -right-1 w-4 h-4 bg-rose-400 text-white text-[10px] font-bold rounded-full flex items-center justify-center">
                     {wishlistItems.length}
                   </span>
                 )}
@@ -443,7 +443,7 @@ export function Header() {
                   <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
                 </svg>
                 {mounted && totalItems() > 0 && (
-                  <span className="absolute -top-1 -right-1 w-4 h-4 bg-rose-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center">
+                  <span className="absolute -top-1 -right-1 w-4 h-4 bg-rose-400 text-white text-[10px] font-bold rounded-full flex items-center justify-center">
                     {totalItems()}
                   </span>
                 )}
@@ -456,7 +456,7 @@ export function Header() {
                 ) : isLoggedIn ? (
                   <div className="flex items-center gap-1 sm:gap-2">
                     <Link href="/profile" className="flex items-center gap-2 group">
-                        <div className="w-8 h-8 rounded-full bg-sky-100 dark:bg-sky-900/30 flex items-center justify-center text-sky-600 dark:text-sky-400 font-bold text-sm border border-sky-200 dark:border-sky-800 group-hover:border-sky-400 transition-colors">
+                        <div className="w-8 h-8 rounded-full bg-rose-100 dark:bg-rose-900/30 flex items-center justify-center text-rose-400 dark:text-rose-300 font-bold text-sm border border-rose-200 dark:border-rose-800 group-hover:border-rose-300 transition-colors">
                             {user.avatar ? (
                                 <img src={user.avatar} alt={user.name} className="w-full h-full rounded-full object-cover" />
                             ) : (
@@ -517,7 +517,7 @@ export function Header() {
                       
                       {isLoggedIn ? (
                           <div className="flex items-center gap-3 mt-4">
-                              <div className="w-12 h-12 rounded-full bg-sky-100 dark:bg-sky-900/30 flex items-center justify-center text-sky-600 dark:text-sky-400 font-bold text-lg border border-sky-200 dark:border-sky-800">
+                              <div className="w-12 h-12 rounded-full bg-rose-100 dark:bg-rose-900/30 flex items-center justify-center text-rose-400 dark:text-rose-300 font-bold text-lg border border-rose-200 dark:border-rose-800">
                                   {user.avatar ? (
                                       <img src={user.avatar} alt={user.name} className="w-full h-full rounded-full object-cover" />
                                   ) : (
@@ -563,7 +563,7 @@ export function Header() {
                               <span>Wishlist</span>
                           </div>
                           {mounted && wishlistItems.length > 0 && (
-                              <span className="bg-rose-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
+                              <span className="bg-rose-400 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
                                   {wishlistItems.length}
                               </span>
                           )}
@@ -589,7 +589,7 @@ export function Header() {
                                           <div className="flex items-center justify-between w-full text-left">
                                               <Link 
                                                 href={`/products?category=${cat.id}`}
-                                                className="flex-1 py-2 px-4 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400"
+                                                className="flex-1 py-2 px-4 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-rose-400 dark:hover:text-rose-300"
                                                 onClick={() => setIsMobileMenuOpen(false)}
                                               >
                                                   {getLocalizedField(cat, 'name', language)}
@@ -597,7 +597,7 @@ export function Header() {
                                               {cat.children && cat.children.length > 0 && (
                                                   <button 
                                                     onClick={() => toggleMobileCategory(cat.id)}
-                                                    className="p-2 text-slate-400 hover:text-sky-500"
+                                                    className="p-2 text-slate-400 hover:text-rose-400"
                                                   >
                                                       <span className={`text-xs transition-transform block ${expandedMobileCategories.includes(cat.id) ? 'rotate-180' : ''}`}>▼</span>
                                                   </button>
@@ -610,7 +610,7 @@ export function Header() {
                                                       <Link 
                                                         key={sub.id}
                                                         href={`/products?category=${sub.id}`}
-                                                        className="block py-1.5 px-2 text-xs text-slate-500 dark:text-slate-500 hover:text-sky-600 dark:hover:text-sky-400"
+                                                        className="block py-1.5 px-2 text-xs text-slate-500 dark:text-slate-500 hover:text-rose-400 dark:hover:text-rose-300"
                                                         onClick={() => setIsMobileMenuOpen(false)}
                                                       >
                                                           {getLocalizedField(sub, 'name', language)}
@@ -663,7 +663,7 @@ export function Header() {
 
       {/* Mobile Search Overlay */}
       {isSearchOpen && (
-        <div className="fixed top-20 left-0 right-0 z-[60] bg-white/95 backdrop-blur-md border-b border-sky-100 p-4 lg:hidden animate-in slide-in-from-top-2 duration-200 dark:bg-slate-950/95 dark:border-slate-800 shadow-lg">
+        <div className="fixed top-20 left-0 right-0 z-[60] bg-white/95 backdrop-blur-md border-b border-rose-100 p-4 lg:hidden animate-in slide-in-from-top-2 duration-200 dark:bg-slate-950/95 dark:border-slate-800 shadow-lg">
           <form onSubmit={handleSearch} className="w-full relative">
             <input
               type="text"
@@ -671,7 +671,7 @@ export function Header() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               autoFocus
-              className="w-full px-5 py-3 rounded-2xl border border-sky-200 bg-sky-50/50 text-sky-900 placeholder-sky-400 text-base focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all dark:bg-slate-900 dark:border-slate-700 dark:text-white dark:placeholder-slate-400 dark:focus:border-sky-500 dark:focus:ring-sky-900"
+              className="w-full px-5 py-3 rounded-2xl border border-rose-200 bg-rose-50/50 text-rose-900 placeholder-rose-300 text-base focus:outline-none focus:border-rose-400 focus:ring-2 focus:ring-rose-100 transition-all dark:bg-slate-900 dark:border-slate-700 dark:text-white dark:placeholder-slate-400 dark:focus:border-rose-400 dark:focus:ring-rose-900"
             />
             {searchQuery && (
                 <button 
@@ -684,7 +684,7 @@ export function Header() {
             )}
             <button 
               type="submit"
-              className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-xl bg-sky-500 text-white hover:bg-sky-600 transition-colors"
+              className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-xl bg-rose-400 text-white hover:bg-rose-400 transition-colors"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="11" cy="11" r="8"></circle>
@@ -721,7 +721,7 @@ export function Header() {
                         <div className="p-2 border-t border-slate-100 dark:border-slate-800">
                             <Link
                                 href={`/products?search=${encodeURIComponent(searchQuery)}`}
-                                className="block w-full py-2 text-center text-sm font-bold text-sky-600 hover:bg-sky-50 dark:hover:bg-slate-800 rounded-lg transition-colors"
+                                className="block w-full py-2 text-center text-sm font-bold text-rose-400 hover:bg-rose-50 dark:hover:bg-slate-800 rounded-lg transition-colors"
                                 onClick={() => setIsSearchOpen(false)}
                             >
                                 View all results for "{searchQuery}"
@@ -741,7 +741,7 @@ export function Header() {
                           <h4 className="text-xs font-bold text-slate-400 uppercase mb-2">Recent Searches</h4>
                           <div className="flex flex-wrap gap-2">
                               {recentSearches.map(s => (
-                                  <button key={s} onClick={() => performSearch(s)} className="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs hover:bg-sky-50 dark:hover:bg-sky-900/30 transition-colors">
+                                  <button key={s} onClick={() => performSearch(s)} className="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs hover:bg-rose-50 dark:hover:bg-rose-900/30 transition-colors">
                                       {s}
                                   </button>
                               ))}
@@ -752,7 +752,7 @@ export function Header() {
                       <h4 className="text-xs font-bold text-slate-400 uppercase mb-2">Popular</h4>
                       <div className="flex flex-wrap gap-2">
                           {popularSearches.map(s => (
-                              <button key={s} onClick={() => performSearch(s)} className="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs hover:bg-sky-50 dark:hover:bg-sky-900/30 transition-colors">
+                              <button key={s} onClick={() => performSearch(s)} className="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs hover:bg-rose-50 dark:hover:bg-rose-900/30 transition-colors">
                                   {s}
                               </button>
                           ))}

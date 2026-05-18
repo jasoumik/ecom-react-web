@@ -20,9 +20,9 @@ export const Section: React.FC<SectionProps> = ({
       case "muted":
         return "bg-slate-50/50 dark:bg-slate-900/50";
       case "highlight":
-        return "bg-gradient-to-br from-rose-50/50 via-white to-sky-50/50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900";
+        return "bg-gradient-to-br from-rose-50/50 via-white to-rose-50/50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900";
       case "blue":
-        return "bg-sky-50 dark:bg-sky-900/30";
+        return "bg-rose-50 dark:bg-rose-900/30";
       default:
         return "bg-transparent";
     }

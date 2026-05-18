@@ -126,7 +126,7 @@ export default function EditBundlePage() {
         <Heading size="md" className="font-sans text-slate-900 dark:text-white">Edit Bundle</Heading>
         <div className="flex gap-3">
             <Button type="button" variant="outline" onClick={() => router.back()} className="rounded-lg py-2 px-4 text-sm h-auto">Cancel</Button>
-            <Button type="submit" form="edit-bundle-form" className="rounded-lg shadow-md shadow-sky-500/20 py-2 px-6 text-sm h-auto">Update Bundle</Button>
+            <Button type="submit" form="edit-bundle-form" className="rounded-lg shadow-md shadow-pink-500/20 py-2 px-6 text-sm h-auto">Update Bundle</Button>
         </div>
       </div>
       
@@ -140,7 +140,7 @@ export default function EditBundlePage() {
                             type="checkbox" 
                             checked={bundle.is_active} 
                             onChange={e => setBundle({...bundle, is_active: e.target.checked})}
-                            className="w-4 h-4 rounded border-slate-300 text-sky-500 focus:ring-sky-500"
+                            className="w-4 h-4 rounded border-slate-300 text-pink-500 focus:ring-pink-500"
                         />
                         <span className="text-xs font-bold text-slate-700 dark:text-slate-300">Active</span>
                     </label>
@@ -213,7 +213,7 @@ export default function EditBundlePage() {
                                 <button 
                                     type="button" 
                                     onClick={() => removeItem(index)}
-                                    className="h-10 w-10 flex items-center justify-center text-rose-500 hover:bg-rose-50 rounded-lg transition-colors shrink-0 mt-auto"
+                                    className="h-10 w-10 flex items-center justify-center text-pink-500 hover:bg-pink-50 rounded-lg transition-colors shrink-0 mt-auto"
                                 >
                                     ✕
                                 </button>
@@ -239,7 +239,7 @@ export default function EditBundlePage() {
                             type="checkbox" 
                             checked={bundle.is_free_shipping} 
                             onChange={e => setBundle({...bundle, is_free_shipping: e.target.checked})}
-                            className="w-4 h-4 rounded border-slate-300 text-sky-500 focus:ring-sky-500"
+                            className="w-4 h-4 rounded border-slate-300 text-pink-500 focus:ring-pink-500"
                         />
                         <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Free Shipping</span>
                     </label>

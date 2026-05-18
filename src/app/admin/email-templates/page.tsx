@@ -134,7 +134,7 @@ export default function EmailTemplatesPage() {
             </div>
 
             <div className="flex justify-end">
-              <Button type="submit" className="bg-sky-600 hover:bg-sky-700 text-white rounded-lg shadow-md h-10 px-6">Save Changes</Button>
+              <Button type="submit" className="bg-pink-600 hover:bg-pink-700 text-white rounded-lg shadow-md h-10 px-6">Save Changes</Button>
             </div>
           </form>
         </div>

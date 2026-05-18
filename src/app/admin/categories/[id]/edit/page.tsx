@@ -126,7 +126,7 @@ export default function EditCategoryPage() {
         <Heading size="md" className="font-sans text-slate-900 dark:text-white">Edit Category</Heading>
         <div className="flex gap-3">
             <Button type="button" variant="outline" onClick={() => router.back()} className="rounded-lg py-2 px-4 text-sm h-auto">Cancel</Button>
-            <Button type="submit" form="category-form" className="rounded-lg shadow-md shadow-sky-500/20 py-2 px-6 text-sm h-auto">Update Category</Button>
+            <Button type="submit" form="category-form" className="rounded-lg shadow-md shadow-pink-500/20 py-2 px-6 text-sm h-auto">Update Category</Button>
         </div>
       </div>
       
@@ -139,7 +139,7 @@ export default function EditCategoryPage() {
                         type="checkbox" 
                         checked={category.is_active} 
                         onChange={e => setCategory({...category, is_active: e.target.checked})}
-                        className="w-4 h-4 rounded border-slate-300 text-sky-500 focus:ring-sky-500"
+                        className="w-4 h-4 rounded border-slate-300 text-pink-500 focus:ring-pink-500"
                     />
                     <span className="text-xs font-bold text-slate-700 dark:text-slate-300">Active</span>
                 </label>
@@ -154,7 +154,7 @@ export default function EditCategoryPage() {
             <div>
                 <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Parent Category</label>
                 <select 
-                    className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
+                    className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
                     value={category.parent_id}
                     onChange={e => setCategory({...category, parent_id: e.target.value})}
                 >
@@ -170,7 +170,7 @@ export default function EditCategoryPage() {
             <div>
                 <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Mother Category</label>
                 <select 
-                    className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
+                    className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
                     value={category.mother_category_id}
                     onChange={e => setCategory({...category, mother_category_id: e.target.value})}
                 >
@@ -187,7 +187,7 @@ export default function EditCategoryPage() {
           <div>
               <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Shop by Age Group</label>
               <select
-                  className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
+                  className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
                   value={category.age_group_id}
                   onChange={e => setCategory({...category, age_group_id: e.target.value})}
               >
@@ -256,7 +256,7 @@ export default function EditCategoryPage() {
             <div>
                 <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Description (English)</label>
                 <textarea 
-                className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white dark:placeholder-slate-500 text-sm"
+                className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white dark:placeholder-slate-500 text-sm"
                 value={category.description} 
                 onChange={e => setCategory({...category, description: e.target.value})} 
                 rows={3}
@@ -265,7 +265,7 @@ export default function EditCategoryPage() {
             <div>
                 <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Description (Bangla)</label>
                 <textarea 
-                className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white dark:placeholder-slate-500 text-sm"
+                className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white dark:placeholder-slate-500 text-sm"
                 value={category.description_bn} 
                 onChange={e => setCategory({...category, description_bn: e.target.value})} 
                 rows={3}

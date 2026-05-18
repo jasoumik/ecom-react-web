@@ -60,7 +60,7 @@ export default function EditPageContent() {
         <Heading size="md" className="font-sans text-slate-900 dark:text-white">Edit {PAGES[key] || key}</Heading>
         <div className="flex gap-3">
             <Button variant="outline" onClick={() => router.back()} className="rounded-lg py-2 px-4 text-sm h-auto">Cancel</Button>
-            <Button onClick={handleSave} className="rounded-lg shadow-md shadow-sky-500/20 py-2 px-6 text-sm h-auto">Save Changes</Button>
+            <Button onClick={handleSave} className="rounded-lg shadow-md shadow-pink-500/20 py-2 px-6 text-sm h-auto">Save Changes</Button>
         </div>
       </div>
       

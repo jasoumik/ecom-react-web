@@ -84,7 +84,7 @@ export function ReviewModal({ productId, productName, orderId, userId, onClose, 
           <div>
             <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Comment (Optional)</label>
             <textarea 
-              className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:placeholder-slate-500"
+              className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-rose-400 focus:ring-2 focus:ring-rose-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:placeholder-slate-500"
               value={comment} 
               onChange={e => setComment(e.target.value)} 
               rows={4}
@@ -110,7 +110,7 @@ export function ReviewModal({ productId, productName, orderId, userId, onClose, 
                 <button 
                     type="button" 
                     onClick={() => setShowMediaPicker(true)}
-                    className="w-16 h-16 rounded-lg border-2 border-dashed border-slate-300 dark:border-slate-600 flex items-center justify-center text-slate-400 hover:border-sky-500 hover:text-sky-500 transition-colors"
+                    className="w-16 h-16 rounded-lg border-2 border-dashed border-slate-300 dark:border-slate-600 flex items-center justify-center text-slate-400 hover:border-rose-400 hover:text-rose-400 transition-colors"
                 >
                     +
                 </button>

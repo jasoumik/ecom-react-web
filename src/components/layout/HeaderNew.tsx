@@ -253,7 +253,7 @@ export function Header() {
     <>
       {/* Top Offer Bar */}
       <div
-        className={`bg-sky-500 text-white overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`bg-rose-400 text-white overflow-hidden transition-all duration-300 ease-in-out ${
           isTopBarVisible ? 'max-h-10 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
@@ -268,7 +268,7 @@ export function Header() {
               href={settings.facebook_link || "https://facebook.com"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 hover:text-sky-100 transition-colors"
+              className="flex items-center gap-1 hover:text-rose-100 transition-colors"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.333-4.669 1.212 0 2.493.216 2.493.216v2.733h-1.406c-1.492 0-1.956.926-1.956 1.874v2.25h3.072l-.487 3.47h-2.585v8.385C19.612 23.027 24 18.062 24 12.073z" />
@@ -280,7 +280,7 @@ export function Header() {
               href={`https://wa.me/${(settings.whatsapp_number || "+8801616684803").replace(/[^0-9]/g, '')}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 hover:text-sky-100 transition-colors"
+              className="flex items-center gap-1 hover:text-rose-100 transition-colors"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.015-1.04 2.535 0 1.52 1.115 2.988 1.264 3.186.149.198 2.19 3.348 5.302 4.695.74.325 1.317.521 1.767.664.75.237 1.433.204 1.975.124.603-.088 1.758-.718 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
@@ -290,7 +290,7 @@ export function Header() {
             <span className="text-white/40">|</span>
             <a
               href={`tel:${settings.shop_phone || "+8801616684803"}`}
-              className="flex items-center gap-1 hover:text-sky-100 transition-colors"
+              className="flex items-center gap-1 hover:text-rose-100 transition-colors"
             >
               <Phone size={12} />
               <span>Call</span>
@@ -303,7 +303,7 @@ export function Header() {
               href={settings.facebook_link}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-sky-100 transition-colors"
+              className="hover:text-rose-100 transition-colors"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.333-4.669 1.212 0 2.493.216 2.493.216v2.733h-1.406c-1.492 0-1.956.926-1.956 1.874v2.25h3.072l-.487 3.47h-2.585v8.385C19.612 23.027 24 18.062 24 12.073z" />
@@ -311,7 +311,7 @@ export function Header() {
             </a>
             <a
               href={`tel:${settings.shop_phone}`}
-              className="flex items-center gap-1 hover:text-sky-100 transition-colors"
+              className="flex items-center gap-1 hover:text-rose-100 transition-colors"
             >
               <Phone size={12} />
               <span>{settings.shop_phone}</span>
@@ -339,8 +339,8 @@ export function Header() {
                 className="h-10 w-auto object-contain"
               />
               <div className="flex flex-col leading-none">
-                <span className="font-bold text-lg text-sky-600 dark:text-sky-400">PrithiBee</span>
-                <span className="text-xs font-medium text-slate-500 dark:text-slate-400">পৃথিবী</span>
+                <span className="font-bold text-lg text-rose-400 dark:text-rose-300">Replant Glow</span>
+                <span className="text-xs font-medium text-slate-500 dark:text-slate-400">রিপ্ল্যান্ট গ্লো</span>
               </div>
             </Link>
 
@@ -355,7 +355,7 @@ export function Header() {
                   setHoveredCategory(null);
                 }}
               >
-                <button className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">
+                <button className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-rose-400 dark:hover:text-rose-300 transition-colors rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">
                   {t("categories")}
                   <ChevronDown size={16} className={`transition-transform ${activeMegaMenu === "categories" ? "rotate-180" : ""}`} />
                 </button>
@@ -411,7 +411,7 @@ export function Header() {
                                     </div>
                                     <span className={`text-sm font-medium transition-colors ${
                                       isHovered 
-                                        ? 'text-sky-600 dark:text-sky-400' 
+                                        ? 'text-rose-400 dark:text-rose-300' 
                                         : 'text-slate-700 dark:text-slate-300'
                                     }`}>
                                       {getLocalizedField(parentCategory, "name", language)}
@@ -422,7 +422,7 @@ export function Header() {
                                       size={16}
                                       className={`transition-colors ${
                                         isHovered 
-                                          ? 'text-sky-600 dark:text-sky-400' 
+                                          ? 'text-rose-400 dark:text-rose-300' 
                                           : 'text-slate-400'
                                       }`}
                                     />
@@ -434,7 +434,7 @@ export function Header() {
                           <div className="mt-4 pt-4 border-t border-slate-200 dark:border-slate-700">
                             <Link
                               href="/products"
-                              className="flex items-center gap-2 px-2 py-2 text-sm font-medium text-sky-600 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-300"
+                              className="flex items-center gap-2 px-2 py-2 text-sm font-medium text-rose-400 hover:text-rose-500 dark:text-rose-300 dark:hover:text-rose-200"
                             >
                               {t("view_all")} Products
                               <ChevronRight size={16} />
@@ -469,7 +469,7 @@ export function Header() {
                                       </h3>
                                       <Link
                                         href={`/products?category=${parentCategory.slug || parentCategory.id}`}
-                                        className="text-xs text-sky-600 dark:text-sky-400 hover:underline"
+                                        className="text-xs text-rose-400 dark:text-rose-300 hover:underline"
                                       >
                                         View all products →
                                       </Link>
@@ -484,8 +484,8 @@ export function Header() {
                                           href={`/products?category=${subCat.slug || subCat.id}`}
                                           className="flex items-center gap-2 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group"
                                         >
-                                          <div className="w-2 h-2 rounded-full bg-sky-500 group-hover:scale-125 transition-transform" />
-                                          <span className="text-sm text-slate-600 dark:text-slate-400 group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                          <div className="w-2 h-2 rounded-full bg-rose-400 group-hover:scale-125 transition-transform" />
+                                          <span className="text-sm text-slate-600 dark:text-slate-400 group-hover:text-rose-400 dark:group-hover:text-rose-300">
                                             {getLocalizedField(subCat, "name", language)}
                                           </span>
                                         </Link>
@@ -498,7 +498,7 @@ export function Header() {
                                       </p>
                                       <Link
                                         href={`/products?category=${parentCategory.slug || parentCategory.id}`}
-                                        className="inline-flex items-center gap-2 px-4 py-2 bg-sky-500 text-white rounded-lg text-sm font-medium hover:bg-sky-600 transition-colors"
+                                        className="inline-flex items-center gap-2 px-4 py-2 bg-rose-400 text-white rounded-lg text-sm font-medium hover:bg-rose-400 transition-colors"
                                       >
                                         Browse Products
                                         <ChevronRight size={16} />
@@ -527,13 +527,13 @@ export function Header() {
 
               <Link
                 href="/products"
-                className="px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800"
+                className="px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-rose-400 dark:hover:text-rose-300 transition-colors rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800"
               >
                 {t("shop")}
               </Link>
               <Link
                 href="/brands"
-                className="px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800"
+                className="px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-rose-400 dark:hover:text-rose-300 transition-colors rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800"
               >
                 Brands
               </Link>
@@ -556,7 +556,7 @@ export function Header() {
                     }}
                     onFocus={() => setShowSuggestions(true)}
                     placeholder={t("search_placeholder")}
-                    className="w-full h-10 pl-11 pr-4 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all"
+                    className="w-full h-10 pl-11 pr-4 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent transition-all"
                   />
                 </div>
               </form>
@@ -596,14 +596,14 @@ export function Header() {
                               <p className="text-sm font-medium text-slate-700 dark:text-slate-300 line-clamp-1">
                                 {getLocalizedField(product, "name", language)}
                               </p>
-                              <p className="text-sm font-bold text-orange-500">৳{product.price}</p>
+                              <p className="text-sm font-bold text-rose-400">৳{product.price}</p>
                             </div>
                           </Link>
                         ))}
                         <div className="mt-2 pt-2 border-t border-slate-100 dark:border-slate-800">
                             <Link
                                 href={`/products?search=${encodeURIComponent(searchQuery)}`}
-                                className="block w-full py-2 text-center text-sm font-bold text-sky-600 hover:bg-sky-50 dark:hover:bg-slate-800 rounded-lg transition-colors"
+                                className="block w-full py-2 text-center text-sm font-bold text-rose-400 hover:bg-rose-50 dark:hover:bg-slate-800 rounded-lg transition-colors"
                                 onClick={() => setShowSuggestions(false)}
                             >
                                 View all results for "{searchQuery}"
@@ -638,7 +638,7 @@ export function Header() {
                               <button
                                 key={term}
                                 onClick={() => performSearch(term)}
-                                className="px-3 py-1.5 text-sm bg-sky-50 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 rounded-full hover:bg-sky-100 dark:hover:bg-sky-900/50 transition-colors"
+                                className="px-3 py-1.5 text-sm bg-rose-50 dark:bg-rose-900/30 text-rose-400 dark:text-rose-300 rounded-full hover:bg-rose-100 dark:hover:bg-rose-900/50 transition-colors"
                               >
                                 {term}
                               </button>
@@ -684,7 +684,7 @@ export function Header() {
               >
                 <Heart size={22} />
                 {wishlistCount > 0 && (
-                  <span className="absolute -top-0.5 -right-0.5 w-5 h-5 bg-rose-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center animate-bounce-in">
+                  <span className="absolute -top-0.5 -right-0.5 w-5 h-5 bg-rose-400 text-white text-[10px] font-bold rounded-full flex items-center justify-center animate-bounce-in">
                     {wishlistCount > 9 ? "9+" : wishlistCount}
                   </span>
                 )}
@@ -701,7 +701,7 @@ export function Header() {
                     key={cartCount}
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
-                    className="absolute -top-0.5 -right-0.5 w-5 h-5 bg-orange-400 text-white text-[10px] font-bold rounded-full flex items-center justify-center"
+                    className="absolute -top-0.5 -right-0.5 w-5 h-5 bg-rose-300 text-white text-[10px] font-bold rounded-full flex items-center justify-center"
                   >
                     {cartCount > 9 ? "9+" : cartCount}
                   </motion.span>
@@ -734,7 +734,7 @@ export function Header() {
                       </Link>
                       <button
                         onClick={handleLogout}
-                        className="w-full text-left px-4 py-2 text-sm text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-900/20 rounded-lg"
+                        className="w-full text-left px-4 py-2 text-sm text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-900/20 rounded-lg"
                       >
                         {t("logout")}
                       </button>
@@ -774,8 +774,8 @@ export function Header() {
                   className="h-8 w-auto object-contain"
                 />
                 <div className="flex flex-col leading-none">
-                  <span className="font-bold text-base text-sky-600 dark:text-sky-400">PrithiBee</span>
-                  <span className="text-[10px] font-medium text-slate-500 dark:text-slate-400">পৃথিবী</span>
+                  <span className="font-bold text-base text-rose-400 dark:text-rose-300">Replant Glow</span>
+                  <span className="text-[10px] font-medium text-slate-500 dark:text-slate-400">রিপ্ল্যান্ট গ্লো</span>
                 </div>
               </Link>
             </div>
@@ -798,7 +798,7 @@ export function Header() {
                     key={cartCount}
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
-                    className="absolute -top-0.5 -right-0.5 w-5 h-5 bg-orange-400 text-white text-[10px] font-bold rounded-full flex items-center justify-center"
+                    className="absolute -top-0.5 -right-0.5 w-5 h-5 bg-rose-300 text-white text-[10px] font-bold rounded-full flex items-center justify-center"
                   >
                     {cartCount > 9 ? "9+" : cartCount}
                   </motion.span>
@@ -871,7 +871,7 @@ export function Header() {
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       placeholder={t("search_placeholder")}
-                      className="w-full h-12 pl-11 pr-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full text-base focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"
+                      className="w-full h-12 pl-11 pr-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full text-base focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent"
                     />
                   </div>
                 </form>
@@ -964,7 +964,7 @@ export function Header() {
                           <p className="font-medium text-slate-800 dark:text-white line-clamp-1">
                             {getLocalizedField(product, "name", language)}
                           </p>
-                          <p className="text-lg font-bold text-orange-500">৳{product.price}</p>
+                          <p className="text-lg font-bold text-rose-400">৳{product.price}</p>
                         </div>
                       </Link>
                     ))}
@@ -972,7 +972,7 @@ export function Header() {
                   <div className="mt-4 pt-2 border-t border-slate-100 dark:border-slate-800">
                       <Link
                           href={`/products?search=${encodeURIComponent(searchQuery)}`}
-                          className="block w-full py-3 text-center text-sm font-bold text-white bg-sky-500 hover:bg-sky-600 rounded-xl transition-colors shadow-sm"
+                          className="block w-full py-3 text-center text-sm font-bold text-white bg-rose-400 hover:bg-rose-400 rounded-xl transition-colors shadow-sm"
                           onClick={() => setIsSearchOverlayOpen(false)}
                       >
                           View all results for "{searchQuery}"
@@ -1021,8 +1021,8 @@ export function Header() {
                     className="h-9 w-auto object-contain"
                   />
                   <div className="flex flex-col leading-none">
-                    <span className="font-bold text-lg text-sky-600 dark:text-sky-400">PrithiBee</span>
-                    <span className="text-xs font-medium text-slate-500 dark:text-slate-400">পৃথিবী</span>
+                    <span className="font-bold text-lg text-rose-400 dark:text-rose-300">Replant Glow</span>
+                    <span className="text-xs font-medium text-slate-500 dark:text-slate-400">রিপ্ল্যান্ট গ্লো</span>
                   </div>
                 </Link>
                 <button
@@ -1037,7 +1037,7 @@ export function Header() {
               <div className="p-4 border-b border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50">
                 {isLoggedIn ? (
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-full bg-sky-100 dark:bg-sky-900/50 flex items-center justify-center text-sky-600 dark:text-sky-400 font-bold text-lg">
+                    <div className="w-12 h-12 rounded-full bg-rose-100 dark:bg-rose-900/50 flex items-center justify-center text-rose-400 dark:text-rose-300 font-bold text-lg">
                       {user.name?.charAt(0) || "U"}
                     </div>
                     <div>
@@ -1107,7 +1107,7 @@ export function Header() {
                                     // Parent category with subcategories - entire row is clickable to expand
                                     <button
                                       onClick={() => toggleMobileCategory(parentCategory.id)}
-                                      className="flex items-center justify-between w-full px-3 py-2.5 text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-lg"
+                                      className="flex items-center justify-between w-full px-3 py-2.5 text-slate-600 dark:text-slate-400 hover:text-rose-400 dark:hover:text-rose-300 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-lg"
                                     >
                                       <div className="flex items-center gap-3">
                                         <div className="w-8 h-8 rounded-lg overflow-hidden bg-slate-100 dark:bg-slate-800 flex-shrink-0">
@@ -1138,7 +1138,7 @@ export function Header() {
                                     <Link
                                       href={`/products?category=${parentCategory.slug || parentCategory.id}`}
                                       onClick={() => setIsMobileMenuOpen(false)}
-                                      className="flex items-center gap-3 px-3 py-2.5 text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-lg"
+                                      className="flex items-center gap-3 px-3 py-2.5 text-slate-600 dark:text-slate-400 hover:text-rose-400 dark:hover:text-rose-300 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-lg"
                                     >
                                       <div className="w-8 h-8 rounded-lg overflow-hidden bg-slate-100 dark:bg-slate-800 flex-shrink-0">
                                         <Image
@@ -1165,12 +1165,12 @@ export function Header() {
                                         transition={{ duration: 0.2 }}
                                         className="overflow-hidden"
                                       >
-                                        <div className="ml-4 pl-4 pb-2 pt-1 space-y-0.5 border-l-2 border-sky-100 dark:border-sky-900">
+                                        <div className="ml-4 pl-4 pb-2 pt-1 space-y-0.5 border-l-2 border-rose-100 dark:border-rose-900">
                                           {/* View all link for parent category */}
                                           <Link
                                             href={`/products?category=${parentCategory.slug || parentCategory.id}`}
                                             onClick={() => setIsMobileMenuOpen(false)}
-                                            className="block px-3 py-2 text-sm font-medium text-sky-600 dark:text-sky-400 hover:bg-sky-50 dark:hover:bg-sky-900/30 rounded-lg"
+                                            className="block px-3 py-2 text-sm font-medium text-rose-400 dark:text-rose-300 hover:bg-rose-50 dark:hover:bg-rose-900/30 rounded-lg"
                                           >
                                             View All {getLocalizedField(parentCategory, "name", language)}
                                           </Link>
@@ -1179,7 +1179,7 @@ export function Header() {
                                               key={subCat.id}
                                               href={`/products?category=${subCat.slug || subCat.id}`}
                                               onClick={() => setIsMobileMenuOpen(false)}
-                                              className="block px-3 py-2 text-sm text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800"
+                                              className="block px-3 py-2 text-sm text-slate-600 dark:text-slate-400 hover:text-rose-400 dark:hover:text-rose-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800"
                                             >
                                               {getLocalizedField(subCat, "name", language)}
                                             </Link>
@@ -1247,7 +1247,7 @@ export function Header() {
                     Wishlist
                   </span>
                   {wishlistCount > 0 && (
-                    <span className="w-6 h-6 bg-rose-500 text-white text-xs font-bold rounded-full flex items-center justify-center">
+                    <span className="w-6 h-6 bg-rose-400 text-white text-xs font-bold rounded-full flex items-center justify-center">
                       {wishlistCount}
                     </span>
                   )}
@@ -1271,7 +1271,7 @@ export function Header() {
                       handleLogout();
                       setIsMobileMenuOpen(false);
                     }}
-                    className="w-full mt-4 px-4 py-3 text-rose-600 border border-rose-200 dark:border-rose-800 rounded-xl text-center font-medium hover:bg-rose-50 dark:hover:bg-rose-900/20"
+                    className="w-full mt-4 px-4 py-3 text-rose-400 border border-rose-200 dark:border-rose-800 rounded-xl text-center font-medium hover:bg-rose-50 dark:hover:bg-rose-900/20"
                   >
                     {t("logout")}
                   </button>

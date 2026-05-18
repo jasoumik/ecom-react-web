@@ -42,7 +42,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-slate-950">
       {/* Hero */}
-      <div className="bg-sky-50 dark:bg-slate-900 py-16 text-center">
+      <div className="bg-rose-50 dark:bg-slate-900 py-16 text-center">
         <Heading size="xl" className="font-sans text-slate-900 dark:text-white mb-4 font-bold">{t('contact_us')}</Heading>
         <Text className="text-xl text-slate-600 dark:text-slate-300 max-w-xl mx-auto">
           {t('contact_hero_subtitle')}
@@ -62,7 +62,7 @@ export default function ContactPage() {
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-sky-100 dark:bg-slate-800 rounded-xl flex items-center justify-center text-2xl text-sky-600">📍</div>
+                <div className="w-12 h-12 bg-rose-100 dark:bg-slate-800 rounded-xl flex items-center justify-center text-2xl text-rose-400">📍</div>
                 <div>
                   <h4 className="font-bold text-slate-900 dark:text-white">{t('visit_us')}</h4>
                   <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">
@@ -72,7 +72,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-sky-100 dark:bg-slate-800 rounded-xl flex items-center justify-center text-2xl text-sky-600">📞</div>
+                <div className="w-12 h-12 bg-rose-100 dark:bg-slate-800 rounded-xl flex items-center justify-center text-2xl text-rose-400">📞</div>
                 <div>
                   <h4 className="font-bold text-slate-900 dark:text-white">{t('call_us')}</h4>
                   <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">
@@ -83,12 +83,12 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-sky-100 dark:bg-slate-800 rounded-xl flex items-center justify-center text-2xl text-sky-600">✉️</div>
+                <div className="w-12 h-12 bg-rose-100 dark:bg-slate-800 rounded-xl flex items-center justify-center text-2xl text-rose-400">✉️</div>
                 <div>
                   <h4 className="font-bold text-slate-900 dark:text-white">{t('email_us')}</h4>
                   <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">
-                    support@prithibee.com<br />
-                    info@prithibee.com
+                    support@replantglow.com<br />
+                    info@replantglow.com
                   </p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function ContactPage() {
               <div>
                 <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{t('message')}</label>
                 <textarea 
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:placeholder-slate-500"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-rose-400 focus:ring-2 focus:ring-rose-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:placeholder-slate-500"
                   value={formData.message} 
                   onChange={e => setFormData({...formData, message: e.target.value})} 
                   required 
@@ -136,7 +136,7 @@ export default function ContactPage() {
                 type="submit" 
                 fullWidth 
                 disabled={isSubmitting}
-                className="rounded-xl py-3 text-base shadow-lg shadow-sky-500/20"
+                className="rounded-xl py-3 text-base shadow-lg shadow-rose-400/20"
               >
                 {isSubmitting ? t('sending') : t('send_message')}
               </Button>

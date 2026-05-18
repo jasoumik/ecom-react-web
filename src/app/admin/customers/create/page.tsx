@@ -39,7 +39,7 @@ export default function CreateCustomerPage() {
         <Heading size="md" className="font-sans text-slate-900 dark:text-white">Add Customer</Heading>
         <div className="flex gap-3">
             <Button type="button" variant="outline" onClick={() => router.back()} className="rounded-lg py-2 px-4 text-sm h-auto">Cancel</Button>
-            <Button type="submit" form="customer-form" className="rounded-lg shadow-md shadow-sky-500/20 py-2 px-6 text-sm h-auto">Save Customer</Button>
+            <Button type="submit" form="customer-form" className="rounded-lg shadow-md shadow-pink-500/20 py-2 px-6 text-sm h-auto">Save Customer</Button>
         </div>
       </div>
       

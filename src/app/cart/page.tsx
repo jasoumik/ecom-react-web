@@ -447,7 +447,7 @@ export default function CartPage() {
         </div>
         <Heading className="mb-2 text-slate-800 dark:text-white text-xl font-bold">{t("your_cart_empty")}</Heading>
         <Text className="text-slate-500 mb-8 text-center max-w-md text-sm">Looks like you haven't added anything to your cart yet.</Text>
-        <Button onClick={() => router.push("/products")} className="rounded-md px-8 py-2.5 bg-sky-600 hover:bg-sky-700 text-white font-medium shadow-sm">{t("start_shopping")}</Button>
+        <Button onClick={() => router.push("/products")} className="rounded-md px-8 py-2.5 bg-rose-400 hover:bg-rose-500 text-white font-medium shadow-sm">{t("start_shopping")}</Button>
       </div>
     );
   }
@@ -464,7 +464,7 @@ export default function CartPage() {
             {/* Cart Header / Select All */}
             <div className="bg-white dark:bg-slate-900 p-4 rounded-sm shadow-sm border border-slate-200 dark:border-slate-800 flex justify-between items-center">
                 <div className="flex items-center gap-3">
-                    <input type="checkbox" checked readOnly className="w-4 h-4 text-sky-600 rounded border-gray-300 focus:ring-sky-500" />
+                    <input type="checkbox" checked readOnly className="w-4 h-4 text-rose-400 rounded border-gray-300 focus:ring-rose-400" />
                     <span className="text-sm font-medium text-slate-700 dark:text-slate-300">
                         Select All ({items.length} Items)
                     </span>
@@ -480,11 +480,11 @@ export default function CartPage() {
                     <span className="text-sm font-bold text-slate-700 dark:text-slate-300">
                         {isFreeShipping ? t('free_shipping_unlocked') : t('add_more_free_shipping', { amount: amountToFreeShipping.toString() })}
                     </span>
-                    <span className="text-xs font-bold text-sky-500">{Math.round(progressPercent)}%</span>
+                    <span className="text-xs font-bold text-rose-400">{Math.round(progressPercent)}%</span>
                 </div>
                 <div className="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2 overflow-hidden">
                     <div 
-                        className={`h-full rounded-full transition-all duration-500 ${isFreeShipping ? 'bg-emerald-500' : 'bg-sky-500'}`} 
+                        className={`h-full rounded-full transition-all duration-500 ${isFreeShipping ? 'bg-emerald-500' : 'bg-rose-400'}`} 
                         style={{ width: `${progressPercent}%` }}
                     ></div>
                 </div>
@@ -500,7 +500,7 @@ export default function CartPage() {
                     return (
                         <div key={`${item.id}-${item.variantId}`} className="p-4 flex gap-4 items-start group">
                             <div className="pt-1">
-                                <input type="checkbox" checked readOnly className="w-4 h-4 text-sky-600 rounded border-gray-300 focus:ring-sky-500" />
+                                <input type="checkbox" checked readOnly className="w-4 h-4 text-rose-400 rounded border-gray-300 focus:ring-rose-400" />
                             </div>
                             
                             {/* Image */}
@@ -510,7 +510,7 @@ export default function CartPage() {
 
                             {/* Details */}
                             <div className="flex-1 min-w-0">
-                                <Link href={`/products/${item.slug || item.id}`} className="text-sm font-medium text-slate-800 dark:text-white hover:text-sky-600 line-clamp-2 mb-1">
+                                <Link href={`/products/${item.slug || item.id}`} className="text-sm font-medium text-slate-800 dark:text-white hover:text-rose-400 line-clamp-2 mb-1">
                                     {item.name}
                                 </Link>
 
@@ -526,7 +526,7 @@ export default function CartPage() {
                                         </button>
                                         <button 
                                             onClick={() => toggleWishlist(item)}
-                                            className={`transition-colors ${isWishlisted ? 'text-rose-500' : 'text-slate-400 hover:text-rose-500'}`} 
+                                            className={`transition-colors ${isWishlisted ? 'text-rose-400' : 'text-slate-400 hover:text-rose-400'}`} 
                                             title="Wishlist"
                                         >
                                             <Heart size={18} fill={isWishlisted ? "currentColor" : "none"} />
@@ -578,7 +578,7 @@ export default function CartPage() {
                     {user && savedAddresses.length > 0 && (
                         <button 
                             onClick={() => setIsAddingNewAddress(!isAddingNewAddress)}
-                            className="text-xs font-bold text-sky-600 hover:text-sky-700 flex items-center gap-1"
+                            className="text-xs font-bold text-rose-400 hover:text-rose-500 flex items-center gap-1"
                         >
                             {isAddingNewAddress ? "Select Saved Address" : "+ Add New Address"}
                         </button>
@@ -596,8 +596,8 @@ export default function CartPage() {
                                     onClick={() => handleAddressSelect(addr)}
                                     className={`w-full text-left p-4 rounded-lg border transition-all duration-200 group relative overflow-hidden ${
                                         customerAddress === addr.address 
-                                        ? 'border-sky-500 bg-sky-50 dark:bg-sky-900/20 ring-1 ring-sky-500' 
-                                        : 'border-slate-200 dark:border-slate-700 hover:border-sky-300 hover:bg-slate-50 dark:hover:bg-slate-800'
+                                        ? 'border-rose-400 bg-rose-50 dark:bg-rose-900/20 ring-1 ring-rose-400' 
+                                        : 'border-slate-200 dark:border-slate-700 hover:border-rose-200 hover:bg-slate-50 dark:hover:bg-slate-800'
                                     }`}
                                 >
                                     <div className="flex justify-between items-center">
@@ -606,7 +606,7 @@ export default function CartPage() {
                                             {addr.type}
                                         </div>
                                         {customerAddress === addr.address && (
-                                            <span className="text-sky-500 text-xs font-bold flex items-center gap-1">
+                                            <span className="text-rose-400 text-xs font-bold flex items-center gap-1">
                                                 <CheckCircle2 size={14} /> Selected
                                             </span>
                                         )}
@@ -670,7 +670,7 @@ export default function CartPage() {
                         <div className="w-full mb-4">
                             <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{t('address')}</label>
                             <textarea 
-                                className="w-full px-4 py-3 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:placeholder-slate-500 resize-none text-sm"
+                                className="w-full px-4 py-3 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-rose-400 focus:ring-2 focus:ring-rose-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:placeholder-slate-500 resize-none text-sm"
                                 value={customerAddress} 
                                 onChange={(e) => setCustomerAddress(e.target.value)} 
                                 required 
@@ -686,19 +686,19 @@ export default function CartPage() {
                                         type="checkbox" 
                                         checked={saveAddress} 
                                         onChange={e => setSaveAddress(e.target.checked)}
-                                        className="peer w-5 h-5 rounded border-slate-300 text-sky-500 focus:ring-sky-500 transition-all cursor-pointer"
+                                        className="peer w-5 h-5 rounded border-slate-300 text-rose-400 focus:ring-rose-400 transition-all cursor-pointer"
                                     />
                                 </div>
-                                <span className="text-sm text-slate-600 dark:text-slate-400 group-hover:text-sky-600 transition-colors">Save this address for future</span>
+                                <span className="text-sm text-slate-600 dark:text-slate-400 group-hover:text-rose-400 transition-colors">Save this address for future</span>
                             </label>
                         )}
                     </div>
                 )}
 
                 <div className="mb-4 pt-4 border-t border-slate-100 dark:border-slate-800">
-                    <div className="flex items-center justify-between p-4 bg-sky-50 dark:bg-sky-900/20 border border-sky-100 dark:border-sky-800 rounded-lg">
+                    <div className="flex items-center justify-between p-4 bg-rose-50 dark:bg-rose-900/20 border border-rose-100 dark:border-rose-800 rounded-lg">
                         <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-sky-500 shadow-sm">
+                            <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-rose-400 shadow-sm">
                                 <Truck size={20} />
                             </div>
                             <div>
@@ -725,7 +725,7 @@ export default function CartPage() {
                         return (
                             <motion.label 
                                 key={methodKey} 
-                                className={`flex flex-col items-center justify-center p-3 rounded-lg border cursor-pointer transition-all relative overflow-hidden ${isSelected ? 'border-sky-500 bg-sky-50 dark:bg-sky-900/20 shadow-md' : 'border-slate-200 dark:border-slate-700 hover:border-slate-300'}`}
+                                className={`flex flex-col items-center justify-center p-3 rounded-lg border cursor-pointer transition-all relative overflow-hidden ${isSelected ? 'border-rose-400 bg-rose-50 dark:bg-rose-900/20 shadow-md' : 'border-slate-200 dark:border-slate-700 hover:border-slate-300'}`}
                                 whileTap={{ scale: 0.98 }}
                                 animate={{ 
                                     borderColor: isSelected ? '#0ea5e9' : 'rgba(226, 232, 240, 1)',
@@ -737,7 +737,7 @@ export default function CartPage() {
                                 {isSelected && (
                                     <motion.div 
                                         layoutId="check"
-                                        className="absolute top-2 right-2 text-sky-500"
+                                        className="absolute top-2 right-2 text-rose-400"
                                         initial={{ scale: 0 }}
                                         animate={{ scale: 1 }}
                                     >
@@ -776,7 +776,7 @@ export default function CartPage() {
                                 <div className="mb-4 text-sm text-slate-600 dark:text-slate-300">
                                     <p className="mb-2 font-bold text-slate-900 dark:text-white">How to pay with {paymentMethod === 'bkash' ? 'bKash' : 'Nagad'}:</p>
                                     <ol className="list-decimal list-inside space-y-1 text-xs">
-                                        <li>Go to your {paymentMethod === 'bkash' ? 'bKash' : 'Nagad'} App or dial <span className="font-bold text-sky-600">{paymentMethod === 'bkash' ? '*247#' : '*167#'}</span></li>
+                                        <li>Go to your {paymentMethod === 'bkash' ? 'bKash' : 'Nagad'} App or dial <span className="font-bold text-rose-400">{paymentMethod === 'bkash' ? '*247#' : '*167#'}</span></li>
                                         <li>Choose "Send Money"</li>
                                         <li>Enter Number: <span className="font-bold text-slate-900 dark:text-white select-all bg-yellow-100 dark:bg-yellow-900/30 px-1 rounded">{paymentMethod === 'bkash' ? paymentNumbers.bkash : paymentNumbers.nagad}</span></li>
                                         <li>Enter Amount: <span className="font-bold text-slate-900 dark:text-white">৳{grandTotal}</span></li>
@@ -859,7 +859,7 @@ export default function CartPage() {
                     <label className="block text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">{t('coupon_code')}</label>
                     <div className="flex flex-col sm:flex-row gap-2">
                         <input 
-                            className="flex-1 px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm w-full"
+                            className="flex-1 px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-rose-400 focus:ring-2 focus:ring-rose-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm w-full"
                             placeholder="Enter code"
                             value={couponCode}
                             onChange={(e) => setCouponCode(e.target.value)}
@@ -904,7 +904,7 @@ export default function CartPage() {
                         <div className="flex gap-2">
                             <input 
                                 type="number"
-                                className="flex-1 px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 text-sm focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none"
+                                className="flex-1 px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 text-sm focus:border-rose-400 focus:ring-2 focus:ring-rose-100 outline-none"
                                 placeholder="Points to use"
                                 value={redeemPoints}
                                 onChange={(e) => {
@@ -931,7 +931,7 @@ export default function CartPage() {
                         fullWidth 
                         onClick={handlePlaceOrder}
                         disabled={isSubmitting}
-                        className="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 rounded-md shadow-md shadow-sky-200 dark:shadow-none flex items-center justify-center gap-2"
+                        className="bg-rose-400 hover:bg-rose-500 text-white font-bold py-3 rounded-md shadow-md shadow-rose-200 dark:shadow-none flex items-center justify-center gap-2"
                     >
                         <span>{isSubmitting ? t('loading') : t('place_order')}</span>
                         <ArrowRight size={18} />
@@ -941,7 +941,7 @@ export default function CartPage() {
                         fullWidth 
                         variant="outline"
                         onClick={() => setIsGift(!isGift)}
-                        className={`border-sky-200 text-sky-600 hover:bg-sky-50 dark:border-slate-700 dark:text-sky-400 dark:hover:bg-slate-800 font-bold py-3 rounded-md flex items-center justify-center gap-2 ${isGift ? 'bg-sky-50 border-sky-500' : ''}`}
+                        className={`border-rose-200 text-rose-400 hover:bg-rose-50 dark:border-slate-700 dark:text-rose-300 dark:hover:bg-slate-800 font-bold py-3 rounded-md flex items-center justify-center gap-2 ${isGift ? 'bg-rose-50 border-rose-400' : ''}`}
                     >
                         <Gift size={18} />
                         <span>{isGift ? "Gift Order Active" : "Order as Gift"}</span>
@@ -950,7 +950,7 @@ export default function CartPage() {
                     {isGift && (
                         <div className="animate-in fade-in slide-in-from-top-2">
                             <textarea 
-                                className="w-full px-3 py-2 rounded-lg border border-sky-200 bg-sky-50/30 text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all text-sm"
+                                className="w-full px-3 py-2 rounded-lg border border-rose-200 bg-rose-50/30 text-slate-900 placeholder-slate-400 focus:border-rose-400 focus:ring-2 focus:ring-rose-100 outline-none transition-all text-sm"
                                 rows={2}
                                 placeholder="Add a gift message..."
                                 value={giftMessage}
@@ -972,7 +972,7 @@ export default function CartPage() {
         {/* RELATED PRODUCTS / RECOMMENDATIONS */}
         <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800">
             <div className="flex items-center gap-2 mb-6">
-                <div className="w-1 h-6 bg-sky-500 rounded-full"></div>
+                <div className="w-1 h-6 bg-rose-400 rounded-full"></div>
                 <Heading size="lg" className="font-sans text-slate-800 dark:text-white text-lg font-bold">
                     You might also like to add
                 </Heading>
@@ -1013,12 +1013,12 @@ export default function CartPage() {
                             </p>
                         )}
                         <div className="flex items-center justify-between mb-2">
-                            <span className="text-sm font-bold text-sky-600">৳{product.price}</span>
+                            <span className="text-sm font-bold text-rose-400">৳{product.price}</span>
                             <span className="text-xs text-slate-400 line-through">৳{Math.round(product.price * 1.2)}</span>
                         </div>
                         <button 
                             onClick={() => handleAddToCart(product)}
-                            className="w-full bg-white border border-slate-200 text-slate-900 text-xs font-bold py-1.5 rounded shadow-sm hover:bg-sky-50 hover:text-sky-600 hover:border-sky-200 transition-all"
+                            className="w-full bg-white border border-slate-200 text-slate-900 text-xs font-bold py-1.5 rounded shadow-sm hover:bg-rose-50 hover:text-rose-400 hover:border-rose-200 transition-all"
                         >
                             Add to Cart
                         </button>

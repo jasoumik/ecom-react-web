@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { API_URL } from '@/lib/config'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://prithibee.com' // Replace with actual domain
+  const baseUrl = 'https://replantglow.com' // Replace with actual domain
 
   // Static routes
   const routes = [

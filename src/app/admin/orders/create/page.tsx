@@ -158,7 +158,7 @@ export default function CreateManualOrderPage() {
         <Heading size="md" className="font-sans text-slate-900 dark:text-white">Create Manual Order</Heading>
         <div className="flex gap-3">
             <Button type="button" variant="outline" onClick={() => router.back()} className="rounded-lg py-2 px-4 text-sm h-auto">Cancel</Button>
-            <Button type="submit" form="manual-order-form" className="rounded-lg shadow-md shadow-sky-500/20 py-2 px-6 text-sm h-auto">Create Order</Button>
+            <Button type="submit" form="manual-order-form" className="rounded-lg shadow-md shadow-pink-500/20 py-2 px-6 text-sm h-auto">Create Order</Button>
         </div>
       </div>
       
@@ -173,7 +173,7 @@ export default function CreateManualOrderPage() {
                   <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Find Existing Customer</label>
                   <input
                     type="text"
-                    className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                    className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
                     placeholder="Search by name or phone..."
                     value={customerSearch}
                     onChange={(e) => {
@@ -207,7 +207,7 @@ export default function CreateManualOrderPage() {
                     <div>
                         <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Order Source</label>
                         <select 
-                            className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                            className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
                             value={order.orderSource}
                             onChange={e => setOrder({...order, orderSource: e.target.value})}
                         >
@@ -232,7 +232,7 @@ export default function CreateManualOrderPage() {
                     <div className="flex-1">
                         <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Product</label>
                         <select 
-                            className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                            className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
                             value={selectedProduct}
                             onChange={e => setSelectedProduct(e.target.value)}
                         >
@@ -291,7 +291,7 @@ export default function CreateManualOrderPage() {
                     <div>
                         <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Payment Method</label>
                         <select 
-                            className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                            className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
                             value={order.paymentMethod}
                             onChange={e => setOrder({...order, paymentMethod: e.target.value})}
                         >
@@ -314,7 +314,7 @@ export default function CreateManualOrderPage() {
                     <div>
                         <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Payment Status</label>
                         <select 
-                            className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                            className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
                             value={order.paymentStatus}
                             onChange={e => handlePaymentStatusChange(e.target.value)}
                         >
@@ -331,7 +331,7 @@ export default function CreateManualOrderPage() {
                             <span className="absolute left-3 top-2.5 text-slate-500 text-sm">৳</span>
                             <input 
                                 type="number" 
-                                className="w-full pl-7 pr-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
+                                className="w-full pl-7 pr-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm"
                                 value={order.paidAmount}
                                 onChange={e => handlePaidAmountChange(parseFloat(e.target.value) || 0)}
                                 min="0"

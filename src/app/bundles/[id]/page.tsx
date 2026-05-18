@@ -90,9 +90,9 @@ export default function BundleDetailsPage() {
       <div className="bg-slate-50 dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
               <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
-                  <Link href="/" className="hover:text-sky-500">{t('home')}</Link>
+                  <Link href="/" className="hover:text-rose-400">{t('home')}</Link>
                   <span>/</span>
-                  <Link href="/bundles" className="hover:text-sky-500">{t('bundles_sets')}</Link>
+                  <Link href="/bundles" className="hover:text-rose-400">{t('bundles_sets')}</Link>
                   <span>/</span>
                   <span className="text-slate-900 dark:text-white font-medium truncate max-w-[200px]">{getLocalizedField(bundle, 'title', language)}</span>
               </div>
@@ -112,7 +112,7 @@ export default function BundleDetailsPage() {
                     className="w-full h-full object-cover"
                 />
                 {savings > 0 && (
-                    <div className="absolute top-4 left-4 z-10 bg-rose-500 text-white text-sm font-bold px-4 py-2 rounded-full shadow-md">
+                    <div className="absolute top-4 left-4 z-10 bg-rose-400 text-white text-sm font-bold px-4 py-2 rounded-full shadow-md">
                         {savings}% {t('off')}
                     </div>
                 )}
@@ -122,7 +122,7 @@ export default function BundleDetailsPage() {
           {/* Right Column: Details */}
           <div className="md:col-span-6 lg:col-span-6 space-y-6">
             <div>
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-50 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 text-xs font-bold uppercase tracking-wider mb-3">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-50 dark:bg-rose-900/30 text-rose-400 dark:text-rose-300 text-xs font-bold uppercase tracking-wider mb-3">
                     {t('bundles_sets')}
                 </div>
                 <Heading as="h1" size="lg" className="font-sans dark:text-white text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-3 text-slate-900">
@@ -135,7 +135,7 @@ export default function BundleDetailsPage() {
 
             <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-800">
                 <div className="flex items-end gap-3 mb-2">
-                    <div className="text-3xl sm:text-4xl font-bold text-sky-600 dark:text-sky-400">৳{bundle.price}</div>
+                    <div className="text-3xl sm:text-4xl font-bold text-rose-400 dark:text-rose-300">৳{bundle.price}</div>
                     {bundle.original_price && (
                         <div className="text-lg text-slate-400 line-through font-medium mb-1">৳{bundle.original_price}</div>
                     )}
@@ -180,7 +180,7 @@ export default function BundleDetailsPage() {
 
             <div className="pt-4">
                 <Button 
-                    className="w-full py-4 text-base rounded-xl bg-sky-600 text-white font-bold shadow-lg shadow-sky-500/20 hover:bg-sky-700 hover:shadow-sky-500/30 transition-all duration-300 flex items-center justify-center gap-2"
+                    className="w-full py-4 text-base rounded-xl bg-rose-400 text-white font-bold shadow-lg shadow-rose-400/20 hover:bg-rose-500 hover:shadow-rose-400/30 transition-all duration-300 flex items-center justify-center gap-2"
                     onClick={handleAddToCart}
                 >
                     <ShoppingCart size={20} />
@@ -191,19 +191,19 @@ export default function BundleDetailsPage() {
             {/* Trust Badges */}
             <div className="grid grid-cols-3 gap-4 py-6 border-t border-slate-100 dark:border-slate-800 mt-2">
                 <div className="flex flex-col items-center text-center gap-2">
-                    <div className="w-10 h-10 rounded-full bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center text-sky-600 dark:text-sky-400">
+                    <div className="w-10 h-10 rounded-full bg-rose-50 dark:bg-rose-900/30 flex items-center justify-center text-rose-400 dark:text-rose-300">
                         <Truck size={20} />
                     </div>
                     <span className="text-xs font-medium text-slate-600 dark:text-slate-300">Fast Delivery</span>
                 </div>
                 <div className="flex flex-col items-center text-center gap-2">
-                    <div className="w-10 h-10 rounded-full bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center text-sky-600 dark:text-sky-400">
+                    <div className="w-10 h-10 rounded-full bg-rose-50 dark:bg-rose-900/30 flex items-center justify-center text-rose-400 dark:text-rose-300">
                         <ShieldCheck size={20} />
                     </div>
                     <span className="text-xs font-medium text-slate-600 dark:text-slate-300">100% Authentic</span>
                 </div>
                 <div className="flex flex-col items-center text-center gap-2">
-                    <div className="w-10 h-10 rounded-full bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center text-sky-600 dark:text-sky-400">
+                    <div className="w-10 h-10 rounded-full bg-rose-50 dark:bg-rose-900/30 flex items-center justify-center text-rose-400 dark:text-rose-300">
                         <RefreshCw size={20} />
                     </div>
                     <span className="text-xs font-medium text-slate-600 dark:text-slate-300">Easy Returns</span>

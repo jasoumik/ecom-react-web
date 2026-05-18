@@ -153,7 +153,7 @@ export function FeaturedProductsSection({
                   {selectedMotherCategory === mc.id && (
                     <motion.div
                       layoutId="activeTabFeatured"
-                      className="absolute inset-0 bg-sky-500 rounded-full"
+                      className="absolute inset-0 bg-rose-400 rounded-full"
                       transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                     />
                   )}
@@ -175,7 +175,7 @@ export function FeaturedProductsSection({
                 {selectedMotherCategory === null && (
                   <motion.div
                     layoutId="activeTabFeatured"
-                    className="absolute inset-0 bg-sky-500 rounded-full"
+                    className="absolute inset-0 bg-rose-400 rounded-full"
                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                   />
                 )}
@@ -205,7 +205,7 @@ export function FeaturedProductsSection({
           {viewAllHref && (
             <Link
               href={viewAllHref}
-              className="text-sm font-bold text-sky-600 hover:text-sky-700 flex items-center gap-1 bg-white/50 dark:bg-slate-800/50 px-4 py-2 rounded-full backdrop-blur-sm border border-slate-200 dark:border-slate-700 shadow-sm transition-all hover:shadow-md"
+              className="text-sm font-bold text-rose-400 hover:text-rose-500 flex items-center gap-1 bg-white/50 dark:bg-slate-800/50 px-4 py-2 rounded-full backdrop-blur-sm border border-slate-200 dark:border-slate-700 shadow-sm transition-all hover:shadow-md"
             >
               {t("view_all")}
               <ChevronRight size={16} />
@@ -244,7 +244,7 @@ export function FeaturedProductsSection({
                     {/* Badges */}
                     {product.tag && (
                       <div className="absolute top-2 left-2 z-10">
-                        <span className="bg-orange-400 text-white px-2 py-1 text-[10px] font-bold uppercase tracking-wide rounded-md shadow-sm">
+                        <span className="bg-rose-300 text-white px-2 py-1 text-[10px] font-bold uppercase tracking-wide rounded-md shadow-sm">
                           {product.tag}
                         </span>
                       </div>
@@ -286,20 +286,20 @@ export function FeaturedProductsSection({
 
                     {/* Product Name */}
                     <h3 className="text-sm font-semibold text-slate-900 dark:text-white line-clamp-2 leading-snug min-h-[2.5em] mb-2">
-                      <Link href={product.href} className="hover:text-sky-600 transition-colors">
+                      <Link href={product.href} className="hover:text-rose-400 transition-colors">
                         {getLocalizedField(product, "name", language)}
                       </Link>
                     </h3>
 
                     {/* Price & Add to Cart */}
                     <div className="mt-auto pt-2 space-y-2">
-                      <div className="text-lg font-bold text-orange-500">{product.price}</div>
+                      <div className="text-lg font-bold text-rose-400">{product.price}</div>
 
                       <motion.div animate={isAnimating ? { scale: [1, 0.95, 1] } : {}}>
                         <Button
                           onClick={(e: React.MouseEvent) => handleAddToCart(product, e)}
                           className={`w-full py-2.5 text-xs font-bold rounded-lg flex items-center justify-center gap-1.5 min-h-[40px] transition-colors ${
-                            isAnimating ? "bg-green-500 text-white" : "bg-sky-500 text-white hover:bg-sky-600"
+                            isAnimating ? "bg-green-500 text-white" : "bg-rose-400 text-white hover:bg-rose-400"
                           }`}
                         >
                           <ShoppingCart size={14} />

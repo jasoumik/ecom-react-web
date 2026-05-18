@@ -110,7 +110,7 @@ export default function EditBannerPage() {
         <Heading size="md" className="font-sans text-slate-900 dark:text-white">Edit Banner</Heading>
         <div className="flex gap-3">
             <Button type="button" variant="outline" onClick={() => router.back()} className="rounded-lg py-2 px-4 text-sm h-auto">Cancel</Button>
-            <Button type="submit" form="edit-banner-form" disabled={isSubmitting} className="rounded-lg shadow-md shadow-sky-500/20 py-2 px-6 text-sm h-auto">
+            <Button type="submit" form="edit-banner-form" disabled={isSubmitting} className="rounded-lg shadow-md shadow-pink-500/20 py-2 px-6 text-sm h-auto">
               {isSubmitting ? "Updating..." : "Update Banner"}
             </Button>
         </div>
@@ -126,7 +126,7 @@ export default function EditBannerPage() {
                         type="checkbox"
                         checked={formData.is_active}
                         onChange={e => setFormData({...formData, is_active: e.target.checked})}
-                        className="w-4 h-4 rounded border-slate-300 text-sky-500 focus:ring-sky-500"
+                        className="w-4 h-4 rounded border-slate-300 text-pink-500 focus:ring-pink-500"
                     />
                     <span className="text-xs font-bold text-slate-700 dark:text-slate-300">Active</span>
               </label>
@@ -168,7 +168,7 @@ export default function EditBannerPage() {
               <div>
                 <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Position</label>
                 <select
-                    className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
+                    className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
                     value={formData.position}
                     onChange={e => setFormData({...formData, position: e.target.value})}
                 >
@@ -181,7 +181,7 @@ export default function EditBannerPage() {
               <div>
                 <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Associated Label</label>
                 <select
-                    className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
+                    className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
                     value={formData.label_id}
                     onChange={e => setFormData({...formData, label_id: e.target.value})}
                 >
@@ -198,7 +198,7 @@ export default function EditBannerPage() {
               <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Link Route</label>
               <div className="flex flex-col gap-2">
                   <select
-                      className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
+                      className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
                       value={AVAILABLE_ROUTES.some(r => r.value === formData.link) ? formData.link : "custom"}
                       onChange={e => {
                           const val = e.target.value;
@@ -230,7 +230,7 @@ export default function EditBannerPage() {
               <div>
                 <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Link Target</label>
                 <select
-                    className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
+                    className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
                     value={formData.target}
                     onChange={e => setFormData({...formData, target: e.target.value})}
                 >
@@ -251,7 +251,7 @@ export default function EditBannerPage() {
                   type="checkbox"
                   checked={formData.no_expiry}
                   onChange={e => setFormData({...formData, no_expiry: e.target.checked})}
-                  className="w-4 h-4 rounded border-slate-300 text-sky-500 focus:ring-sky-500"
+                  className="w-4 h-4 rounded border-slate-300 text-pink-500 focus:ring-pink-500"
               />
               <span className="text-xs font-bold text-slate-700 dark:text-slate-300">No Expiry</span>
             </label>

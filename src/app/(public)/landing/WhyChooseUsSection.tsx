@@ -32,7 +32,7 @@ export function WhyChooseUsSection({
       switch (iconStr) {
           case '🛡️':
           case 'shield':
-              return <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-sky-500"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>;
+              return <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-rose-400"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>;
           case '🌱':
           case 'leaf':
               return <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-emerald-500"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg>;
@@ -47,8 +47,8 @@ export function WhyChooseUsSection({
   return (
     <Section variant="blue" className="py-6 sm:py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-4 sm:mb-10">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white shadow-sm border border-sky-100 text-sky-600 text-[10px] font-bold uppercase tracking-wider mb-2 sm:mb-3 dark:bg-slate-800 dark:border-slate-700 dark:text-sky-400">
-          <span className="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse"></span>
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white shadow-sm border border-rose-100 text-rose-400 text-[10px] font-bold uppercase tracking-wider mb-2 sm:mb-3 dark:bg-slate-800 dark:border-slate-700 dark:text-rose-300">
+          <span className="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse"></span>
           {t('our_promise')}
         </div>
         <Heading size="lg" className="font-sans text-xl sm:text-2xl md:text-3xl text-slate-900 dark:text-white font-bold mb-1 sm:mb-3">{getLocalizedField({title, title_bn}, 'title', language)}</Heading>

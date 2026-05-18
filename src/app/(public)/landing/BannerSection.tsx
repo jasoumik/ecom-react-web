@@ -135,7 +135,7 @@ export function BannerSection({ banners }: BannerSectionProps) {
                                     className="pt-1 sm:pt-2"
                                 >
                                     <Link href={currentBanner.link || '/products'}>
-                                        <Button className="bg-sky-500 hover:bg-sky-600 text-white border-none font-bold px-4 py-2 sm:px-6 sm:py-2.5 rounded-full shadow-lg text-xs sm:text-sm min-h-[36px] sm:min-h-[44px]">
+                                        <Button className="bg-rose-400 hover:bg-rose-400 text-white border-none font-bold px-4 py-2 sm:px-6 sm:py-2.5 rounded-full shadow-lg text-xs sm:text-sm min-h-[36px] sm:min-h-[44px]">
                                             {t('shop_now')}
                                         </Button>
                                     </Link>

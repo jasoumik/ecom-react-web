@@ -173,7 +173,7 @@ export default function AgeGroupsPage() {
                 setEditingId(null);
                 setEditForm(emptyAgeGroup);
               }}
-              className="bg-sky-500 hover:bg-sky-600 text-white"
+              className="bg-pink-500 hover:bg-pink-600 text-white"
             >
               <Plus size={18} className="mr-2" />
               Add Age Group
@@ -207,7 +207,7 @@ export default function AgeGroupsPage() {
                   value={editForm.label_bn || ""}
                   onChange={(e) => setEditForm({ ...editForm, label_bn: e.target.value })}
                   className="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white"
-                  placeholder="e.g., নবজাতক"
+                  placeholder="যেমন: অয়েলি স্কিন"
                 />
               </div>
               <div>
@@ -222,7 +222,7 @@ export default function AgeGroupsPage() {
                       onClick={() => setEditForm({ ...editForm, icon: emoji })}
                       className={`w-10 h-10 rounded-lg text-2xl flex items-center justify-center transition-all ${
                         editForm.icon === emoji
-                          ? "bg-sky-500 ring-2 ring-sky-300"
+                          ? "bg-pink-500 ring-2 ring-pink-300"
                           : "bg-slate-100 dark:bg-slate-700 hover:bg-slate-200"
                       }`}
                     >
@@ -252,7 +252,7 @@ export default function AgeGroupsPage() {
                   value={editForm.description || ""}
                   onChange={(e) => setEditForm({ ...editForm, description: e.target.value })}
                   className="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white"
-                  placeholder="e.g., Essentials for your newborn"
+                  placeholder="e.g. Perfect for oily skin types"
                 />
               </div>
               <div>
@@ -264,7 +264,7 @@ export default function AgeGroupsPage() {
                   value={editForm.description_bn || ""}
                   onChange={(e) => setEditForm({ ...editForm, description_bn: e.target.value })}
                   className="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white"
-                  placeholder="e.g., নবজাতকের জন্য প্রয়োজনীয়"
+                  placeholder="যেমন: অয়েলি স্কিনের জন্য প্রয়োজনীয়"
                 />
               </div>
               <div className="flex items-center gap-2">
@@ -281,7 +281,7 @@ export default function AgeGroupsPage() {
               </div>
             </div>
             <div className="flex gap-2 mt-4">
-              <Button onClick={handleCreate} className="bg-sky-500 hover:bg-sky-600 text-white">
+              <Button onClick={handleCreate} className="bg-pink-500 hover:bg-pink-600 text-white">
                 <Save size={16} className="mr-2" />
                 Create
               </Button>
@@ -300,7 +300,7 @@ export default function AgeGroupsPage() {
               key={ageGroup.id}
               className={`bg-white dark:bg-slate-800 rounded-xl p-4 border transition-all ${
                 editingId === ageGroup.id
-                  ? "border-sky-500 shadow-lg"
+                  ? "border-pink-500 shadow-lg"
                   : "border-slate-200 dark:border-slate-700"
               } ${!ageGroup.is_active ? "opacity-60" : ""}`}
             >
@@ -342,7 +342,7 @@ export default function AgeGroupsPage() {
                             onClick={() => setEditForm({ ...editForm, icon: emoji })}
                             className={`w-10 h-10 rounded-lg text-2xl flex items-center justify-center transition-all ${
                               editForm.icon === emoji
-                                ? "bg-sky-500 ring-2 ring-sky-300"
+                                ? "bg-pink-500 ring-2 ring-pink-300"
                                 : "bg-slate-100 dark:bg-slate-700 hover:bg-slate-200"
                             }`}
                           >
@@ -398,7 +398,7 @@ export default function AgeGroupsPage() {
                     </div>
                   </div>
                   <div className="flex gap-2">
-                    <Button onClick={() => handleUpdate(ageGroup.id)} className="bg-sky-500 hover:bg-sky-600 text-white">
+                    <Button onClick={() => handleUpdate(ageGroup.id)} className="bg-pink-500 hover:bg-pink-600 text-white">
                       <Save size={16} className="mr-2" />
                       Save
                     </Button>
@@ -412,7 +412,7 @@ export default function AgeGroupsPage() {
                 /* View Mode */
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-sky-50 dark:bg-slate-700 flex items-center justify-center text-2xl">
+                    <div className="w-12 h-12 rounded-xl bg-pink-50 dark:bg-slate-700 flex items-center justify-center text-2xl">
                       {ageGroup.icon}
                     </div>
                     <div>
@@ -436,7 +436,7 @@ export default function AgeGroupsPage() {
                   <div className="flex items-center gap-2">
                     <button
                       onClick={() => startEditing(ageGroup)}
-                      className="p-2 rounded-lg text-slate-500 hover:text-sky-600 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+                      className="p-2 rounded-lg text-slate-500 hover:text-pink-600 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
                     >
                       <Pencil size={18} />
                     </button>
@@ -458,7 +458,7 @@ export default function AgeGroupsPage() {
             <p className="mb-4">No age groups yet.</p>
             <Button
               onClick={() => setIsCreating(true)}
-              className="bg-sky-500 hover:bg-sky-600 text-white"
+              className="bg-pink-500 hover:bg-pink-600 text-white"
             >
               <Plus size={18} className="mr-2" />
               Create First Age Group

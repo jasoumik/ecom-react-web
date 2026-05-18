@@ -2,7 +2,7 @@
 
 export function WhatsAppButton() {
   const phoneNumber = "+8801616684803"; // Your number
-  const message = "Hi, I'm interested in a product from Prithibee.";
+  const message = "Hi, I'm interested in a product from Replant Glow.";
 
   return (
     <a

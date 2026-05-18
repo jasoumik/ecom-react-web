@@ -50,7 +50,7 @@ export default function LoginPage() {
   if (isCheckingAuth) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-white dark:bg-slate-950">
-        <div className="w-8 h-8 border-4 border-sky-500 border-t-transparent rounded-full animate-spin" />
+        <div className="w-8 h-8 border-4 border-rose-400 border-t-transparent rounded-full animate-spin" />
       </div>
     );
   }
@@ -175,7 +175,7 @@ export default function LoginPage() {
         <button
           className={`flex-1 py-3 rounded-lg text-sm font-bold transition-all ${
             !isOtpLogin 
-              ? 'bg-white dark:bg-slate-700 shadow-sm text-sky-600 dark:text-sky-400' 
+              ? 'bg-white dark:bg-slate-700 shadow-sm text-rose-400 dark:text-rose-300' 
               : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
           }`}
           onClick={() => { setIsOtpLogin(false); setOtpSent(false); }}
@@ -186,7 +186,7 @@ export default function LoginPage() {
         <button
           className={`flex-1 py-3 rounded-lg text-sm font-bold transition-all ${
             isOtpLogin 
-              ? 'bg-white dark:bg-slate-700 shadow-sm text-sky-600 dark:text-sky-400' 
+              ? 'bg-white dark:bg-slate-700 shadow-sm text-rose-400 dark:text-rose-300' 
               : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
           }`}
           onClick={() => setIsOtpLogin(true)}
@@ -209,7 +209,7 @@ export default function LoginPage() {
               Phone / Email
             </label>
             <div className="relative group">
-              <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-sky-500 transition-colors">
+              <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-rose-400 transition-colors">
                 <Mail size={20} />
               </div>
               <input
@@ -219,7 +219,7 @@ export default function LoginPage() {
                 placeholder="e.g. 017... or name@example.com"
                 required
                 disabled={isLoading}
-                className="w-full h-14 pl-12 pr-4 bg-slate-50/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-2xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500/20 focus:border-sky-500 transition-all text-base font-medium"
+                className="w-full h-14 pl-12 pr-4 bg-slate-50/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-2xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-rose-400/20 focus:border-rose-400 transition-all text-base font-medium"
               />
             </div>
           </div>
@@ -229,7 +229,7 @@ export default function LoginPage() {
               {t('password')}
             </label>
             <div className="relative group">
-              <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-sky-500 transition-colors">
+              <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-rose-400 transition-colors">
                 <Lock size={20} />
               </div>
               <input
@@ -239,7 +239,7 @@ export default function LoginPage() {
                 placeholder="Enter your password"
                 required
                 disabled={isLoading}
-                className="w-full h-14 pl-12 pr-12 bg-slate-50/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-2xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500/20 focus:border-sky-500 transition-all text-base font-medium"
+                className="w-full h-14 pl-12 pr-12 bg-slate-50/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-2xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-rose-400/20 focus:border-rose-400 transition-all text-base font-medium"
               />
               <button
                 type="button"
@@ -254,7 +254,7 @@ export default function LoginPage() {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full h-14 bg-sky-500 hover:bg-sky-600 disabled:bg-sky-400 text-white font-bold rounded-2xl shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 transition-all flex items-center justify-center gap-2 text-base mt-2"
+            className="w-full h-14 bg-rose-400 hover:bg-rose-400 disabled:bg-rose-300 text-white font-bold rounded-2xl shadow-lg shadow-rose-400/25 hover:shadow-rose-400/40 transition-all flex items-center justify-center gap-2 text-base mt-2"
           >
             {isLoading ? (
               <div className="w-6 h-6 border-2 border-white/30 border-t-white rounded-full animate-spin" />
@@ -280,7 +280,7 @@ export default function LoginPage() {
                   Phone / Email
                 </label>
                 <div className="relative group">
-                  <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-sky-500 transition-colors">
+                  <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-rose-400 transition-colors">
                     <Mail size={20} />
                   </div>
                   <input
@@ -290,7 +290,7 @@ export default function LoginPage() {
                     placeholder="e.g. 017... or name@example.com"
                     required
                     disabled={isLoading}
-                    className="w-full h-14 pl-12 pr-4 bg-slate-50/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-2xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500/20 focus:border-sky-500 transition-all text-base font-medium"
+                    className="w-full h-14 pl-12 pr-4 bg-slate-50/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-2xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-rose-400/20 focus:border-rose-400 transition-all text-base font-medium"
                   />
                 </div>
               </div>
@@ -298,7 +298,7 @@ export default function LoginPage() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full h-14 bg-sky-500 hover:bg-sky-600 disabled:bg-sky-400 text-white font-bold rounded-2xl shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 transition-all flex items-center justify-center gap-2 text-base mt-2"
+                className="w-full h-14 bg-rose-400 hover:bg-rose-400 disabled:bg-rose-300 text-white font-bold rounded-2xl shadow-lg shadow-rose-400/25 hover:shadow-rose-400/40 transition-all flex items-center justify-center gap-2 text-base mt-2"
               >
                 {isLoading ? (
                   <div className="w-6 h-6 border-2 border-white/30 border-t-white rounded-full animate-spin" />
@@ -313,8 +313,8 @@ export default function LoginPage() {
           ) : (
             <div className="space-y-6 animate-in fade-in">
               <div className="text-center py-4">
-                <div className="w-20 h-20 bg-sky-100 dark:bg-sky-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Phone className="w-10 h-10 text-sky-600 dark:text-sky-400" />
+                <div className="w-20 h-20 bg-rose-100 dark:bg-rose-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Phone className="w-10 h-10 text-rose-400 dark:text-rose-300" />
                 </div>
                 <p className="text-base text-slate-600 dark:text-slate-400 mb-8 font-medium">
                   {t('enter_otp_code', { identifier })}
@@ -325,7 +325,7 @@ export default function LoginPage() {
               <button
                 onClick={handleVerifyOtp}
                 disabled={isLoading || otp.length < 6}
-                className="w-full h-14 bg-sky-500 hover:bg-sky-600 disabled:bg-sky-400 text-white font-bold rounded-2xl shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 transition-all flex items-center justify-center gap-2 text-base"
+                className="w-full h-14 bg-rose-400 hover:bg-rose-400 disabled:bg-rose-300 text-white font-bold rounded-2xl shadow-lg shadow-rose-400/25 hover:shadow-rose-400/40 transition-all flex items-center justify-center gap-2 text-base"
               >
                 {isLoading ? (
                   <div className="w-6 h-6 border-2 border-white/30 border-t-white rounded-full animate-spin" />
@@ -340,7 +340,7 @@ export default function LoginPage() {
               <button
                 onClick={() => setOtpSent(false)}
                 disabled={isLoading}
-                className="w-full text-center text-sm text-sky-600 dark:text-sky-400 hover:underline font-bold"
+                className="w-full text-center text-sm text-rose-400 dark:text-rose-300 hover:underline font-bold"
               >
                 {t('change_number_email')}
               </button>
@@ -360,7 +360,7 @@ export default function LoginPage() {
           {t('dont_have_account')}{" "}
           <Link
             href="/register"
-            className="text-sky-600 dark:text-sky-400 font-bold hover:underline"
+            className="text-rose-400 dark:text-rose-300 font-bold hover:underline"
           >
             {t('create_account')}
           </Link>
@@ -369,7 +369,7 @@ export default function LoginPage() {
         {/* Back to Home Link */}
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm text-slate-400 dark:text-slate-500 hover:text-sky-600 dark:hover:text-sky-400 transition-colors font-medium"
+          className="inline-flex items-center gap-2 text-sm text-slate-400 dark:text-slate-500 hover:text-rose-400 dark:hover:text-rose-300 transition-colors font-medium"
         >
           <Home size={16} />
           <span>{t('back_to_home') || 'Back to Home'}</span>

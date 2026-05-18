@@ -55,7 +55,7 @@ export function NewsletterSection() {
   };
 
   return (
-    <Section className="py-8 sm:py-12 md:py-16 bg-linear-to-br from-sky-500 to-sky-400 relative overflow-hidden">
+    <Section className="py-8 sm:py-12 md:py-16 bg-linear-to-br from-rose-400 to-rose-300 relative overflow-hidden">
       {/* Background Pattern */}
       <div
         className="absolute inset-0 opacity-10"
@@ -77,7 +77,7 @@ export function NewsletterSection() {
             : "Subscribe to Our Newsletter"}
         </Heading>
 
-        <p className="text-sky-100 text-xs sm:text-sm md:text-base mb-4 sm:mb-8 max-w-md mx-auto">
+        <p className="text-rose-100 text-xs sm:text-sm md:text-base mb-4 sm:mb-8 max-w-md mx-auto">
           {language === "bn"
             ? "নতুন পণ্য, অফার এবং বিশেষ ছাড়ের খবর পেতে সাবস্ক্রাইব করুন।"
             : "Get updates on new products, exclusive offers, and special discounts."}
@@ -131,7 +131,7 @@ export function NewsletterSection() {
                 <Button
                   type="submit"
                   disabled={isLoading}
-                  className="h-[52px] px-8 bg-orange-400 hover:bg-orange-500 text-white font-bold rounded-xl transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 min-w-[140px]"
+                  className="h-[52px] px-8 bg-rose-300 hover:bg-rose-400 text-white font-bold rounded-xl transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 min-w-[140px]"
                 >
                   {isLoading ? (
                     <>
@@ -145,7 +145,7 @@ export function NewsletterSection() {
               </div>
 
               {/* Privacy Note */}
-              <p className="text-sky-100/80 text-xs mt-6">
+              <p className="text-rose-100/80 text-xs mt-6">
                 {language === "bn"
                   ? "সাবস্ক্রাইব করে আপনি আমাদের প্রাইভেসি পলিসিতে সম্মত হচ্ছেন।"
                   : "By subscribing, you agree to our Privacy Policy."}

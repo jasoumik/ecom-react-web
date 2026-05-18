@@ -127,7 +127,7 @@ export default function AdminMediaPage() {
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-3">
             {currentFolder && (
-                <button onClick={() => setCurrentFolder(null)} className="text-sky-500 hover:underline text-xs font-bold">
+                <button onClick={() => setCurrentFolder(null)} className="text-pink-500 hover:underline text-xs font-bold">
                     ← Root
                 </button>
             )}
@@ -141,7 +141,7 @@ export default function AdminMediaPage() {
                 + New Folder
             </Button>
             <label className="cursor-pointer">
-                <span className="inline-flex items-center justify-center rounded-lg px-4 py-2 text-xs font-bold tracking-wide transition-all duration-300 bg-sky-500 text-white shadow-sm hover:bg-sky-600 hover:shadow-md">
+                <span className="inline-flex items-center justify-center rounded-lg px-4 py-2 text-xs font-bold tracking-wide transition-all duration-300 bg-pink-500 text-white shadow-sm hover:bg-pink-600 hover:shadow-md">
                     Upload File
                 </span>
                 <input type="file" className="hidden" onChange={handleUpload} />
@@ -166,7 +166,7 @@ export default function AdminMediaPage() {
                     >
                         <div 
                             onClick={() => setCurrentFolder(folder.id)}
-                            className="aspect-square bg-sky-50 dark:bg-slate-800 rounded-xl flex flex-col items-center justify-center cursor-pointer hover:bg-sky-100 dark:hover:bg-slate-700 transition-colors border border-transparent hover:border-sky-200"
+                            className="aspect-square bg-pink-50 dark:bg-slate-800 rounded-xl flex flex-col items-center justify-center cursor-pointer hover:bg-pink-100 dark:hover:bg-slate-700 transition-colors border border-transparent hover:border-pink-200"
                         >
                             <div className="text-3xl mb-1">📂</div>
                             <div className="text-[10px] font-bold text-slate-700 dark:text-slate-300 truncate px-2 w-full text-center">{folder.name}</div>

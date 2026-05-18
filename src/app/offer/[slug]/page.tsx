@@ -216,7 +216,7 @@ export default function LandingOfferPage() {
     <div className={`min-h-screen font-sans ${bgClass}`}>
       {/* Simple Header */}
       <header className={`${isDarkTheme ? 'bg-slate-900 border-slate-800' : 'bg-white border-slate-100'} border-b py-4 text-center sticky top-0 z-50`}>
-          <h1 className="text-2xl font-bold text-sky-500">{settings.shop_name}</h1>
+          <h1 className="text-2xl font-bold text-rose-400">{settings.shop_name}</h1>
       </header>
 
       <div className="max-w-3xl mx-auto px-4 py-8 pb-32">
@@ -253,7 +253,7 @@ export default function LandingOfferPage() {
                         <button 
                             key={i} 
                             onClick={() => setSelectedImageIndex(i)}
-                            className={`w-16 h-16 rounded-lg overflow-hidden border-2 shrink-0 transition-all ${selectedImageIndex === i ? 'border-sky-500 ring-2 ring-sky-500/20' : 'border-slate-200 dark:border-slate-700'}`}
+                            className={`w-16 h-16 rounded-lg overflow-hidden border-2 shrink-0 transition-all ${selectedImageIndex === i ? 'border-rose-400 ring-2 ring-rose-400/20' : 'border-slate-200 dark:border-slate-700'}`}
                         >
                             <ResponsiveImage 
                                 src={getImageUrl(img)} 
@@ -273,7 +273,7 @@ export default function LandingOfferPage() {
                 </Heading>
                 
                 <div className="flex flex-wrap items-center gap-3 mb-6">
-                    <div className="text-3xl font-black text-sky-600 dark:text-sky-400">৳{currentPrice}</div>
+                    <div className="text-3xl font-black text-rose-400 dark:text-rose-300">৳{currentPrice}</div>
                     {product.old_price && <div className="text-xl text-slate-400 line-through">৳{product.old_price}</div>}
                     {product.old_price && (
                         <div className="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded-full whitespace-nowrap">
@@ -295,7 +295,7 @@ export default function LandingOfferPage() {
                                             onClick={() => setSelectedSize(size)}
                                             className={`px-4 py-2 rounded-lg border text-sm font-bold transition-all ${
                                                 selectedSize === size 
-                                                ? 'border-sky-500 bg-sky-500 text-white shadow-md' 
+                                                ? 'border-rose-400 bg-rose-400 text-white shadow-md' 
                                                 : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300 dark:bg-slate-700 dark:border-slate-600 dark:text-slate-300'
                                             }`}
                                         >
@@ -315,7 +315,7 @@ export default function LandingOfferPage() {
                                             onClick={() => setSelectedColor(color)}
                                             className={`px-4 py-2 rounded-lg border text-sm font-bold transition-all ${
                                                 selectedColor === color 
-                                                ? 'border-sky-500 bg-sky-500 text-white shadow-md' 
+                                                ? 'border-rose-400 bg-rose-400 text-white shadow-md' 
                                                 : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300 dark:bg-slate-700 dark:border-slate-600 dark:text-slate-300'
                                             }`}
                                         >
@@ -338,7 +338,7 @@ export default function LandingOfferPage() {
                     </div>
                 </div>
 
-                <div className={`prose max-w-none leading-relaxed ${isDarkTheme ? 'prose-invert text-slate-300' : 'text-slate-600'}`}>
+                <div className={`prose max-w-none leading-relaxed ${isDarkTheme ? 'ppink-invert text-slate-300' : 'text-slate-600'}`}>
                     {/* Use custom description if available, else product description */}
                     {landingPage.description || getLocalizedField(product, 'description', language)}
                 </div>
@@ -346,7 +346,7 @@ export default function LandingOfferPage() {
         </div>
 
         {/* Order Form */}
-        <div id="order-form" className={`${cardClass} p-6 sm:p-8 rounded-3xl shadow-lg border-2 border-sky-100 dark:border-slate-700`}>
+        <div id="order-form" className={`${cardClass} p-6 sm:p-8 rounded-3xl shadow-lg border-2 border-rose-100 dark:border-slate-700`}>
             <Heading size="lg" className={`font-sans mb-6 text-center ${isDarkTheme ? 'text-white' : 'text-slate-900'}`}>{t('fill_form_to_confirm')}</Heading>
             
             {/* Order Summary Top */}
@@ -360,7 +360,7 @@ export default function LandingOfferPage() {
                         <div className={`text-xs ${isDarkTheme ? 'text-slate-400' : 'text-slate-500'}`}>
                             {selectedVariant ? [selectedSize, selectedColor].filter(Boolean).join(' / ') : ''}
                         </div>
-                        <div className="font-bold text-sky-600 dark:text-sky-400">৳{currentPrice} x {quantity}</div>
+                        <div className="font-bold text-rose-400 dark:text-rose-300">৳{currentPrice} x {quantity}</div>
                     </div>
                     <div className="text-right">
                         <div className={`font-bold text-lg ${isDarkTheme ? 'text-white' : 'text-slate-900'}`}>৳{subtotal}</div>
@@ -373,11 +373,11 @@ export default function LandingOfferPage() {
                         <span className={`font-bold ${isDarkTheme ? 'text-slate-300' : 'text-slate-700'}`}>
                             {isFreeShipping ? t('free_shipping_unlocked') : t('add_more_free_shipping', { amount: amountToFreeShipping.toString() })}
                         </span>
-                        <span className="font-bold text-sky-600 dark:text-sky-400">{progress.toFixed(0)}%</span>
+                        <span className="font-bold text-rose-400 dark:text-rose-300">{progress.toFixed(0)}%</span>
                     </div>
                     <div className={`h-2 w-full rounded-full overflow-hidden ${isDarkTheme ? 'bg-slate-700' : 'bg-slate-200'}`}>
                         <div 
-                            className={`h-full rounded-full transition-all duration-500 ${isFreeShipping ? 'bg-emerald-500' : 'bg-sky-500'}`} 
+                            className={`h-full rounded-full transition-all duration-500 ${isFreeShipping ? 'bg-emerald-500' : 'bg-rose-400'}`} 
                             style={{ width: `${progress}%` }}
                         ></div>
                     </div>
@@ -404,7 +404,7 @@ export default function LandingOfferPage() {
                 <div>
                     <label className={`block text-sm font-bold mb-2 ${isDarkTheme ? 'text-slate-300' : 'text-slate-700'}`}>{t('address')}</label>
                     <textarea 
-                        className={`w-full px-4 py-3 rounded-xl border focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all resize-none ${isDarkTheme ? 'bg-slate-800 border-slate-700 text-white placeholder-slate-500' : 'border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400'}`}
+                        className={`w-full px-4 py-3 rounded-xl border focus:border-rose-400 focus:ring-2 focus:ring-rose-100 outline-none transition-all resize-none ${isDarkTheme ? 'bg-slate-800 border-slate-700 text-white placeholder-slate-500' : 'border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400'}`}
                         value={customerAddress} 
                         onChange={(e) => setCustomerAddress(e.target.value)} 
                         required 
@@ -417,7 +417,7 @@ export default function LandingOfferPage() {
                     <label className={`block text-sm font-bold ${isDarkTheme ? 'text-slate-300' : 'text-slate-700'}`}>{t('delivery_area')}</label>
                     <div className="grid grid-cols-1 gap-2">
                         {deliveryCharges.map(charge => (
-                            <label key={charge.id} className={`flex items-center justify-between p-3 rounded-xl border cursor-pointer transition-all ${selectedDeliveryId === charge.id ? 'border-sky-500 bg-sky-50 dark:bg-sky-900/20' : 'border-slate-200 dark:border-slate-700'}`}>
+                            <label key={charge.id} className={`flex items-center justify-between p-3 rounded-xl border cursor-pointer transition-all ${selectedDeliveryId === charge.id ? 'border-rose-400 bg-rose-50 dark:bg-rose-900/20' : 'border-slate-200 dark:border-slate-700'}`}>
                                 <div className="flex items-center gap-3">
                                     <input 
                                         type="radio" 
@@ -425,7 +425,7 @@ export default function LandingOfferPage() {
                                         value={charge.id}
                                         checked={selectedDeliveryId === charge.id}
                                         onChange={() => setSelectedDeliveryId(charge.id)}
-                                        className="w-4 h-4 text-sky-500 focus:ring-sky-500"
+                                        className="w-4 h-4 text-rose-400 focus:ring-rose-400"
                                     />
                                     <span className={`text-sm font-medium ${isDarkTheme ? 'text-slate-300' : 'text-slate-700'}`}>{getLocalizedField(charge, 'name', language)}</span>
                                 </div>
@@ -447,17 +447,17 @@ export default function LandingOfferPage() {
                 <div className="space-y-3">
                     <label className={`block text-sm font-bold ${isDarkTheme ? 'text-slate-300' : 'text-slate-700'}`}>{t('payment_method')}</label>
                     <div className="grid grid-cols-3 gap-2">
-                        <label className={`flex flex-col items-center justify-center p-3 rounded-xl border cursor-pointer transition-all ${paymentMethod === 'cod' ? 'border-sky-500 bg-sky-50 dark:bg-sky-900/20' : 'border-slate-200 dark:border-slate-700 hover:border-slate-300'}`}>
+                        <label className={`flex flex-col items-center justify-center p-3 rounded-xl border cursor-pointer transition-all ${paymentMethod === 'cod' ? 'border-rose-400 bg-rose-50 dark:bg-rose-900/20' : 'border-slate-200 dark:border-slate-700 hover:border-slate-300'}`}>
                             <input type="radio" name="payment" value="cod" checked={paymentMethod === 'cod'} onChange={() => setPaymentMethod('cod')} className="hidden" />
                             <span className="text-2xl mb-1">💵</span>
                             <span className={`text-xs font-bold ${isDarkTheme ? 'text-slate-300' : 'text-slate-700'} text-center leading-tight`}>{t('cod')}</span>
                         </label>
-                        <label className={`flex flex-col items-center justify-center p-3 rounded-xl border cursor-pointer transition-all ${paymentMethod === 'bkash' ? 'border-pink-500 bg-pink-50 dark:bg-pink-900/20' : 'border-slate-200 dark:border-slate-700 hover:border-slate-300'}`}>
+                        <label className={`flex flex-col items-center justify-center p-3 rounded-xl border cursor-pointer transition-all ${paymentMethod === 'bkash' ? 'border-rose-400 bg-rose-50 dark:bg-rose-900/20' : 'border-slate-200 dark:border-slate-700 hover:border-slate-300'}`}>
                             <input type="radio" name="payment" value="bkash" checked={paymentMethod === 'bkash'} onChange={() => setPaymentMethod('bkash')} className="hidden" />
                             <img src="https://freelogopng.com/images/all_img/1656234745bkash-app-logo-png.png" alt="Bkash" className="h-8 w-auto mb-1 object-contain" />
                             <span className={`text-xs font-bold ${isDarkTheme ? 'text-slate-300' : 'text-slate-700'}`}>Bkash</span>
                         </label>
-                        <label className={`flex flex-col items-center justify-center p-3 rounded-xl border cursor-pointer transition-all ${paymentMethod === 'nagad' ? 'border-orange-500 bg-orange-50 dark:bg-orange-900/20' : 'border-slate-200 dark:border-slate-700 hover:border-slate-300'}`}>
+                        <label className={`flex flex-col items-center justify-center p-3 rounded-xl border cursor-pointer transition-all ${paymentMethod === 'nagad' ? 'border-rose-400 bg-rose-50 dark:bg-rose-900/20' : 'border-slate-200 dark:border-slate-700 hover:border-slate-300'}`}>
                             <input type="radio" name="payment" value="nagad" checked={paymentMethod === 'nagad'} onChange={() => setPaymentMethod('nagad')} className="hidden" />
                             <img src="https://freelogopng.com/images/all_img/1679248787Nagad-Logo.png" alt="Nagad" className="h-8 w-auto mb-1 object-contain" />
                             <span className={`text-xs font-bold ${isDarkTheme ? 'text-slate-300' : 'text-slate-700'}`}>Nagad</span>
@@ -501,7 +501,7 @@ export default function LandingOfferPage() {
                     fullWidth 
                     type="submit" 
                     disabled={isSubmitting}
-                    className="py-4 text-lg shadow-xl shadow-sky-500/20 bg-sky-500 hover:bg-sky-600 text-white rounded-2xl font-bold animate-pulse"
+                    className="py-4 text-lg shadow-xl shadow-rose-400/20 bg-rose-400 hover:bg-rose-400 text-white rounded-2xl font-bold animate-pulse"
                 >
                     {isSubmitting ? t('processing') : t('confirm_order')}
                 </Button>
@@ -513,7 +513,7 @@ export default function LandingOfferPage() {
       <div className={`fixed bottom-0 left-0 right-0 p-4 border-t z-40 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] sm:hidden ${isDarkTheme ? 'bg-slate-900 border-slate-800' : 'bg-white border-slate-100'}`}>
           <Button 
             fullWidth 
-            className="py-3 text-lg rounded-xl bg-sky-500 text-white font-bold shadow-lg"
+            className="py-3 text-lg rounded-xl bg-rose-400 text-white font-bold shadow-lg"
             onClick={() => document.getElementById('order-form')?.scrollIntoView({ behavior: 'smooth' })}
           >
             {t('click_to_order')}

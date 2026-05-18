@@ -2,9 +2,9 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Prithibee | Baby Care & Skin Care Products',
-    short_name: 'Prithibee',
-    description: 'Premium baby care and skin care products in Bangladesh',
+    name: 'Replant Glow | Premium Skincare',
+    short_name: 'Replant Glow',
+    description: 'Premium skincare for glowing, healthy skin',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',

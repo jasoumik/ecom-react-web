@@ -81,7 +81,7 @@ export function SearchableSelect({
             <div className="relative">
                 <input
                     type="text"
-                    className="w-full px-4 py-3 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm pr-10"
+                    className="w-full px-4 py-3 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-rose-400 focus:ring-2 focus:ring-rose-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white text-sm pr-10"
                     placeholder={placeholder}
                     value={query}
                     onChange={(e) => {
@@ -125,7 +125,7 @@ export function SearchableSelect({
                         <button
                             key={opt.value}
                             type="button"
-                            className="w-full text-left px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 border-b border-slate-50 dark:border-slate-700/50 last:border-0"
+                            className="w-full text-left px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-rose-50 dark:hover:bg-slate-700 hover:text-rose-400 border-b border-slate-50 dark:border-slate-700/50 last:border-0"
                             onClick={() => {
                                 onChange(opt.value);
                                 setQuery(opt.label);

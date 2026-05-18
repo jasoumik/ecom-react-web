@@ -11,7 +11,7 @@ export const Avatar: React.FC<AvatarProps> = ({ src, alt = "", size = 40 }) => {
   if (!src) {
     return (
       <div
-        className="rounded-full bg-rose-50 flex items-center justify-center text-xs text-rose-400"
+        className="rounded-full bg-rose-50 flex items-center justify-center text-xs text-rose-300"
         style={{ width: size, height: size }}
       >
         {alt?.charAt(0) ?? ""}

@@ -373,7 +373,7 @@ export default function BuyNowPage() {
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 font-sans">
       {/* Simple Header */}
       <header className="bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800 py-4 text-center sticky top-0 z-50">
-          <h1 className="text-2xl font-bold text-sky-500">{settings.shop_name}</h1>
+          <h1 className="text-2xl font-bold text-rose-400">{settings.shop_name}</h1>
       </header>
 
       <div className="max-w-3xl mx-auto px-4 py-8 pb-32">
@@ -413,7 +413,7 @@ export default function BuyNowPage() {
                         <button 
                             key={i} 
                             onClick={() => setSelectedImageIndex(i)}
-                            className={`w-16 h-16 rounded-lg overflow-hidden border-2 shrink-0 transition-all ${selectedImageIndex === i ? 'border-sky-500 ring-2 ring-sky-500/20' : 'border-slate-200 dark:border-slate-700'}`}
+                            className={`w-16 h-16 rounded-lg overflow-hidden border-2 shrink-0 transition-all ${selectedImageIndex === i ? 'border-rose-400 ring-2 ring-rose-400/20' : 'border-slate-200 dark:border-slate-700'}`}
                         >
                             <ResponsiveImage 
                                 src={getImageUrl(img)} 
@@ -433,7 +433,7 @@ export default function BuyNowPage() {
                 </Heading>
                 
                 <div className="flex flex-wrap items-baseline gap-2 sm:gap-3 mb-6">
-                    <div className="text-2xl sm:text-3xl font-black text-sky-600 dark:text-sky-400 break-words max-w-full">
+                    <div className="text-2xl sm:text-3xl font-black text-rose-400 dark:text-rose-300 break-words max-w-full">
                       ৳{currentPrice}
                     </div>
                     {product.old_price && (
@@ -461,7 +461,7 @@ export default function BuyNowPage() {
                                             onClick={() => setSelectedSize(size)}
                                             className={`px-4 py-2 rounded-lg border text-sm font-bold transition-all ${
                                                 selectedSize === size 
-                                                ? 'border-sky-500 bg-sky-500 text-white shadow-md' 
+                                                ? 'border-rose-400 bg-rose-400 text-white shadow-md' 
                                                 : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300 dark:bg-slate-800 dark:border-slate-600 dark:text-slate-300'
                                             }`}
                                         >
@@ -481,7 +481,7 @@ export default function BuyNowPage() {
                                             onClick={() => setSelectedColor(color)}
                                             className={`px-4 py-2 rounded-lg border text-sm font-bold transition-all ${
                                                 selectedColor === color 
-                                                ? 'border-sky-500 bg-sky-500 text-white shadow-md' 
+                                                ? 'border-rose-400 bg-rose-400 text-white shadow-md' 
                                                 : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300 dark:bg-slate-800 dark:border-slate-600 dark:text-slate-300'
                                             }`}
                                         >
@@ -540,7 +540,7 @@ export default function BuyNowPage() {
                   </Heading>
                   <div
                     className={
-                      "prose dark:prose-invert max-w-none text-slate-600 dark:text-slate-300 leading-relaxed text-sm " +
+                      "prose dark:ppink-invert max-w-none text-slate-600 dark:text-slate-300 leading-relaxed text-sm " +
                       (isDescriptionExpanded || descriptionWordCount <= 100
                         ? "max-h-none"
                         : "max-h-[30rem] overflow-hidden")
@@ -551,7 +551,7 @@ export default function BuyNowPage() {
                     <button
                       type="button"
                       onClick={() => setIsDescriptionExpanded((prev) => !prev)}
-                      className="mt-3 text-xs font-bold text-sky-600 hover:text-sky-700"
+                      className="mt-3 text-xs font-bold text-rose-400 hover:text-rose-500"
                     >
                       {isDescriptionExpanded ? t('see_less') : t('see_more')}
                     </button>
@@ -561,7 +561,7 @@ export default function BuyNowPage() {
         </div>
 
         {/* Order Form */}
-        <div id="order-form" className="bg-white dark:bg-slate-800 p-6 sm:p-8 rounded-3xl shadow-lg border-2 border-sky-100 dark:border-slate-700">
+        <div id="order-form" className="bg-white dark:bg-slate-800 p-6 sm:p-8 rounded-3xl shadow-lg border-2 border-rose-100 dark:border-slate-700">
             <Heading size="lg" className="font-sans text-slate-900 dark:text-white mb-6 text-center">{t('fill_form_to_confirm')}</Heading>
             
             {/* Order Summary Top */}
@@ -582,7 +582,7 @@ export default function BuyNowPage() {
                         <div className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 break-words">
                             {selectedVariant ? [selectedSize, selectedColor].filter(Boolean).join(' / ') : ''}
                         </div>
-                        <div className="font-bold text-sky-600 dark:text-sky-400 mt-1 text-sm sm:text-base break-words">
+                        <div className="font-bold text-rose-400 dark:text-rose-300 mt-1 text-sm sm:text-base break-words">
                           ৳{currentPrice} x {quantity}
                         </div>
                     </div>
@@ -599,11 +599,11 @@ export default function BuyNowPage() {
                         <span className="font-bold text-slate-700 dark:text-slate-300">
                             {isFreeShipping ? t('free_shipping_unlocked') : t('add_more_free_shipping', { amount: amountToFreeShipping.toString() })}
                         </span>
-                        <span className="font-bold text-sky-600 dark:text-sky-400">{progress.toFixed(0)}%</span>
+                        <span className="font-bold text-rose-400 dark:text-rose-300">{progress.toFixed(0)}%</span>
                     </div>
                     <div className="h-2 w-full bg-slate-200 dark:bg-slate-600 rounded-full overflow-hidden">
                         <div 
-                            className={`h-full rounded-full transition-all duration-500 ${isFreeShipping ? 'bg-emerald-500' : 'bg-sky-500'}`} 
+                            className={`h-full rounded-full transition-all duration-500 ${isFreeShipping ? 'bg-emerald-500' : 'bg-rose-400'}`} 
                             style={{ width: `${progress}%` }}
                         ></div>
                     </div>
@@ -616,7 +616,7 @@ export default function BuyNowPage() {
                     <div className="mb-4 animate-in fade-in slide-in-from-top-2 duration-500">
                         <div className="flex items-center justify-between mb-2">
                             <label className="block text-xs font-bold text-slate-500 uppercase tracking-wide">Saved Addresses</label>
-                            <span className="text-[10px] text-sky-500 font-medium bg-sky-50 px-2 py-0.5 rounded-full">Tap to select</span>
+                            <span className="text-[10px] text-rose-400 font-medium bg-rose-50 px-2 py-0.5 rounded-full">Tap to select</span>
                         </div>
                         <div className="space-y-2">
                             {savedAddresses.map(addr => (
@@ -626,8 +626,8 @@ export default function BuyNowPage() {
                                     onClick={() => handleAddressSelect(addr)}
                                     className={`w-full text-left p-3 rounded-xl border transition-all duration-200 group relative overflow-hidden ${
                                         customerAddress === addr.address 
-                                        ? 'border-sky-500 bg-sky-50 dark:bg-sky-900/20 ring-1 ring-sky-500' 
-                                        : 'border-slate-200 dark:border-slate-700 hover:border-sky-300 hover:bg-slate-50 dark:hover:bg-slate-800'
+                                        ? 'border-rose-400 bg-rose-50 dark:bg-rose-900/20 ring-1 ring-rose-400' 
+                                        : 'border-slate-200 dark:border-slate-700 hover:border-rose-200 hover:bg-slate-50 dark:hover:bg-slate-800'
                                     }`}
                                 >
                                     <div className="flex justify-between items-center">
@@ -636,7 +636,7 @@ export default function BuyNowPage() {
                                             {addr.type}
                                         </div>
                                         {customerAddress === addr.address && (
-                                            <span className="text-sky-500 text-xs font-bold animate-in zoom-in">Selected</span>
+                                            <span className="text-rose-400 text-xs font-bold animate-in zoom-in">Selected</span>
                                         )}
                                     </div>
                                     <div className="text-xs text-slate-500 truncate mt-1 pl-7">{addr.address}</div>
@@ -693,7 +693,7 @@ export default function BuyNowPage() {
                 <div>
                     <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{t('address')}</label>
                     <textarea 
-                        className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:placeholder-slate-500 resize-none"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-rose-400 focus:ring-2 focus:ring-rose-100 outline-none transition-all dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:placeholder-slate-500 resize-none"
                         value={customerAddress} 
                         onChange={(e) => setCustomerAddress(e.target.value)} 
                         required 
@@ -709,18 +709,18 @@ export default function BuyNowPage() {
                                 type="checkbox" 
                                 checked={saveAddress} 
                                 onChange={e => setSaveAddress(e.target.checked)}
-                                className="peer w-5 h-5 rounded border-slate-300 text-sky-500 focus:ring-sky-500 transition-all cursor-pointer"
+                                className="peer w-5 h-5 rounded border-slate-300 text-rose-400 focus:ring-rose-400 transition-all cursor-pointer"
                             />
                         </div>
-                        <span className="text-sm text-slate-600 dark:text-slate-400 group-hover:text-sky-600 transition-colors">Save this address for future</span>
+                        <span className="text-sm text-slate-600 dark:text-slate-400 group-hover:text-rose-400 transition-colors">Save this address for future</span>
                     </label>
                 )}
 
                 <div className="space-y-3">
                     <label className="block text-sm font-bold text-slate-700 dark:text-slate-300">{t('delivery_area')}</label>
-                    <div className="p-4 bg-sky-50 dark:bg-sky-900/20 border border-sky-100 dark:border-sky-800 rounded-lg flex items-center justify-between">
+                    <div className="p-4 bg-rose-50 dark:bg-rose-900/20 border border-rose-100 dark:border-rose-800 rounded-lg flex items-center justify-between">
                         <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-sky-500 shadow-sm">
+                            <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-rose-400 shadow-sm">
                                 <Truck size={20} />
                             </div>
                             <div>
@@ -748,7 +748,7 @@ export default function BuyNowPage() {
                             return (
                                 <motion.label 
                                     key={methodKey} 
-                                    className={`flex flex-col items-center justify-center p-3 rounded-xl border cursor-pointer transition-all relative overflow-hidden ${isSelected ? 'border-sky-500 bg-sky-50 dark:bg-sky-900/20 shadow-md' : 'border-slate-200 dark:border-slate-700 hover:border-slate-300'}`}
+                                    className={`flex flex-col items-center justify-center p-3 rounded-xl border cursor-pointer transition-all relative overflow-hidden ${isSelected ? 'border-rose-400 bg-rose-50 dark:bg-rose-900/20 shadow-md' : 'border-slate-200 dark:border-slate-700 hover:border-slate-300'}`}
                                     whileTap={{ scale: 0.98 }}
                                     animate={{ 
                                         borderColor: isSelected ? '#0ea5e9' : 'rgba(226, 232, 240, 1)',
@@ -760,7 +760,7 @@ export default function BuyNowPage() {
                                     {isSelected && (
                                         <motion.div 
                                             layoutId="check-buy"
-                                            className="absolute top-2 right-2 text-sky-500"
+                                            className="absolute top-2 right-2 text-rose-400"
                                             initial={{ scale: 0 }}
                                             animate={{ scale: 1 }}
                                         >
@@ -799,7 +799,7 @@ export default function BuyNowPage() {
                                     <div className="mb-4 text-sm text-slate-600 dark:text-slate-300">
                                         <p className="mb-2 font-bold text-slate-900 dark:text-white">How to pay with {paymentMethod === 'bkash' ? 'bKash' : 'Nagad'}:</p>
                                         <ol className="list-decimal list-inside space-y-1 text-xs">
-                                            <li>Go to your {paymentMethod === 'bkash' ? 'bKash' : 'Nagad'} App or dial <span className="font-bold text-sky-600">{paymentMethod === 'bkash' ? '*247#' : '*167#'}</span></li>
+                                            <li>Go to your {paymentMethod === 'bkash' ? 'bKash' : 'Nagad'} App or dial <span className="font-bold text-rose-400">{paymentMethod === 'bkash' ? '*247#' : '*167#'}</span></li>
                                             <li>Choose "Send Money"</li>
                                             <li>Enter Number: <span className="font-bold text-slate-900 dark:text-white select-all bg-yellow-100 dark:bg-yellow-900/30 px-1 rounded">{paymentMethod === 'bkash' ? paymentNumbers.bkash : paymentNumbers.nagad}</span></li>
                                             <li>Enter Amount: <span className="font-bold text-slate-900 dark:text-white">৳{totalAmount}</span></li>
@@ -854,7 +854,7 @@ export default function BuyNowPage() {
                     fullWidth 
                     type="submit" 
                     disabled={isSubmitting}
-                    className="py-4 text-lg shadow-xl shadow-sky-500/20 bg-sky-500 hover:bg-sky-600 text-white rounded-2xl font-bold animate-pulse"
+                    className="py-4 text-lg shadow-xl shadow-rose-400/20 bg-rose-400 hover:bg-rose-400 text-white rounded-2xl font-bold animate-pulse"
                 >
                     {isSubmitting ? t('processing') : t('confirm_order')}
                 </Button>
@@ -866,7 +866,7 @@ export default function BuyNowPage() {
       <div className="fixed bottom-0 left-0 right-0 p-4 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 z-40 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] sm:hidden">
           <Button 
             fullWidth 
-            className="py-3 text-lg rounded-xl bg-sky-500 text-white font-bold shadow-lg"
+            className="py-3 text-lg rounded-xl bg-rose-400 text-white font-bold shadow-lg"
             onClick={() => document.getElementById('order-form')?.scrollIntoView({ behavior: 'smooth' })}
           >
             {t('click_to_order')}

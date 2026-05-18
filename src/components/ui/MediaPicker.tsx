@@ -79,7 +79,7 @@ export function MediaPicker({ onSelect, onClose, context = 'general' }: MediaPic
         <div className="p-4 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
           <div className="flex items-center gap-4">
             {currentFolder && (
-                <button onClick={() => setCurrentFolder(null)} className="text-sky-500 hover:underline text-sm font-bold">
+                <button onClick={() => setCurrentFolder(null)} className="text-rose-400 hover:underline text-sm font-bold">
                     ← Back
                 </button>
             )}
@@ -90,7 +90,7 @@ export function MediaPicker({ onSelect, onClose, context = 'general' }: MediaPic
         
         <div className="p-4 border-b border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50">
             <label className="cursor-pointer inline-block">
-                <span className="inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-bold bg-sky-500 text-white hover:bg-sky-600 transition-colors">
+                <span className="inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-bold bg-rose-400 text-white hover:bg-rose-400 transition-colors">
                     Upload New File
                 </span>
                 <input type="file" className="hidden" onChange={handleUpload} />
@@ -99,7 +99,7 @@ export function MediaPicker({ onSelect, onClose, context = 'general' }: MediaPic
 
         <div className="flex-1 overflow-y-auto p-6">
           {loading ? (
-            <div className="flex justify-center py-12"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-sky-500"></div></div>
+            <div className="flex justify-center py-12"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-rose-400"></div></div>
           ) : folders.length === 0 && files.length === 0 ? (
             <div className="text-center text-slate-500 py-12">No files found. Upload one to get started.</div>
           ) : (
@@ -107,7 +107,7 @@ export function MediaPicker({ onSelect, onClose, context = 'general' }: MediaPic
               {folders.map((folder) => (
                 <div 
                     key={folder.id} 
-                    className="group relative aspect-square bg-sky-50 dark:bg-slate-800 rounded-xl flex flex-col items-center justify-center cursor-pointer border-2 border-transparent hover:border-sky-200 transition-all"
+                    className="group relative aspect-square bg-rose-50 dark:bg-slate-800 rounded-xl flex flex-col items-center justify-center cursor-pointer border-2 border-transparent hover:border-rose-200 transition-all"
                     onClick={() => setCurrentFolder(folder.id)}
                 >
                     <div className="text-4xl mb-2">📂</div>
@@ -118,7 +118,7 @@ export function MediaPicker({ onSelect, onClose, context = 'general' }: MediaPic
               {files.map((file) => (
                 <div 
                     key={file.id} 
-                    className="group relative aspect-square bg-slate-100 dark:bg-slate-800 rounded-xl overflow-hidden cursor-pointer border-2 border-transparent hover:border-sky-500 transition-all"
+                    className="group relative aspect-square bg-slate-100 dark:bg-slate-800 rounded-xl overflow-hidden cursor-pointer border-2 border-transparent hover:border-rose-400 transition-all"
                     onClick={() => onSelect(`${file.url}`)}
                 >
                   {file.type === 'image' ? (

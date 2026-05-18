@@ -27,13 +27,13 @@ export function HeroSection(props: HeroContent) {
           {/* Restored Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-4 justify-center pt-2">
             <a href={primaryCta.href} className="w-full sm:w-auto">
-              <Button className="px-8 py-3 text-sm rounded-full shadow-lg shadow-sky-500/20 bg-sky-600 text-white hover:bg-sky-700 hover:scale-105 transition-all duration-300 w-full font-bold">
+              <Button className="px-8 py-3 text-sm rounded-full shadow-lg shadow-rose-400/20 bg-rose-400 text-white hover:bg-rose-500 hover:scale-105 transition-all duration-300 w-full font-bold">
                 {getLocalizedField(primaryCta, 'label', language)}
               </Button>
             </a>
             {secondaryCta && (
               <a href={secondaryCta.href} className="w-full sm:w-auto">
-                <Button variant="outline" className="px-8 py-3 text-sm rounded-full border-2 border-slate-200 text-slate-700 hover:border-sky-600 hover:text-sky-600 hover:bg-white transition-all duration-300 w-full font-bold dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800">
+                <Button variant="outline" className="px-8 py-3 text-sm rounded-full border-2 border-slate-200 text-slate-700 hover:border-rose-400 hover:text-rose-400 hover:bg-white transition-all duration-300 w-full font-bold dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800">
                   {getLocalizedField(secondaryCta, 'label', language)}
                 </Button>
               </a>
@@ -44,7 +44,7 @@ export function HeroSection(props: HeroContent) {
             <div className="flex justify-center gap-8 pt-6 border-t border-slate-100 dark:border-slate-800 mt-6">
               {stats.map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <div className="text-xl font-bold text-sky-600 dark:text-sky-400">
+                  <div className="text-xl font-bold text-rose-400 dark:text-rose-300">
                     {stat.value}
                   </div>
                   <div className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wide">

@@ -71,7 +71,7 @@ export default function CreateReviewPage() {
           <div>
               <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Product</label>
               <select 
-                  className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
+                  className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
                   value={formData.productId}
                   onChange={e => setFormData({...formData, productId: e.target.value})}
                   required
@@ -86,7 +86,7 @@ export default function CreateReviewPage() {
           <div>
               <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">User (Author)</label>
               <select 
-                  className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
+                  className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white text-sm"
                   value={formData.userId}
                   onChange={e => setFormData({...formData, userId: e.target.value})}
                   required
@@ -117,7 +117,7 @@ export default function CreateReviewPage() {
           <div>
             <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Comment</label>
             <textarea 
-              className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white dark:placeholder-slate-500 text-sm"
+              className="w-full px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:border-pink-500 focus:ring-2 focus:ring-pink-100 outline-none transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white dark:placeholder-slate-500 text-sm"
               value={formData.comment} 
               onChange={e => setFormData({...formData, comment: e.target.value})} 
               rows={4}
@@ -126,7 +126,7 @@ export default function CreateReviewPage() {
             />
           </div>
 
-          <Button type="submit" fullWidth className="rounded-lg shadow-md shadow-sky-500/20 py-3 text-sm font-bold">Create Review</Button>
+          <Button type="submit" fullWidth className="rounded-lg shadow-md shadow-pink-500/20 py-3 text-sm font-bold">Create Review</Button>
         </form>
       </div>
     </div>

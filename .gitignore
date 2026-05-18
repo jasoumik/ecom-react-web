@@ -51,3 +51,5 @@ package-lock.json
 
 # Workspace files
 pnpm-workspace.yaml
+
+/.idea

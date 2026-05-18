@@ -87,7 +87,7 @@ export function BrandsSection({ motherCategories = [] }: BrandsSectionProps) {
                   {selectedMotherCategory === mc.id && (
                     <motion.div
                       layoutId="activeTabBrand"
-                      className="absolute inset-0 bg-sky-500 rounded-full shadow-md"
+                      className="absolute inset-0 bg-rose-400 rounded-full shadow-md"
                       transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                     />
                   )}
@@ -110,7 +110,7 @@ export function BrandsSection({ motherCategories = [] }: BrandsSectionProps) {
                 {selectedMotherCategory === null && (
                   <motion.div
                     layoutId="activeTabBrand"
-                    className="absolute inset-0 bg-sky-500 rounded-full shadow-md"
+                    className="absolute inset-0 bg-rose-400 rounded-full shadow-md"
                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                   />
                 )}
@@ -138,7 +138,7 @@ export function BrandsSection({ motherCategories = [] }: BrandsSectionProps) {
           
           <Link
             href="/brands"
-            className="text-sm font-bold text-sky-600 hover:text-sky-700 hover:underline flex items-center gap-1 bg-white/50 px-4 py-2 rounded-full backdrop-blur-sm border border-slate-200 dark:border-slate-700 shadow-sm transition-all hover:shadow-md dark:bg-slate-800/50 self-start sm:self-auto"
+            className="text-sm font-bold text-rose-400 hover:text-rose-500 hover:underline flex items-center gap-1 bg-white/50 px-4 py-2 rounded-full backdrop-blur-sm border border-slate-200 dark:border-slate-700 shadow-sm transition-all hover:shadow-md dark:bg-slate-800/50 self-start sm:self-auto"
           >
             {t('view_all')}
             <ChevronRight size={16} />
@@ -187,12 +187,12 @@ export function BrandsSection({ motherCategories = [] }: BrandsSectionProps) {
                           className="w-full h-full object-cover transition-all duration-300"
                         />
                       ) : (
-                        <span className="text-3xl font-bold text-slate-300 group-hover:text-sky-500 transition-colors">
+                        <span className="text-3xl font-bold text-slate-300 group-hover:text-rose-400 transition-colors">
                           {brand.name.charAt(0)}
                         </span>
                       )}
                     </div>
-                    <span className="text-xs font-semibold text-slate-600 dark:text-slate-400 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors text-center line-clamp-1">
+                    <span className="text-xs font-semibold text-slate-600 dark:text-slate-400 group-hover:text-rose-400 dark:group-hover:text-rose-300 transition-colors text-center line-clamp-1">
                       {getLocalizedField(brand, 'name', language)}
                     </span>
                   </Link>

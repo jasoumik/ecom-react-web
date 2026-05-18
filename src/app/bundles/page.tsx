@@ -126,7 +126,7 @@ export default function BundlesPage() {
                                     )}
                                 </div>
                                 <div className="p-2 sm:p-4 flex flex-col flex-grow">
-                                    <h3 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white mb-1 line-clamp-1 group-hover:text-sky-600 transition-colors">{getLocalizedField(bundle, 'title', language)}</h3>
+                                    <h3 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white mb-1 line-clamp-1 group-hover:text-rose-400 transition-colors">{getLocalizedField(bundle, 'title', language)}</h3>
                                     <p className="text-slate-500 dark:text-slate-400 text-[10px] sm:text-xs mb-2 sm:mb-3 line-clamp-2 flex-grow">{getLocalizedField(bundle, 'description', language)}</p>
                                     
                                     <div className="flex items-center justify-between mt-auto pt-2 sm:pt-3 border-t border-slate-100 dark:border-slate-700 gap-1">
@@ -138,7 +138,7 @@ export default function BundlesPage() {
                                         </div>
                                         <Button 
                                             onClick={(e) => handleAddToCart(bundle, e)}
-                                            className="rounded-lg px-2 py-1 sm:px-3 sm:py-1.5 bg-sky-500 hover:bg-sky-600 text-white font-bold shadow-md text-[10px] flex items-center gap-1 h-7 sm:h-8 min-w-0"
+                                            className="rounded-lg px-2 py-1 sm:px-3 sm:py-1.5 bg-rose-400 hover:bg-rose-400 text-white font-bold shadow-md text-[10px] flex items-center gap-1 h-7 sm:h-8 min-w-0"
                                         >
                                             <ShoppingCart size={12} />
                                             <span className="hidden sm:inline">{t('add_to_cart')}</span>

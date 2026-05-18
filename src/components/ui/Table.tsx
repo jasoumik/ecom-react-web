@@ -53,7 +53,7 @@ export function Table<T extends { id: string | number }>({
                   onClick={() => onRowClick && onRowClick(item)}
                   className={`group transition-colors ${
                       onRowClick 
-                      ? 'cursor-pointer hover:bg-sky-50 dark:hover:bg-sky-900/20' 
+                      ? 'cursor-pointer hover:bg-rose-50 dark:hover:bg-rose-900/20' 
                       : 'hover:bg-slate-50/50 dark:hover:bg-slate-800/50'
                   }`}
                 >
@@ -83,7 +83,7 @@ export function Table<T extends { id: string | number }>({
                 key={item.id} 
                 className={`p-4 transition-colors ${
                     onRowClick 
-                    ? 'cursor-pointer active:bg-sky-50 dark:active:bg-sky-900/20' 
+                    ? 'cursor-pointer active:bg-rose-50 dark:active:bg-rose-900/20' 
                     : ''
                 }`}
                 onClick={() => onRowClick && onRowClick(item)}

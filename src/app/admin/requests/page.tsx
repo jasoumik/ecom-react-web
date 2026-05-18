@@ -70,19 +70,19 @@ export default function AdminRequestsPage() {
       <div className="flex gap-2 border-b border-slate-200 dark:border-slate-800">
           <button 
             onClick={() => setActiveTab('stock')}
-            className={`px-4 py-2 text-sm font-bold border-b-2 transition-colors ${activeTab === 'stock' ? 'border-sky-500 text-sky-600' : 'border-transparent text-slate-500 hover:text-slate-700'}`}
+            className={`px-4 py-2 text-sm font-bold border-b-2 transition-colors ${activeTab === 'stock' ? 'border-pink-500 text-pink-600' : 'border-transparent text-slate-500 hover:text-slate-700'}`}
           >
               Stock Notifications
           </button>
           <button 
             onClick={() => setActiveTab('product')}
-            className={`px-4 py-2 text-sm font-bold border-b-2 transition-colors ${activeTab === 'product' ? 'border-sky-500 text-sky-600' : 'border-transparent text-slate-500 hover:text-slate-700'}`}
+            className={`px-4 py-2 text-sm font-bold border-b-2 transition-colors ${activeTab === 'product' ? 'border-pink-500 text-pink-600' : 'border-transparent text-slate-500 hover:text-slate-700'}`}
           >
               Product Ideas
           </button>
           <button 
             onClick={() => setActiveTab('contact')}
-            className={`px-4 py-2 text-sm font-bold border-b-2 transition-colors ${activeTab === 'contact' ? 'border-sky-500 text-sky-600' : 'border-transparent text-slate-500 hover:text-slate-700'}`}
+            className={`px-4 py-2 text-sm font-bold border-b-2 transition-colors ${activeTab === 'contact' ? 'border-pink-500 text-pink-600' : 'border-transparent text-slate-500 hover:text-slate-700'}`}
           >
               Contact Messages
           </button>

@@ -1,45 +1,56 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Lato } from "next/font/google";
+import { Cormorant, Plus_Jakarta_Sans } from "next/font/google";
 import { LayoutContent } from "@/components/layout/LayoutContent";
 
-const lato = Lato({
-  weight: ["300", "400", "700", "900"],
+// Ultra-luxury editorial serif — high contrast, elegant, beauty editorial
+const cormorant = Cormorant({
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
-  variable: "--font-lato",
+  variable: "--font-cormorant",
+  display: "swap",
+});
+
+// #1 Gen Z DTC body font — warm, rounded, modern (Ceremonia, Versed, Kosas)
+const jakarta = Plus_Jakarta_Sans({
+  weight: ["300", "400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+  variable: "--font-jakarta",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://prithibee.com'), // Replace with actual domain
+  metadataBase: new URL('https://replantglow.com'), // Replace with actual domain
   title: {
-    default: "Prithibee | Baby Care & Skin Care Products",
-    template: "%s | Prithibee"
+    default: "Replant Glow | Premium Skincare",
+    template: "%s | Replant Glow"
   },
-  description: "Premium baby care and skin care products in Bangladesh. Shop for diapers, feeding essentials, clothing, toys, and authentic skin care items.",
-  keywords: ["baby care", "skin care", "diapers", "baby food", "toys", "bangladesh", "online shopping", "cosmetics", "beauty"],
-  authors: [{ name: "Prithibee" }],
-  creator: "Prithibee",
+  description: "Premium skincare products for glowing, healthy skin. Discover serums, moisturizers, cleansers and more — curated for every skin type.",
+  keywords: ["skincare", "skin care", "serum", "moisturizer", "cleanser", "glow", "beauty", "bangladesh", "online shopping", "cosmetics"],
+  authors: [{ name: "Replant Glow" }],
+  creator: "Replant Glow",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://prithibee.com",
-    title: "Prithibee | Baby Care & Skin Care Products",
-    description: "Premium baby care and skin care products in Bangladesh",
-    siteName: "Prithibee",
+    url: "https://replantglow.com",
+    title: "Replant Glow | Premium Skincare",
+    description: "Premium skincare for glowing, healthy skin",
+    siteName: "Replant Glow",
     images: [
       {
-        url: "/prithibee.png", // Ensure this image exists in public folder
+        url: "/replantglow.png", // Ensure this image exists in public folder
         width: 1200,
         height: 630,
-        alt: "Prithibee",
+        alt: "Replant Glow",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prithibee | Baby Care & Skin Care Products",
-    description: "Premium baby care and skin care products in Bangladesh",
-    images: ["/prithibee.png"],
+    title: "Replant Glow | Premium Skincare",
+    description: "Premium skincare for glowing, healthy skin",
+    images: ["/replantglow.png"],
   },
   icons: {
     icon: "/favicon.ico",
@@ -73,7 +84,7 @@ export default function RootLayout({
       </head>
       <body
         suppressHydrationWarning
-        className={`${lato.variable} font-sans bg-gradient-to-br from-sky-50 via-white to-sky-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300 min-h-screen`}
+        className={`${cormorant.variable} ${jakarta.variable} font-sans antialiased bg-background text-foreground min-h-screen`}
       >
         <LayoutContent>{children}</LayoutContent>
       </body>

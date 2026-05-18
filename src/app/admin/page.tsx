@@ -60,7 +60,7 @@ export default function AdminDashboard() {
             title="Total Customers" 
             value={totalUsers} 
             icon={<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>}
-            color="from-amber-400 to-orange-500" 
+            color="from-amber-400 to-pink-500" 
             trend="+8.4%" 
             trendUp={true}
         />
@@ -72,7 +72,7 @@ export default function AdminDashboard() {
                 <h3 className="font-bold text-base text-slate-800 dark:text-white">Recent Orders</h3>
                 <button 
                     onClick={() => router.push('/admin/orders')}
-                    className="text-xs font-medium text-sky-500 hover:text-sky-600 hover:underline"
+                    className="text-xs font-medium text-pink-500 hover:text-pink-600 hover:underline"
                 >
                     View All
                 </button>

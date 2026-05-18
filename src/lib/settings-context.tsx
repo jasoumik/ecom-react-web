@@ -17,12 +17,12 @@ interface Settings {
 }
 
 const defaultSettings: Settings = {
-  shop_name: "Prithibee",
-  shop_name_bn: "পৃথিবী",
+  shop_name: "Replant Glow",
+  shop_name_bn: "রিপ্ল্যান্ট গ্লো",
   shop_phone: "+880 1616-684803",
   shop_address: "Uttara Model Town, Dhaka-1230",
-  support_email: "support@prithibee.com",
-  facebook_link: "https://www.facebook.com/prithibeeofficial",
+  support_email: "support@replantglow.com",
+  facebook_link: "https://www.facebook.com/replantglowofficial",
   whatsapp_number: "+8801616684803",
   free_shipping_threshold: "5000",
   payment_methods: "bKash,Nagad,Visa,Mastercard,COD",

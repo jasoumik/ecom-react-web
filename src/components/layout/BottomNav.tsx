@@ -76,7 +76,7 @@ export function BottomNav() {
                 {isActive && (
                   <motion.div
                     layoutId="bottomNavIndicator"
-                    className="absolute -inset-1.5 bg-sky-100 dark:bg-sky-900/50 rounded-xl"
+                    className="absolute -inset-1.5 bg-rose-100 dark:bg-rose-900/50 rounded-xl"
                     transition={{ type: "spring", stiffness: 400, damping: 30 }}
                   />
                 )}
@@ -85,7 +85,7 @@ export function BottomNav() {
                   size={22}
                   className={`relative z-10 transition-all duration-200 ${
                     isActive
-                      ? "text-sky-600 dark:text-sky-400 scale-105"
+                      ? "text-rose-400 dark:text-rose-300 scale-105"
                       : "text-slate-500 dark:text-slate-400"
                   }`}
                 />
@@ -96,7 +96,7 @@ export function BottomNav() {
                     key={item.badge}
                     initial={{ scale: 0 }}
                     animate={{ scale: animateBadge && item.href === "/cart" ? [1, 1.3, 1] : 1 }}
-                    className="absolute -top-2 -right-2 w-5 h-5 bg-orange-400 text-white text-[10px] font-bold rounded-full flex items-center justify-center z-20 shadow-sm"
+                    className="absolute -top-2 -right-2 w-5 h-5 bg-rose-300 text-white text-[10px] font-bold rounded-full flex items-center justify-center z-20 shadow-sm"
                   >
                     {item.badge > 9 ? "9+" : item.badge}
                   </motion.span>
@@ -105,7 +105,7 @@ export function BottomNav() {
 
               <span
                 className={`text-[10px] font-medium transition-colors ${
-                  isActive ? "text-sky-600 dark:text-sky-400" : "text-slate-500 dark:text-slate-400"
+                  isActive ? "text-rose-400 dark:text-rose-300" : "text-slate-500 dark:text-slate-400"
                 }`}
               >
                 {item.label}

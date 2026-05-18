@@ -55,7 +55,7 @@ export default function TrackingPage() {
                 <p className="text-sm text-slate-500 dark:text-slate-400 mb-1">{t('order_id')}</p>
                 <p className="text-xl font-bold text-slate-900 dark:text-white">#{order.order_number}</p>
                 {order.estimated_delivery && (
-                    <p className="text-sm text-sky-600 mt-2 font-medium">
+                    <p className="text-sm text-rose-400 mt-2 font-medium">
                         {t('estimated_delivery')}: {formatDate(order.estimated_delivery)}
                     </p>
                 )}
@@ -82,7 +82,7 @@ export default function TrackingPage() {
                                 <div key={step} className="flex gap-6 items-start">
                                     <div className={`relative z-10 w-8 h-8 rounded-full flex items-center justify-center border-2 transition-colors ${
                                         isCompleted 
-                                        ? 'bg-sky-500 border-sky-500 text-white' 
+                                        ? 'bg-rose-400 border-rose-400 text-white' 
                                         : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-600 text-slate-300'
                                     }`}>
                                         {isCompleted && (
@@ -92,7 +92,7 @@ export default function TrackingPage() {
                                     <div className={`flex-1 pt-1 ${isCompleted ? 'opacity-100' : 'opacity-50'}`}>
                                         <div className="flex justify-between items-start">
                                             <div>
-                                                <h3 className={`font-bold text-base capitalize ${isCurrent ? 'text-sky-600' : 'text-slate-900 dark:text-white'}`}>
+                                                <h3 className={`font-bold text-base capitalize ${isCurrent ? 'text-rose-400' : 'text-slate-900 dark:text-white'}`}>
                                                     {t(step)}
                                                 </h3>
                                                 <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">

@@ -364,9 +364,9 @@ export default function ProductPage() {
             <div className="bg-slate-50 dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
                     <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
-                        <Link href="/" className="hover:text-sky-500">{t('home')}</Link>
+                        <Link href="/" className="hover:text-rose-400">{t('home')}</Link>
                         <span>/</span>
-                        <Link href="/products" className="hover:text-sky-500">{t('products')}</Link>
+                        <Link href="/products" className="hover:text-rose-400">{t('products')}</Link>
                         <span>/</span>
                         <span
                             className="text-slate-900 dark:text-white font-medium truncate max-w-[200px]">{getLocalizedField(product, 'name', language)}</span>
@@ -388,7 +388,7 @@ export default function ProductPage() {
                                             type="button"
                                             className={`shrink-0 w-16 h-16 sm:w-18 sm:h-18 rounded-xl overflow-hidden bg-white dark:bg-slate-900 cursor-pointer hover:opacity-80 border-2 transition-all ${
                                                 selectedMedia === media
-                                                    ? 'border-sky-500 ring-2 ring-sky-500/20'
+                                                    ? 'border-rose-400 ring-2 ring-rose-400/20'
                                                     : 'border-slate-100 dark:border-slate-800'
                                             }`}
                                             onClick={() => setSelectedMedia(media)}
@@ -427,7 +427,7 @@ export default function ProductPage() {
                                 >
                                     {/* Discount Badge */}
                                     {product.old_price && (
-                                        <div className="absolute top-4 left-4 z-10 bg-rose-500 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-md">
+                                        <div className="absolute top-4 left-4 z-10 bg-rose-400 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-md">
                                             {Math.round(
                                                 ((parseFloat(product.old_price) - parseFloat(currentPrice)) /
                                                     parseFloat(product.old_price)) * 100
@@ -482,7 +482,7 @@ export default function ProductPage() {
                         <div>
                             <div className="flex justify-between items-start mb-2">
                                 <div
-                                    className="text-xs font-bold text-sky-600 uppercase tracking-wider bg-sky-50 dark:bg-sky-900/30 px-2.5 py-1 rounded-md">{getLocalizedField(product, 'category_name', language)}</div>
+                                    className="text-xs font-bold text-rose-400 uppercase tracking-wider bg-rose-50 dark:bg-rose-900/30 px-2.5 py-1 rounded-md">{getLocalizedField(product, 'category_name', language)}</div>
 
                                 {/* Country Label */}
                                 {product.country_id && (
@@ -515,7 +515,7 @@ export default function ProductPage() {
                                 </div>
 
                                 <div
-                                    className={`flex items-center gap-1.5 text-sm font-medium px-2.5 py-0.5 rounded-full ${currentStock > 0 ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-900/20 dark:text-emerald-400' : 'bg-rose-50 text-rose-700 dark:bg-rose-900/20 dark:text-rose-400'}`}>
+                                    className={`flex items-center gap-1.5 text-sm font-medium px-2.5 py-0.5 rounded-full ${currentStock > 0 ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-900/20 dark:text-emerald-400' : 'bg-rose-50 text-rose-500 dark:bg-rose-900/20 dark:text-rose-300'}`}>
                                     {currentStock > 0 ? <CheckCircle2 size={14}/> : <AlertCircle size={14}/>}
                                     {currentStock > 0 ? t('in_stock') : t('out_of_stock')}
                                 </div>
@@ -524,7 +524,7 @@ export default function ProductPage() {
                             <div
                                 className="flex items-end gap-3 mb-6 pb-6 border-b border-slate-100 dark:border-slate-800">
                                 <div
-                                    className="text-3xl sm:text-4xl font-bold text-sky-600 dark:text-sky-400">৳{currentPrice}</div>
+                                    className="text-3xl sm:text-4xl font-bold text-rose-400 dark:text-rose-300">৳{currentPrice}</div>
                                 {product.old_price && (
                                     <div className="flex flex-col mb-1">
                                         <div
@@ -549,7 +549,7 @@ export default function ProductPage() {
                                                     onClick={() => handleSizeChange(size)}
                                                     className={`px-4 py-2 rounded-lg border text-sm font-medium transition-all min-w-[3rem] ${
                                                         selectedSize === size
-                                                            ? 'border-sky-500 bg-sky-50 text-sky-700 dark:bg-sky-900/30 dark:text-sky-400 ring-1 ring-sky-500'
+                                                            ? 'border-rose-400 bg-rose-50 text-rose-500 dark:bg-rose-900/30 dark:text-rose-300 ring-1 ring-rose-400'
                                                             : 'border-slate-200 text-slate-600 hover:border-slate-300 dark:border-slate-700 dark:text-slate-300 bg-white dark:bg-slate-800'
                                                     }`}
                                                 >
@@ -574,7 +574,7 @@ export default function ProductPage() {
                                                         onClick={() => handleColorChange(color)}
                                                         className={`px-4 py-2 rounded-lg border text-sm font-medium transition-all ${
                                                             selectedColor === color
-                                                                ? 'border-sky-500 bg-sky-50 text-sky-700 dark:bg-sky-900/30 dark:text-sky-400 ring-1 ring-sky-500'
+                                                                ? 'border-rose-400 bg-rose-50 text-rose-500 dark:bg-rose-900/30 dark:text-rose-300 ring-1 ring-rose-400'
                                                                 : isAvailable
                                                                     ? 'border-slate-200 text-slate-600 hover:border-slate-300 dark:border-slate-700 dark:text-slate-300 bg-white dark:bg-slate-800'
                                                                     : 'border-slate-100 text-slate-300 cursor-not-allowed bg-slate-50 dark:bg-slate-800/50 dark:border-slate-800 dark:text-slate-600 opacity-50'
@@ -601,7 +601,7 @@ export default function ProductPage() {
                                                     onClick={() => setSelectedWeight(weight)}
                                                     className={`px-4 py-2 rounded-lg border text-sm font-medium transition-all min-w-[3rem] ${
                                                         selectedWeight === weight
-                                                            ? 'border-sky-500 bg-sky-50 text-sky-700 dark:bg-sky-900/30 dark:text-sky-400 ring-1 ring-sky-500'
+                                                            ? 'border-rose-400 bg-rose-50 text-rose-500 dark:bg-rose-900/30 dark:text-rose-300 ring-1 ring-rose-400'
                                                             : 'border-slate-200 text-slate-600 hover:border-slate-300 dark:border-slate-700 dark:text-slate-300 bg-white dark:bg-slate-800'
                                                     }`}
                                                 >
@@ -647,7 +647,7 @@ export default function ProductPage() {
                                 {currentStock > 0 ? (
                                     <>
                                         <Button
-                                            className="flex-1 py-4 text-base rounded-xl bg-sky-600 text-white font-bold shadow-lg shadow-sky-500/20 hover:bg-sky-700 hover:shadow-sky-500/30 transition-all duration-300"
+                                            className="flex-1 py-4 text-base rounded-xl bg-rose-400 text-white font-bold shadow-lg shadow-rose-400/20 hover:bg-rose-500 hover:shadow-rose-400/30 transition-all duration-300"
                                             onClick={handleAddToCart}
                                         >
                                             {t('add_to_cart')}
@@ -672,7 +672,7 @@ export default function ProductPage() {
                             <div className="flex items-center gap-4">
                                 <button
                                     onClick={toggleWishlist}
-                                    className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors border ${isWishlisted ? 'border-rose-200 bg-rose-50 text-rose-600 dark:bg-rose-900/20 dark:border-rose-800' : 'border-slate-200 text-slate-600 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800'}`}
+                                    className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors border ${isWishlisted ? 'border-rose-200 bg-rose-50 text-rose-400 dark:bg-rose-900/20 dark:border-rose-800' : 'border-slate-200 text-slate-600 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800'}`}
                                 >
                                     <Heart size={18} fill={isWishlisted ? "currentColor" : "none"}/>
                                     {isWishlisted ? "Wishlisted" : "Add to Wishlist"}
@@ -692,7 +692,7 @@ export default function ProductPage() {
                             className="grid grid-cols-3 gap-4 py-6 border-t border-slate-100 dark:border-slate-800 mt-6">
                             <div className="flex flex-col items-center text-center gap-2">
                                 <div
-                                    className="w-10 h-10 rounded-full bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center text-sky-600 dark:text-sky-400">
+                                    className="w-10 h-10 rounded-full bg-rose-50 dark:bg-rose-900/30 flex items-center justify-center text-rose-400 dark:text-rose-300">
                                     <Truck size={20}/>
                                 </div>
                                 <span
@@ -700,7 +700,7 @@ export default function ProductPage() {
                             </div>
                             <div className="flex flex-col items-center text-center gap-2">
                                 <div
-                                    className="w-10 h-10 rounded-full bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center text-sky-600 dark:text-sky-400">
+                                    className="w-10 h-10 rounded-full bg-rose-50 dark:bg-rose-900/30 flex items-center justify-center text-rose-400 dark:text-rose-300">
                                     <ShieldCheck size={20}/>
                                 </div>
                                 <span
@@ -708,7 +708,7 @@ export default function ProductPage() {
                             </div>
                             <div className="flex flex-col items-center text-center gap-2">
                                 <div
-                                    className="w-10 h-10 rounded-full bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center text-sky-600 dark:text-sky-400">
+                                    className="w-10 h-10 rounded-full bg-rose-50 dark:bg-rose-900/30 flex items-center justify-center text-rose-400 dark:text-rose-300">
                                     <RefreshCw size={20}/>
                                 </div>
                                 <span
@@ -761,7 +761,7 @@ export default function ProductPage() {
                         {/*                    <div className="flex items-center justify-between mb-2">*/}
                         {/*                        <div className="flex items-center gap-2">*/}
                         {/*                            <div*/}
-                        {/*                                className="w-8 h-8 rounded-full bg-sky-100 dark:bg-sky-900/50 flex items-center justify-center text-sky-600 dark:text-sky-400 font-bold text-xs">*/}
+                        {/*                                className="w-8 h-8 rounded-full bg-rose-100 dark:bg-rose-900/50 flex items-center justify-center text-rose-400 dark:text-rose-300 font-bold text-xs">*/}
                         {/*                                {review.user_name.charAt(0)}*/}
                         {/*                            </div>*/}
                         {/*                            <div>*/}
@@ -798,7 +798,7 @@ export default function ProductPage() {
                                 {t('description')}
                             </Heading>
                             <div
-                                className="prose dark:prose-invert max-w-none text-slate-600 dark:text-slate-300 leading-relaxed text-sm"
+                                className="prose dark:ppink-invert max-w-none text-slate-600 dark:text-slate-300 leading-relaxed text-sm"
                                 dangerouslySetInnerHTML={{__html: getLocalizedField(product, 'description', language)}}
                             />
                         </div>
@@ -844,7 +844,7 @@ export default function ProductPage() {
                                             </Link>
                                         </div>
                                         <div className="space-y-1 text-center flex-grow">
-                                            <h3 className="text-sm font-bold text-slate-900 font-sans group-hover:text-sky-500 transition-colors dark:text-white line-clamp-1">
+                                            <h3 className="text-sm font-bold text-slate-900 font-sans group-hover:text-rose-400 transition-colors dark:text-white line-clamp-1">
                                                 <Link
                                                     href={`/products/${p.slug || p.id}`}>{getLocalizedField(p, 'name', language)}</Link>
                                             </h3>
@@ -853,7 +853,7 @@ export default function ProductPage() {
                                         </div>
                                         <div className="mt-3 pt-3 border-t border-slate-100 dark:border-slate-700">
                                             <Button
-                                                className="w-full py-2 text-xs font-bold rounded-lg bg-sky-600 text-white hover:bg-sky-700 transition-colors flex items-center justify-center gap-2"
+                                                className="w-full py-2 text-xs font-bold rounded-lg bg-rose-400 text-white hover:bg-rose-500 transition-colors flex items-center justify-center gap-2"
                                                 onClick={(e) => {
                                                     e.preventDefault();
                                                     e.stopPropagation();
@@ -899,7 +899,7 @@ export default function ProductPage() {
                     {currentStock > 0 ? (
                         <>
                             <Button
-                                className="flex-1 py-3 text-sm rounded-lg bg-sky-600 text-white font-bold shadow-md"
+                                className="flex-1 py-3 text-sm rounded-lg bg-rose-400 text-white font-bold shadow-md"
                                 onClick={handleAddToCart}
                             >
                                 {t('add_to_cart')}

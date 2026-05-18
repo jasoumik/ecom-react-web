@@ -85,7 +85,7 @@ export default function AdminLandingPages() {
           {
             header: "Slug",
             cell: (page) => (
-                <a href={`/offer/${page.slug}`} target="_blank" className="text-sky-500 hover:underline text-xs font-mono">
+                <a href={`/offer/${page.slug}`} target="_blank" className="text-pink-500 hover:underline text-xs font-mono">
                     /offer/{page.slug}
                 </a>
             )
@@ -114,7 +114,7 @@ export default function AdminLandingPages() {
               <div className="flex justify-end gap-1">
                   <button 
                   onClick={() => router.push(`/admin/landing-pages/${page.id}/edit`)}
-                  className="p-1.5 rounded text-slate-500 hover:bg-sky-50 hover:text-sky-600 transition-colors"
+                  className="p-1.5 rounded text-slate-500 hover:bg-pink-50 hover:text-pink-600 transition-colors"
                   title="Edit"
                   >
                       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>

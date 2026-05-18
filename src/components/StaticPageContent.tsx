@@ -26,7 +26,7 @@ export function StaticPageContent({ pageKey, title }: { pageKey: string, title: 
     <div className="min-h-screen bg-white dark:bg-slate-950 py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Heading size="xl" className="font-sans text-slate-900 dark:text-white mb-8 text-center">{title}</Heading>
-        <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: content || "<p>Coming soon...</p>" }} />
+        <div className="prose dark:ppink-invert max-w-none" dangerouslySetInnerHTML={{ __html: content || "<p>Coming soon...</p>" }} />
       </div>
     </div>
   );

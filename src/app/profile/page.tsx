@@ -130,7 +130,7 @@ export default function ProfilePage() {
         </div>
 
         {/* Points Card */}
-        <div className="mb-8 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl p-6 text-white shadow-lg relative overflow-hidden">
+        <div className="mb-8 bg-gradient-to-r from-amber-500 to-rose-400 rounded-2xl p-6 text-white shadow-lg relative overflow-hidden">
             <div className="absolute top-0 right-0 p-4 opacity-10">
                 <Coins size={120} />
             </div>
@@ -165,7 +165,7 @@ export default function ProfilePage() {
                     <button 
                         type="button" 
                         onClick={() => fileInputRef.current?.click()}
-                        className="absolute -bottom-1 -right-1 p-1.5 bg-sky-500 text-white rounded-full shadow-sm hover:bg-sky-600 transition-colors border-2 border-white dark:border-slate-900"
+                        className="absolute -bottom-1 -right-1 p-1.5 bg-rose-400 text-white rounded-full shadow-sm hover:bg-rose-400 transition-colors border-2 border-white dark:border-slate-900"
                     >
                         <Camera size={12} />
                     </button>
@@ -185,7 +185,7 @@ export default function ProfilePage() {
                             type="text"
                             value={formData.name}
                             onChange={(e) => setFormData({...formData, name: e.target.value})}
-                            className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 bg-white dark:bg-slate-800 dark:border-slate-700 focus:ring-2 focus:ring-sky-500 outline-none transition-all text-sm font-medium text-slate-900 dark:text-white"
+                            className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 bg-white dark:bg-slate-800 dark:border-slate-700 focus:ring-2 focus:ring-rose-400 outline-none transition-all text-sm font-medium text-slate-900 dark:text-white"
                             placeholder="Enter your name"
                         />
                     </div>
@@ -200,7 +200,7 @@ export default function ProfilePage() {
                                 type="text"
                                 value={formData.phone}
                                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                                className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 bg-white dark:bg-slate-800 dark:border-slate-700 focus:ring-2 focus:ring-sky-500 outline-none transition-all text-sm font-medium text-slate-900 dark:text-white"
+                                className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 bg-white dark:bg-slate-800 dark:border-slate-700 focus:ring-2 focus:ring-rose-400 outline-none transition-all text-sm font-medium text-slate-900 dark:text-white"
                                 placeholder="01XXXXXXXXX or +8801XXXXXXXXX"
                             />
                         </div>
@@ -215,7 +215,7 @@ export default function ProfilePage() {
                                 type="email"
                                 value={formData.email}
                                 onChange={(e) => setFormData({...formData, email: e.target.value})}
-                                className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 bg-white dark:bg-slate-800 dark:border-slate-700 focus:ring-2 focus:ring-sky-500 outline-none transition-all text-sm font-medium text-slate-900 dark:text-white"
+                                className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 bg-white dark:bg-slate-800 dark:border-slate-700 focus:ring-2 focus:ring-rose-400 outline-none transition-all text-sm font-medium text-slate-900 dark:text-white"
                                 placeholder="Enter your email"
                             />
                         </div>
@@ -227,7 +227,7 @@ export default function ProfilePage() {
                 <Button 
                     type="submit" 
                     disabled={loading}
-                    className="rounded-xl px-8 py-3 font-bold shadow-lg shadow-sky-500/20 w-full sm:w-auto"
+                    className="rounded-xl px-8 py-3 font-bold shadow-lg shadow-rose-400/20 w-full sm:w-auto"
                 >
                     {loading ? "Saving Changes..." : "Save Changes"}
                 </Button>

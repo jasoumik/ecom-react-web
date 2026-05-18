@@ -47,7 +47,7 @@ export default function RegisterPage() {
   if (isCheckingAuth) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-white dark:bg-slate-950">
-        <div className="w-8 h-8 border-4 border-sky-500 border-t-transparent rounded-full animate-spin" />
+        <div className="w-8 h-8 border-4 border-rose-400 border-t-transparent rounded-full animate-spin" />
       </div>
     );
   }
@@ -106,7 +106,7 @@ export default function RegisterPage() {
               placeholder={t('full_name_placeholder')}
               required
               disabled={isLoading}
-              className="w-full h-12 pl-12 pr-4 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all text-base"
+              className="w-full h-12 pl-12 pr-4 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent transition-all text-base"
             />
           </div>
         </div>
@@ -126,7 +126,7 @@ export default function RegisterPage() {
               placeholder="017..."
               required
               disabled={isLoading}
-              className="w-full h-12 pl-12 pr-4 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all text-base"
+              className="w-full h-12 pl-12 pr-4 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent transition-all text-base"
             />
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function RegisterPage() {
               placeholder="you@example.com"
               required
               disabled={isLoading}
-              className="w-full h-12 pl-12 pr-4 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all text-base"
+              className="w-full h-12 pl-12 pr-4 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent transition-all text-base"
             />
           </div>
         </div>
@@ -166,7 +166,7 @@ export default function RegisterPage() {
               placeholder={t('password_placeholder')}
               required
               disabled={isLoading}
-              className="w-full h-12 pl-12 pr-12 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all text-base"
+              className="w-full h-12 pl-12 pr-12 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent transition-all text-base"
             />
             <button
               type="button"
@@ -181,7 +181,7 @@ export default function RegisterPage() {
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full h-12 bg-sky-500 hover:bg-sky-600 disabled:bg-sky-400 text-white font-bold rounded-xl shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 transition-all flex items-center justify-center gap-2 text-base"
+          className="w-full h-12 bg-rose-400 hover:bg-rose-400 disabled:bg-rose-300 text-white font-bold rounded-xl shadow-lg shadow-rose-400/25 hover:shadow-rose-400/40 transition-all flex items-center justify-center gap-2 text-base"
         >
           {isLoading ? (
             <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
@@ -205,7 +205,7 @@ export default function RegisterPage() {
           {t('already_have_account')}{" "}
           <Link
             href="/login"
-            className="text-sky-600 dark:text-sky-400 font-bold hover:underline"
+            className="text-rose-400 dark:text-rose-300 font-bold hover:underline"
           >
             {t('login')}
           </Link>
@@ -214,7 +214,7 @@ export default function RegisterPage() {
         {/* Back to Home Link */}
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 transition-colors"
+          className="inline-flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 hover:text-rose-400 dark:hover:text-rose-300 transition-colors"
         >
           <Home size={16} />
           <span>{t('back_to_home') || 'Back to Home'}</span>

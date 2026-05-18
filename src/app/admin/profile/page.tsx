@@ -78,7 +78,7 @@ export default function AdminProfilePage() {
                         {user.avatar ? (
                             <img src={user.avatar} alt={user.name} className="w-full h-full object-cover" />
                         ) : (
-                            <div className="w-full h-full bg-gradient-to-br from-sky-400 to-blue-600 flex items-center justify-center text-5xl text-white font-bold">
+                            <div className="w-full h-full bg-gradient-to-br from-pink-400 to-blue-600 flex items-center justify-center text-5xl text-white font-bold">
                                 {user.name.charAt(0)}
                             </div>
                         )}
@@ -86,12 +86,12 @@ export default function AdminProfilePage() {
                     <div className="absolute inset-0 bg-black/40 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-200">
                         <span className="text-white text-xs font-bold">Change</span>
                     </div>
-                    <div className="absolute bottom-1 right-1 w-8 h-8 bg-white dark:bg-slate-700 rounded-full shadow-md flex items-center justify-center text-sky-500">
+                    <div className="absolute bottom-1 right-1 w-8 h-8 bg-white dark:bg-slate-700 rounded-full shadow-md flex items-center justify-center text-pink-500">
                         ✎
                     </div>
                 </div>
                 <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-1">{user.name}</h3>
-                <span className="inline-flex px-3 py-1 rounded-full bg-sky-100 text-sky-700 text-xs font-bold uppercase tracking-wide dark:bg-sky-900/30 dark:text-sky-400">
+                <span className="inline-flex px-3 py-1 rounded-full bg-pink-100 text-pink-700 text-xs font-bold uppercase tracking-wide dark:bg-pink-900/30 dark:text-pink-400">
                     Administrator
                 </span>
             </div>
@@ -111,7 +111,7 @@ export default function AdminProfilePage() {
                     </div>
                     
                     <div className="pt-6 flex justify-end">
-                        <Button type="submit" className="rounded-xl shadow-lg shadow-sky-500/20 px-8 py-3 text-base">Save Changes</Button>
+                        <Button type="submit" className="rounded-xl shadow-lg shadow-pink-500/20 px-8 py-3 text-base">Save Changes</Button>
                     </div>
                 </form>
             </div>

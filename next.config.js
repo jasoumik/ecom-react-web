@@ -22,7 +22,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'api.prithibee.com',
+        hostname: 'api.replantglow.com',
         pathname: '/api/uploads/**',
       },
     ],

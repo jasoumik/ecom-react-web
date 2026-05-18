@@ -68,7 +68,7 @@ export function CategoriesSection({ categories, motherCategories = [] }: Categor
                             {selectedMotherCategory === mc.id && (
                                 <motion.div
                                     layoutId="activeTabCat"
-                                    className="absolute inset-0 bg-sky-500 rounded-full"
+                                    className="absolute inset-0 bg-rose-400 rounded-full"
                                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                                 />
                             )}
@@ -91,7 +91,7 @@ export function CategoriesSection({ categories, motherCategories = [] }: Categor
                         {selectedMotherCategory === null && (
                             <motion.div
                                 layoutId="activeTabCat"
-                                className="absolute inset-0 bg-sky-500 rounded-full"
+                                className="absolute inset-0 bg-rose-400 rounded-full"
                                 transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                             />
                         )}
@@ -120,7 +120,7 @@ export function CategoriesSection({ categories, motherCategories = [] }: Categor
 
           <Link
             href="/products"
-            className="text-sm font-bold text-sky-600 hover:text-sky-700 flex items-center gap-1 bg-white dark:bg-slate-800 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 shadow-sm transition-all hover:shadow-md"
+            className="text-sm font-bold text-rose-400 hover:text-rose-500 flex items-center gap-1 bg-white dark:bg-slate-800 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 shadow-sm transition-all hover:shadow-md"
           >
             {t('view_all')}
             <ChevronRight size={16} />
@@ -132,7 +132,7 @@ export function CategoriesSection({ categories, motherCategories = [] }: Categor
           {/* Desktop Navigation Arrows */}
           <button
             onClick={() => scroll('left')}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 rounded-full bg-white dark:bg-slate-800 shadow-lg flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-700 transition-all opacity-0 group-hover:opacity-100 hidden lg:flex pointer-events-auto"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 rounded-full bg-white dark:bg-slate-800 shadow-lg flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-rose-50 dark:hover:bg-slate-700 transition-all opacity-0 group-hover:opacity-100 hidden lg:flex pointer-events-auto"
             aria-label="Scroll left"
           >
             <ChevronLeft size={20} />
@@ -168,11 +168,11 @@ export function CategoriesSection({ categories, motherCategories = [] }: Categor
                             className="object-cover w-full h-full"
                             />
                             {/* Hover Overlay */}
-                            <div className="absolute inset-0 bg-sky-500/0 group-hover/card:bg-sky-500/10 transition-colors" />
+                            <div className="absolute inset-0 bg-rose-400/0 group-hover/card:bg-rose-400/10 transition-colors" />
                         </div>
 
                         {/* Category Name */}
-                        <h3 className="font-semibold text-slate-800 dark:text-white text-xs sm:text-sm group-hover/card:text-sky-600 dark:group-hover/card:text-sky-400 transition-colors line-clamp-2 w-20 sm:w-28 lg:w-32">
+                        <h3 className="font-semibold text-slate-800 dark:text-white text-xs sm:text-sm group-hover/card:text-rose-400 dark:group-hover/card:text-rose-300 transition-colors line-clamp-2 w-20 sm:w-28 lg:w-32">
                             {getLocalizedField(category, 'name', language)}
                         </h3>
                         </Link>
@@ -193,7 +193,7 @@ export function CategoriesSection({ categories, motherCategories = [] }: Categor
           {/* Desktop Navigation Arrow Right */}
           <button
             onClick={() => scroll('right')}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 rounded-full bg-white dark:bg-slate-800 shadow-lg flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-700 transition-all opacity-0 group-hover:opacity-100 hidden lg:flex pointer-events-auto"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 rounded-full bg-white dark:bg-slate-800 shadow-lg flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-rose-50 dark:hover:bg-slate-700 transition-all opacity-0 group-hover:opacity-100 hidden lg:flex pointer-events-auto"
             aria-label="Scroll right"
           >
             <ChevronRight size={20} />
